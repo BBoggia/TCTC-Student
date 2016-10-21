@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5EB6C46C1DBA803600AD52D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6C46B1DBA803600AD52D3 /* AppDelegate.swift */; };
+		5EB6C46E1DBA803600AD52D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6C46D1DBA803600AD52D3 /* ViewController.swift */; };
+		5EB6C4711DBA803600AD52D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EB6C46F1DBA803600AD52D3 /* Main.storyboard */; };
+		5EB6C4731DBA803600AD52D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EB6C4721DBA803600AD52D3 /* Assets.xcassets */; };
+		5EB6C4761DBA803600AD52D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EB6C4741DBA803600AD52D3 /* LaunchScreen.storyboard */; };
+		5EB6C4811DBA803600AD52D3 /* TCTC_StudentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6C4801DBA803600AD52D3 /* TCTC_StudentTests.swift */; };
+		5EB6C48C1DBA803600AD52D3 /* TCTC_StudentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6C48B1DBA803600AD52D3 /* TCTC_StudentUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5EB6C47D1DBA803600AD52D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EB6C4601DBA803600AD52D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EB6C4671DBA803600AD52D3;
+			remoteInfo = "TCTC Student";
+		};
+		5EB6C4881DBA803600AD52D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EB6C4601DBA803600AD52D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EB6C4671DBA803600AD52D3;
+			remoteInfo = "TCTC Student";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5EB6C4681DBA803600AD52D3 /* TCTC Student.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TCTC Student.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EB6C46B1DBA803600AD52D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5EB6C46D1DBA803600AD52D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5EB6C4701DBA803600AD52D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5EB6C4721DBA803600AD52D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5EB6C4751DBA803600AD52D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5EB6C4771DBA803600AD52D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EB6C47C1DBA803600AD52D3 /* TCTC StudentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TCTC StudentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EB6C4801DBA803600AD52D3 /* TCTC_StudentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCTC_StudentTests.swift; sourceTree = "<group>"; };
+		5EB6C4821DBA803600AD52D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EB6C4871DBA803600AD52D3 /* TCTC StudentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TCTC StudentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EB6C48B1DBA803600AD52D3 /* TCTC_StudentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCTC_StudentUITests.swift; sourceTree = "<group>"; };
+		5EB6C48D1DBA803600AD52D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EB6C4651DBA803600AD52D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EB6C4791DBA803600AD52D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EB6C4841DBA803600AD52D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5EB6C45F1DBA803600AD52D3 = {
+			isa = PBXGroup;
+			children = (
+				5EB6C46A1DBA803600AD52D3 /* TCTC Student */,
+				5EB6C47F1DBA803600AD52D3 /* TCTC StudentTests */,
+				5EB6C48A1DBA803600AD52D3 /* TCTC StudentUITests */,
+				5EB6C4691DBA803600AD52D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5EB6C4691DBA803600AD52D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EB6C4681DBA803600AD52D3 /* TCTC Student.app */,
+				5EB6C47C1DBA803600AD52D3 /* TCTC StudentTests.xctest */,
+				5EB6C4871DBA803600AD52D3 /* TCTC StudentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EB6C46A1DBA803600AD52D3 /* TCTC Student */ = {
+			isa = PBXGroup;
+			children = (
+				5EB6C46B1DBA803600AD52D3 /* AppDelegate.swift */,
+				5EB6C46D1DBA803600AD52D3 /* ViewController.swift */,
+				5EB6C46F1DBA803600AD52D3 /* Main.storyboard */,
+				5EB6C4721DBA803600AD52D3 /* Assets.xcassets */,
+				5EB6C4741DBA803600AD52D3 /* LaunchScreen.storyboard */,
+				5EB6C4771DBA803600AD52D3 /* Info.plist */,
+			);
+			path = "TCTC Student";
+			sourceTree = "<group>";
+		};
+		5EB6C47F1DBA803600AD52D3 /* TCTC StudentTests */ = {
+			isa = PBXGroup;
+			children = (
+				5EB6C4801DBA803600AD52D3 /* TCTC_StudentTests.swift */,
+				5EB6C4821DBA803600AD52D3 /* Info.plist */,
+			);
+			path = "TCTC StudentTests";
+			sourceTree = "<group>";
+		};
+		5EB6C48A1DBA803600AD52D3 /* TCTC StudentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5EB6C48B1DBA803600AD52D3 /* TCTC_StudentUITests.swift */,
+				5EB6C48D1DBA803600AD52D3 /* Info.plist */,
+			);
+			path = "TCTC StudentUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EB6C4671DBA803600AD52D3 /* TCTC Student */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EB6C4901DBA803600AD52D3 /* Build configuration list for PBXNativeTarget "TCTC Student" */;
+			buildPhases = (
+				5EB6C4641DBA803600AD52D3 /* Sources */,
+				5EB6C4651DBA803600AD52D3 /* Frameworks */,
+				5EB6C4661DBA803600AD52D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TCTC Student";
+			productName = "TCTC Student";
+			productReference = 5EB6C4681DBA803600AD52D3 /* TCTC Student.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5EB6C47B1DBA803600AD52D3 /* TCTC StudentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EB6C4931DBA803600AD52D3 /* Build configuration list for PBXNativeTarget "TCTC StudentTests" */;
+			buildPhases = (
+				5EB6C4781DBA803600AD52D3 /* Sources */,
+				5EB6C4791DBA803600AD52D3 /* Frameworks */,
+				5EB6C47A1DBA803600AD52D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EB6C47E1DBA803600AD52D3 /* PBXTargetDependency */,
+			);
+			name = "TCTC StudentTests";
+			productName = "TCTC StudentTests";
+			productReference = 5EB6C47C1DBA803600AD52D3 /* TCTC StudentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5EB6C4861DBA803600AD52D3 /* TCTC StudentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EB6C4961DBA803600AD52D3 /* Build configuration list for PBXNativeTarget "TCTC StudentUITests" */;
+			buildPhases = (
+				5EB6C4831DBA803600AD52D3 /* Sources */,
+				5EB6C4841DBA803600AD52D3 /* Frameworks */,
+				5EB6C4851DBA803600AD52D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EB6C4891DBA803600AD52D3 /* PBXTargetDependency */,
+			);
+			name = "TCTC StudentUITests";
+			productName = "TCTC StudentUITests";
+			productReference = 5EB6C4871DBA803600AD52D3 /* TCTC StudentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EB6C4601DBA803600AD52D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Pinetree Studios";
+				TargetAttributes = {
+					5EB6C4671DBA803600AD52D3 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6E2D64GGFH;
+						ProvisioningStyle = Automatic;
+					};
+					5EB6C47B1DBA803600AD52D3 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6E2D64GGFH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5EB6C4671DBA803600AD52D3;
+					};
+					5EB6C4861DBA803600AD52D3 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6E2D64GGFH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5EB6C4671DBA803600AD52D3;
+					};
+				};
+			};
+			buildConfigurationList = 5EB6C4631DBA803600AD52D3 /* Build configuration list for PBXProject "TCTC Student" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5EB6C45F1DBA803600AD52D3;
+			productRefGroup = 5EB6C4691DBA803600AD52D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EB6C4671DBA803600AD52D3 /* TCTC Student */,
+				5EB6C47B1DBA803600AD52D3 /* TCTC StudentTests */,
+				5EB6C4861DBA803600AD52D3 /* TCTC StudentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EB6C4661DBA803600AD52D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EB6C4761DBA803600AD52D3 /* LaunchScreen.storyboard in Resources */,
+				5EB6C4731DBA803600AD52D3 /* Assets.xcassets in Resources */,
+				5EB6C4711DBA803600AD52D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EB6C47A1DBA803600AD52D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EB6C4851DBA803600AD52D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EB6C4641DBA803600AD52D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EB6C46E1DBA803600AD52D3 /* ViewController.swift in Sources */,
+				5EB6C46C1DBA803600AD52D3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EB6C4781DBA803600AD52D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EB6C4811DBA803600AD52D3 /* TCTC_StudentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EB6C4831DBA803600AD52D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EB6C48C1DBA803600AD52D3 /* TCTC_StudentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5EB6C47E1DBA803600AD52D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EB6C4671DBA803600AD52D3 /* TCTC Student */;
+			targetProxy = 5EB6C47D1DBA803600AD52D3 /* PBXContainerItemProxy */;
+		};
+		5EB6C4891DBA803600AD52D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EB6C4671DBA803600AD52D3 /* TCTC Student */;
+			targetProxy = 5EB6C4881DBA803600AD52D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5EB6C46F1DBA803600AD52D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EB6C4701DBA803600AD52D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5EB6C4741DBA803600AD52D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EB6C4751DBA803600AD52D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5EB6C48E1DBA803600AD52D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5EB6C48F1DBA803600AD52D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5EB6C4911DBA803600AD52D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6E2D64GGFH;
+				INFOPLIST_FILE = "TCTC Student/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tctcapp.TCTC-Student";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5EB6C4921DBA803600AD52D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6E2D64GGFH;
+				INFOPLIST_FILE = "TCTC Student/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tctcapp.TCTC-Student";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5EB6C4941DBA803600AD52D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6E2D64GGFH;
+				INFOPLIST_FILE = "TCTC StudentTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tctcapp.TCTC-StudentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCTC Student.app/TCTC Student";
+			};
+			name = Debug;
+		};
+		5EB6C4951DBA803600AD52D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6E2D64GGFH;
+				INFOPLIST_FILE = "TCTC StudentTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tctcapp.TCTC-StudentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCTC Student.app/TCTC Student";
+			};
+			name = Release;
+		};
+		5EB6C4971DBA803600AD52D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 6E2D64GGFH;
+				INFOPLIST_FILE = "TCTC StudentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tctcapp.TCTC-StudentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "TCTC Student";
+			};
+			name = Debug;
+		};
+		5EB6C4981DBA803600AD52D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 6E2D64GGFH;
+				INFOPLIST_FILE = "TCTC StudentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tctcapp.TCTC-StudentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "TCTC Student";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EB6C4631DBA803600AD52D3 /* Build configuration list for PBXProject "TCTC Student" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EB6C48E1DBA803600AD52D3 /* Debug */,
+				5EB6C48F1DBA803600AD52D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EB6C4901DBA803600AD52D3 /* Build configuration list for PBXNativeTarget "TCTC Student" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EB6C4911DBA803600AD52D3 /* Debug */,
+				5EB6C4921DBA803600AD52D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5EB6C4931DBA803600AD52D3 /* Build configuration list for PBXNativeTarget "TCTC StudentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EB6C4941DBA803600AD52D3 /* Debug */,
+				5EB6C4951DBA803600AD52D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5EB6C4961DBA803600AD52D3 /* Build configuration list for PBXNativeTarget "TCTC StudentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EB6C4971DBA803600AD52D3 /* Debug */,
+				5EB6C4981DBA803600AD52D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5EB6C4601DBA803600AD52D3 /* Project object */;
+}
