@@ -3,14 +3,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TCTC_Student" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -97,6 +95,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="111.2" y="186.65667166416793"/>
         </scene>
@@ -167,10 +166,10 @@
             </objects>
             <point key="canvasLocation" x="1449" y="1182"/>
         </scene>
-        <!--View Controller-->
+        <!--Home Page View Controller-->
         <scene sceneID="ToD-q0-u3C">
             <objects>
-                <viewController id="WMa-MC-XN2" sceneMemberID="viewController">
+                <viewController id="WMa-MC-XN2" customClass="HomePageViewController" customModule="TCTC_Student" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sIn-Dx-CJy"/>
                         <viewControllerLayoutGuide type="bottom" id="7N0-Q8-nnT"/>
@@ -179,35 +178,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tB0-8x-E3s">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ase-wM-zHc">
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lfy-NW-vW8">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfa-qS-9df">
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Lfy-NW-vW8" secondAttribute="trailing" id="YMO-gi-WVK"/>
-                                    <constraint firstAttribute="bottom" secondItem="Lfy-NW-vW8" secondAttribute="bottom" id="bab-kQ-HKO"/>
-                                    <constraint firstItem="Lfy-NW-vW8" firstAttribute="centerX" secondItem="tB0-8x-E3s" secondAttribute="centerX" id="jEv-GE-9h1"/>
-                                    <constraint firstAttribute="trailing" secondItem="Lfy-NW-vW8" secondAttribute="trailing" id="jyc-SS-h6F"/>
-                                    <constraint firstItem="Lfy-NW-vW8" firstAttribute="centerY" secondItem="tB0-8x-E3s" secondAttribute="centerY" id="n3X-4o-r95"/>
-                                    <constraint firstItem="Lfy-NW-vW8" firstAttribute="leading" secondItem="tB0-8x-E3s" secondAttribute="leading" id="oyF-Ls-Jh1"/>
-                                    <constraint firstItem="Lfy-NW-vW8" firstAttribute="leading" secondItem="tB0-8x-E3s" secondAttribute="leading" id="pWn-Kx-X7n"/>
+                                    <constraint firstItem="pfa-qS-9df" firstAttribute="centerX" secondItem="Ase-wM-zHc" secondAttribute="centerX" id="Kmq-Xp-c7Q"/>
+                                    <constraint firstAttribute="bottom" secondItem="pfa-qS-9df" secondAttribute="bottom" id="R1C-Zi-c04"/>
+                                    <constraint firstItem="pfa-qS-9df" firstAttribute="top" secondItem="Ase-wM-zHc" secondAttribute="top" id="SjQ-Aq-k1K"/>
+                                    <constraint firstAttribute="trailing" secondItem="pfa-qS-9df" secondAttribute="trailing" id="ejd-fg-bfp"/>
+                                    <constraint firstItem="pfa-qS-9df" firstAttribute="centerY" secondItem="Ase-wM-zHc" secondAttribute="centerY" id="hE1-95-sAi"/>
+                                    <constraint firstItem="pfa-qS-9df" firstAttribute="leading" secondItem="Ase-wM-zHc" secondAttribute="leading" id="oNF-6z-jXd"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tB0-8x-E3s" firstAttribute="top" secondItem="sIn-Dx-CJy" secondAttribute="bottom" id="Am3-7v-vrT"/>
-                            <constraint firstItem="Lfy-NW-vW8" firstAttribute="centerX" secondItem="Wh0-E0-XMZ" secondAttribute="centerX" id="G2g-HC-Knc"/>
-                            <constraint firstItem="tB0-8x-E3s" firstAttribute="leading" secondItem="Wh0-E0-XMZ" secondAttribute="leading" id="J8H-cr-yYC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Lfy-NW-vW8" secondAttribute="trailing" constant="-16" id="S4B-DR-NlP"/>
-                            <constraint firstItem="tB0-8x-E3s" firstAttribute="bottom" secondItem="7N0-Q8-nnT" secondAttribute="top" id="YcP-o9-RPc"/>
-                            <constraint firstAttribute="trailing" secondItem="tB0-8x-E3s" secondAttribute="trailing" id="baZ-bS-IRZ"/>
-                            <constraint firstItem="Lfy-NW-vW8" firstAttribute="top" secondItem="sIn-Dx-CJy" secondAttribute="bottom" id="fZ5-zg-Szo"/>
+                            <constraint firstItem="Ase-wM-zHc" firstAttribute="top" secondItem="Wh0-E0-XMZ" secondAttribute="top" id="24Y-B0-Vlu"/>
+                            <constraint firstItem="Ase-wM-zHc" firstAttribute="bottom" secondItem="7N0-Q8-nnT" secondAttribute="top" id="7B2-7i-e2s"/>
+                            <constraint firstAttribute="trailing" secondItem="Ase-wM-zHc" secondAttribute="trailing" id="Odd-Ue-ObN"/>
+                            <constraint firstItem="Ase-wM-zHc" firstAttribute="leading" secondItem="Wh0-E0-XMZ" secondAttribute="leading" id="gOe-2D-snF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AFF-y6-Emn"/>
+                    <connections>
+                        <outlet property="scrollView" destination="Ase-wM-zHc" id="eai-tA-wDc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9I-bh-lqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -230,7 +228,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="taf-Nt-Rjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3335.1999999999998" y="438.53073463268368"/>
+            <point key="canvasLocation" x="3334" y="439"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PjM-9r-eIJ">
@@ -243,7 +241,6 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="RV4-aO-yE7" kind="relationship" relationship="viewControllers" id="J1P-tb-3gc"/>
                         <segue destination="hGV-Fe-f2d" kind="relationship" relationship="viewControllers" id="JiW-zO-dWY"/>
                         <segue destination="iAC-pv-LMG" kind="relationship" relationship="viewControllers" id="YRJ-xy-d8q"/>
                         <segue destination="gf8-oh-2pU" kind="relationship" relationship="viewControllers" id="oDQ-s1-d6e"/>
@@ -254,30 +251,10 @@
             </objects>
             <point key="canvasLocation" x="428" y="947"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="EWZ-si-p8l">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RV4-aO-yE7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="Home-48" selectedImage="Home-48" id="UGd-LE-UCx"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Gs-mo-cAG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="WMa-MC-XN2" kind="relationship" relationship="rootViewController" id="FS4-UP-MnN"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mEl-h1-1A4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1448.8" y="438.53073463268368"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Certificate-02-48" width="48" height="48"/>
         <image name="Customize-02-48" width="48" height="48"/>
-        <image name="Home-48" width="48" height="48"/>
         <image name="Screen Shot 2016-10-24 at 12.43.51 PM" width="418" height="295"/>
         <image name="Screen Shot 2016-10-24 at 12.44.07 PM" width="416" height="296"/>
         <image name="Student-Laptop-48" width="48" height="48"/>

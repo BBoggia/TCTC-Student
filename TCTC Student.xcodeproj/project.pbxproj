@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E75CDE11DC3B7830036CEE5 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75CDE01DC3B7830036CEE5 /* HomePageViewController.swift */; };
 		5EB6C46C1DBA803600AD52D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6C46B1DBA803600AD52D3 /* AppDelegate.swift */; };
 		5EB6C46E1DBA803600AD52D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6C46D1DBA803600AD52D3 /* ViewController.swift */; };
 		5EB6C4711DBA803600AD52D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EB6C46F1DBA803600AD52D3 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E75CDE01DC3B7830036CEE5 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		5EB6C4681DBA803600AD52D3 /* TCTC Student.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TCTC Student.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB6C46B1DBA803600AD52D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EB6C46D1DBA803600AD52D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				5EB6C46B1DBA803600AD52D3 /* AppDelegate.swift */,
 				5EB6C46D1DBA803600AD52D3 /* ViewController.swift */,
+				5E75CDE01DC3B7830036CEE5 /* HomePageViewController.swift */,
 				5EB6C46F1DBA803600AD52D3 /* Main.storyboard */,
 				5EB6C4721DBA803600AD52D3 /* Assets.xcassets */,
 				5EB6C4741DBA803600AD52D3 /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 			files = (
 				5EB6C46E1DBA803600AD52D3 /* ViewController.swift in Sources */,
 				5EB6C46C1DBA803600AD52D3 /* AppDelegate.swift in Sources */,
+				5E75CDE11DC3B7830036CEE5 /* HomePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +518,7 @@
 				5EB6C4921DBA803600AD52D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5EB6C4931DBA803600AD52D3 /* Build configuration list for PBXNativeTarget "TCTC StudentTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				5EB6C4951DBA803600AD52D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5EB6C4961DBA803600AD52D3 /* Build configuration list for PBXNativeTarget "TCTC StudentUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				5EB6C4981DBA803600AD52D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
