@@ -12,6 +12,11 @@ class HomePageViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBAction func WebLink(sender: AnyObject) {
+        if let url = NSURL(string: "https://docs.google.com/a/tctchome.com/forms/d/e/1FAIpQLSeJ1bHahcqJBr_A6G_ZC8zcAsPDkwQdFsJNTmthLfcRg4_p6A/viewform") {
+            UIApplication.shared.openURL(url as URL)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
