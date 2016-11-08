@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5E0900A51DC7BAFA00FD9CC0 /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0900A41DC7BAFA00FD9CC0 /* AnnouncementsViewController.swift */; };
 		5E0900AD1DCD009400FD9CC0 /* GuidanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0900AC1DCD009400FD9CC0 /* GuidanceViewController.swift */; };
+		5E65A2591DD2476F00972C49 /* RssTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65A2581DD2476F00972C49 /* RssTableViewController.swift */; };
 		5E75CDE11DC3B7830036CEE5 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75CDE01DC3B7830036CEE5 /* HomePageViewController.swift */; };
 		5EB6C46C1DBA803600AD52D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6C46B1DBA803600AD52D3 /* AppDelegate.swift */; };
 		5EB6C46E1DBA803600AD52D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6C46D1DBA803600AD52D3 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		5E0900A41DC7BAFA00FD9CC0 /* AnnouncementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementsViewController.swift; sourceTree = "<group>"; };
 		5E0900AC1DCD009400FD9CC0 /* GuidanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceViewController.swift; sourceTree = "<group>"; };
+		5E65A2581DD2476F00972C49 /* RssTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssTableViewController.swift; sourceTree = "<group>"; };
 		5E75CDE01DC3B7830036CEE5 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		5EB6C4681DBA803600AD52D3 /* TCTC Student.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TCTC Student.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB6C46B1DBA803600AD52D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				5EB6C46D1DBA803600AD52D3 /* ViewController.swift */,
 				5E75CDE01DC3B7830036CEE5 /* HomePageViewController.swift */,
 				5E0900A41DC7BAFA00FD9CC0 /* AnnouncementsViewController.swift */,
+				5E65A2581DD2476F00972C49 /* RssTableViewController.swift */,
 				5E0900AC1DCD009400FD9CC0 /* GuidanceViewController.swift */,
 				5EB6C46F1DBA803600AD52D3 /* Main.storyboard */,
 				5EB6C4721DBA803600AD52D3 /* Assets.xcassets */,
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E65A2591DD2476F00972C49 /* RssTableViewController.swift in Sources */,
 				5EB6C46E1DBA803600AD52D3 /* ViewController.swift in Sources */,
 				5E0900A51DC7BAFA00FD9CC0 /* AnnouncementsViewController.swift in Sources */,
 				5EB6C46C1DBA803600AD52D3 /* AppDelegate.swift in Sources */,

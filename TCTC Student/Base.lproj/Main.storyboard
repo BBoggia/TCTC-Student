@@ -210,7 +210,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qTI-MZ-PxS" id="crt-b3-wHy">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -226,7 +226,7 @@
             </objects>
             <point key="canvasLocation" x="1449" y="1182"/>
         </scene>
-        <!--Home Page View Controller-->
+        <!--Item-->
         <scene sceneID="ToD-q0-u3C">
             <objects>
                 <viewController id="WMa-MC-XN2" customClass="HomePageViewController" customModule="TCTC_Student" customModuleProvider="target" sceneMemberID="viewController">
@@ -279,6 +279,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zv-QK-fEn">
                                                 <frame key="frameInset" minX="8" minY="173" width="179" height="63"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <segue destination="FIj-jQ-uWS" kind="presentation" id="331-0O-r2Q"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -302,6 +305,7 @@
                             <constraint firstItem="Ase-wM-zHc" firstAttribute="leading" secondItem="Wh0-E0-XMZ" secondAttribute="leading" id="gOe-2D-snF"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="Home-48" id="tSl-vg-kaM"/>
                     <navigationItem key="navigationItem" id="AFF-y6-Emn"/>
                     <connections>
                         <outlet property="scrollView" destination="Ase-wM-zHc" id="eai-tA-wDc"/>
@@ -310,6 +314,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9I-bh-lqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2388" y="438.53073463268368"/>
+        </scene>
+        <!--RSS By Apple-->
+        <scene sceneID="lf2-YZ-Lvf">
+            <objects>
+                <tableViewController id="3xF-JY-oeG" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JCk-mB-XHG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="yCm-B0-H4Y" style="IBUITableViewCellStyleDefault" id="817-40-qVz">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="817-40-qVz" id="0OW-IS-iWD">
+                                    <frame key="frameInset" width="342" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yCm-B0-H4Y">
+                                            <frame key="frameInset" minX="15" width="325" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="emX-wQ-vCx" kind="showDetail" identifier="showDetail" id="XaC-sO-pqQ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3xF-JY-oeG" id="41T-Q3-muK"/>
+                            <outlet property="delegate" destination="3xF-JY-oeG" id="Zvo-zm-VC7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="RSS By Apple" id="bh5-xf-Dud"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aS5-e8-bSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2388" y="-309"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PO5-FM-wKk">
+            <objects>
+                <navigationController id="FIj-jQ-uWS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fz9-Xl-bZJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3xF-JY-oeG" kind="relationship" relationship="rootViewController" id="eE2-pL-prv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dWl-zL-cVq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1449" y="-311"/>
         </scene>
         <!--Announcements View Controller-->
         <scene sceneID="GzL-Zt-spp">
@@ -323,25 +384,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oax-1S-Hfv">
-                                <frame key="frameInset" width="375" height="667"/>
+                            <webView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j3e-mV-Jvz">
+                                <frame key="frameInset" minY="44" width="375" height="601"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="feedURL" value="http://www.tctchome.com/RSS/News/114504242206402.rss"/>
-                                </userDefinedRuntimeAttributes>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PPJ-Im-2F6">
+                                <frame key="frameInset" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="ibg-Ng-Obi">
+                                        <barButtonItem key="leftBarButtonItem" title="Close" id="vIe-Hk-izy"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="announcementWebView" destination="oax-1S-Hfv" id="EQp-ER-Es5"/>
-                        <outlet property="webview" destination="oax-1S-Hfv" id="tYi-Zc-rJo"/>
+                        <outlet property="customNav" destination="PPJ-Im-2F6" id="8hy-Tq-bF1"/>
+                        <outlet property="webView" destination="j3e-mV-Jvz" id="zdS-hM-K8k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dCp-fe-YiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2388" y="-283.80809595202402"/>
+            <point key="canvasLocation" x="3334" y="-310"/>
         </scene>
         <!--Parents-->
         <scene sceneID="9wE-ZD-ZHD">
@@ -373,9 +440,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <segue destination="WMa-MC-XN2" kind="relationship" relationship="viewControllers" id="rB1-sn-zUl"/>
                         <segue destination="hGV-Fe-f2d" kind="relationship" relationship="viewControllers" id="JiW-zO-dWY"/>
-                        <segue destination="iAC-pv-LMG" kind="relationship" relationship="viewControllers" id="YRJ-xy-d8q"/>
                         <segue destination="gf8-oh-2pU" kind="relationship" relationship="viewControllers" id="oDQ-s1-d6e"/>
+                        <segue destination="iAC-pv-LMG" kind="relationship" relationship="viewControllers" id="YRJ-xy-d8q"/>
                         <segue destination="vZB-GY-rmT" kind="relationship" relationship="viewControllers" id="cYV-6X-S7A"/>
                     </connections>
                 </tabBarController>
@@ -387,6 +455,7 @@
     <resources>
         <image name="Certificate-02-48" width="48" height="48"/>
         <image name="Customize-02-48" width="48" height="48"/>
+        <image name="Home-48" width="48" height="48"/>
         <image name="Screen Shot 2016-10-24 at 12.43.51 PM" width="418" height="295"/>
         <image name="Screen Shot 2016-10-24 at 12.44.07 PM" width="416" height="296"/>
         <image name="Student-Laptop-48" width="48" height="48"/>
