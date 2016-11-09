@@ -31,7 +31,7 @@ class GuidanceViewController: UIViewController {
         if let phoneCallURL:NSURL = NSURL(string: "tel://\(phoneNumber),\(extensionNum)") {
             let application:UIApplication = UIApplication.shared
             if (application.canOpenURL(phoneCallURL as URL)) {
-                application.openURL(phoneCallURL as URL);
+                application.open(phoneCallURL as URL);
             }
         }
     }

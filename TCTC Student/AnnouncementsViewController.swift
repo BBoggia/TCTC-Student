@@ -5,6 +5,7 @@
 //  Created by Branson Boggia on 10/31/16.
 //  Copyright © 2016 Pinetree Studios. All rights reserved.
 //
+
 import UIKit
 
 class AnnouncementsViewController: UIViewController, UIWebViewDelegate {
@@ -20,7 +21,7 @@ class AnnouncementsViewController: UIViewController, UIWebViewDelegate {
         
         self.customNav.topItem?.title = titleString
         
-        let myURL = URL(string: url .addingPercentEscapes(using: String.Encoding.utf8)!)
+        let myURL = URL(string: url .addingPercentEncoding(withAllowedCharacters: CharacterSet.alphanumerics)!)
         
         let request = URLRequest(url: myURL!)
         

@@ -394,7 +394,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="ibg-Ng-Obi">
-                                        <barButtonItem key="leftBarButtonItem" title="Close" id="vIe-Hk-izy"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Close" id="vIe-Hk-izy">
+                                            <connections>
+                                                <action selector="closeBarButtonAction:" destination="emX-wQ-vCx" id="Fws-J7-ad3"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
