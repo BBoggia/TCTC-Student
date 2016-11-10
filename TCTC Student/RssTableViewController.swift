@@ -88,7 +88,7 @@ class MasterTableViewController: UITableViewController, XMLParserDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             let indexPath: IndexPath
-            var detail: AnnouncementsViewController
+            var detail: DetailViewController
             var urlString = NSString()
             var titleString = NSString()
             
@@ -98,10 +98,11 @@ class MasterTableViewController: UITableViewController, XMLParserDelegate {
             urlString = (feeds.object(at: (indexPath as NSIndexPath).row) as AnyObject).object(forKey: "link") as! NSString
             titleString = (feeds.object(at: (indexPath as NSIndexPath).row) as AnyObject).object(forKey: "title") as! NSString
             
-            detail = segue.destination as! AnnouncementsViewController
+            detail = segue.destination as! DetailViewController
             detail.url = urlString as String
             detail.titleString = titleString as String
             
         }
     }
 }
+

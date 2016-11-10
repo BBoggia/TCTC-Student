@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AnnouncementsViewController: UIViewController, UIWebViewDelegate {
+class DetailViewController: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var customNav: UINavigationBar!
@@ -21,7 +21,7 @@ class AnnouncementsViewController: UIViewController, UIWebViewDelegate {
         
         self.customNav.topItem?.title = titleString
         
-        let myURL = URL(string: url .addingPercentEncoding(withAllowedCharacters: CharacterSet.alphanumerics)!)
+        let myURL = URL(string: url .addingPercentEscapes(using: String.Encoding.utf8)!)
         
         let request = URLRequest(url: myURL!)
         
@@ -32,4 +32,3 @@ class AnnouncementsViewController: UIViewController, UIWebViewDelegate {
         self.dismiss(animated: true, completion: nil)
     }
 }
-
