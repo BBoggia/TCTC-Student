@@ -11,6 +11,7 @@ import UIKit
 class GuidanceViewController: UIViewController {
     
     @IBOutlet weak var guidancePhone: UIButton!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     @IBAction func phoneLaunch(sender: AnyObject) {
         callNumber(phoneNumber: "3308470503", extensionNum: "1005")
@@ -19,7 +20,7 @@ class GuidanceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        scrollView.contentInset = UIEdgeInsetsMake(0, 0, 700, 0)
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,6 +36,4 @@ class GuidanceViewController: UIViewController {
             }
         }
     }
-
-
 }
