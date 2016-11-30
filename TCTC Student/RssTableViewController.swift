@@ -21,6 +21,8 @@ class MasterTableViewController: UITableViewController, XMLParserDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
         feeds = NSMutableArray()
         parser = XMLParser(contentsOf: URL(string: url)!)!
         parser.delegate = self
