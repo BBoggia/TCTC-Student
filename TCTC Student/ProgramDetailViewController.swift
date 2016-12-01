@@ -10,6 +10,7 @@ import UIKit
 
 class ProgramDetailViewController: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var programImageView: UIImageView!
     @IBOutlet weak var programTitle: UILabel!
     @IBOutlet weak var teacherName: UILabel!
@@ -24,6 +25,8 @@ class ProgramDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scrollView.contentInset = UIEdgeInsetsMake(0, 0, 100, 0)
 
         programTitle.text = sendData1
         teacherName.text = sendData2

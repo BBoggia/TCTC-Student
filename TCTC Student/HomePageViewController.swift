@@ -12,7 +12,6 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageScroller: UIScrollView!
-    @IBOutlet weak var pageControl: UIPageControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +19,7 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate {
         scrollView.contentInset = UIEdgeInsetsMake(0, 0, 400, 0)
         
         self.imageScroller.frame = CGRect(x:0, y:122, width:self.imageScroller.frame.width, height:205)
-        let imageScrollerWidth:CGFloat = self.imageScroller.frame.width
+        let imageScrollerWidth:CGFloat = self.view.frame.width
         let imageScrollerHeight:CGFloat = self.imageScroller.frame.height
         
         let imgOne = UIImageView(frame: CGRect(x:imageScrollerWidth*0, y:imageScrollerWidth*0,width:imageScrollerWidth, height:imageScrollerHeight))
@@ -61,9 +60,8 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate {
         self.imageScroller.addSubview(imgEleven)
         self.imageScroller.addSubview(imgTwelve)
         
-        self.imageScroller.contentSize = CGSize(width:self.imageScroller.frame.width * 12, height:self.imageScroller.frame.height)
+        self.imageScroller.contentSize = CGSize(width:self.view.frame.width * 12, height:self.imageScroller.frame.height)
         self.imageScroller.delegate = self
-        self.pageControl.currentPage = 0
         
         Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(moveToNextPage), userInfo: nil, repeats: true)
     }
@@ -75,7 +73,7 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate {
     
     func moveToNextPage (){
         
-        let pageWidth:CGFloat = self.imageScroller.frame.width
+        let pageWidth:CGFloat = self.view.frame.width
         let maxWidth:CGFloat = pageWidth * 12
         let contentOffset:CGFloat = self.imageScroller.contentOffset.x
         
