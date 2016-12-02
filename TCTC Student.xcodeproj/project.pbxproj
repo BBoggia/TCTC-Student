@@ -12,6 +12,7 @@
 		5E536D6E1DDF82E6004541BB /* ProgramTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E536D6D1DDF82E6004541BB /* ProgramTableViewController.swift */; };
 		5E536D701DE36DB0004541BB /* ProgramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E536D6F1DE36DB0004541BB /* ProgramTableViewCell.swift */; };
 		5E5FBE741DEF31A80093DFDE /* ProgramDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5FBE731DEF31A80093DFDE /* ProgramDetailViewController.swift */; };
+		5E5FBE761DF1DE220093DFDE /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5FBE751DF1DE220093DFDE /* StudentsViewController.swift */; };
 		5E65A2591DD2476F00972C49 /* RssTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65A2581DD2476F00972C49 /* RssTableViewController.swift */; };
 		5E75CDE11DC3B7830036CEE5 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75CDE01DC3B7830036CEE5 /* HomePageViewController.swift */; };
 		5EB6C46C1DBA803600AD52D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6C46B1DBA803600AD52D3 /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 		5E536D6D1DDF82E6004541BB /* ProgramTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramTableViewController.swift; sourceTree = "<group>"; };
 		5E536D6F1DE36DB0004541BB /* ProgramTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramTableViewCell.swift; sourceTree = "<group>"; };
 		5E5FBE731DEF31A80093DFDE /* ProgramDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramDetailViewController.swift; sourceTree = "<group>"; };
+		5E5FBE751DF1DE220093DFDE /* StudentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
 		5E65A2581DD2476F00972C49 /* RssTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssTableViewController.swift; sourceTree = "<group>"; };
 		5E75CDE01DC3B7830036CEE5 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		5EB6C4681DBA803600AD52D3 /* TCTC Student.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TCTC Student.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 				5E536D6D1DDF82E6004541BB /* ProgramTableViewController.swift */,
 				5E536D6F1DE36DB0004541BB /* ProgramTableViewCell.swift */,
 				5E5FBE731DEF31A80093DFDE /* ProgramDetailViewController.swift */,
+				5E5FBE751DF1DE220093DFDE /* StudentsViewController.swift */,
 				5EB6C46F1DBA803600AD52D3 /* Main.storyboard */,
 				5EB6C4721DBA803600AD52D3 /* Assets.xcassets */,
 				5EB6C4741DBA803600AD52D3 /* LaunchScreen.storyboard */,
@@ -291,6 +294,7 @@
 				5E0900A51DC7BAFA00FD9CC0 /* AnnouncementsViewController.swift in Sources */,
 				5EB6C46C1DBA803600AD52D3 /* AppDelegate.swift in Sources */,
 				5E0900AD1DCD009400FD9CC0 /* GuidanceViewController.swift in Sources */,
+				5E5FBE761DF1DE220093DFDE /* StudentsViewController.swift in Sources */,
 				5E75CDE11DC3B7830036CEE5 /* HomePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
