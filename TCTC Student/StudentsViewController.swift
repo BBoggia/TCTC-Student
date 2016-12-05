@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LiquidFloatingActionButton
 
 class StudentsViewController: UIViewController {
 
@@ -15,7 +16,7 @@ class StudentsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.contentInset = UIEdgeInsetsMake(0, 0, 800, 0)
+        scrollView.contentInset = UIEdgeInsetsMake(0, 0, 950, 0)
 
         // Do any additional setup after loading the view.
     }
