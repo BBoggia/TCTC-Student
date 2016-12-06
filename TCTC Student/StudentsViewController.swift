@@ -13,12 +13,15 @@ class StudentsViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     
+    var cells = [LiquidFloatingCell]()
+    var floatingActionButton: LiquidFloatingActionButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         scrollView.contentInset = UIEdgeInsetsMake(0, 0, 950, 0)
 
-        // Do any additional setup after loading the view.
+        createFloatingButton()
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,15 +29,16 @@ class StudentsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func createFloatingButton() {
+        cells.append(createButtonCell(iconName: "floatingButton"))
+        
+        let floatingFrame = CGRect(x: self.view.frame.width - 56 - 16, y: self.view.frame.height - 56 - 16, width: 56, height: 56)
+        
+        //let floatingButton = createButton(floatingFrame, style: .Up)
     }
-    */
+    
+    private func createButtonCell(iconName: String) -> LiquidFloatingCell {
+        return LiquidFloatingCell(icon: UIImage(named: iconName)!)
+    }
 
 }

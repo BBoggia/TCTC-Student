@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15ED0F67144AD86C6B140AEE /* Pods_TCTC_StudentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B380E50E40BAD2052506E80 /* Pods_TCTC_StudentTests.framework */; };
+		42AA36A66C579F39F79BB90A /* Pods_TCTC_StudentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4DDE4D33EC8E2A40B7E44D /* Pods_TCTC_StudentUITests.framework */; };
 		5E0900A51DC7BAFA00FD9CC0 /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0900A41DC7BAFA00FD9CC0 /* AnnouncementsViewController.swift */; };
 		5E0900AD1DCD009400FD9CC0 /* GuidanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0900AC1DCD009400FD9CC0 /* GuidanceViewController.swift */; };
 		5E536D6E1DDF82E6004541BB /* ProgramTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E536D6D1DDF82E6004541BB /* ProgramTableViewController.swift */; };
@@ -22,6 +24,7 @@
 		5EB6C4761DBA803600AD52D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EB6C4741DBA803600AD52D3 /* LaunchScreen.storyboard */; };
 		5EB6C4811DBA803600AD52D3 /* TCTC_StudentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6C4801DBA803600AD52D3 /* TCTC_StudentTests.swift */; };
 		5EB6C48C1DBA803600AD52D3 /* TCTC_StudentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6C48B1DBA803600AD52D3 /* TCTC_StudentUITests.swift */; };
+		9522EA7B057D7DA628C782FC /* Pods_TCTC_Student.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7548845384A87406C38BB764 /* Pods_TCTC_Student.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C33C3A0A28A847BDB1165B6 /* Pods-TCTC Student.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCTC Student.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCTC Student/Pods-TCTC Student.debug.xcconfig"; sourceTree = "<group>"; };
+		4A05091567B8FB89AEBDF6B3 /* Pods-TCTC StudentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCTC StudentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCTC StudentTests/Pods-TCTC StudentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		556201B89026265E4BEE32A0 /* Pods-TCTC StudentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCTC StudentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCTC StudentTests/Pods-TCTC StudentTests.release.xcconfig"; sourceTree = "<group>"; };
 		5E0900A41DC7BAFA00FD9CC0 /* AnnouncementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementsViewController.swift; sourceTree = "<group>"; };
 		5E0900AC1DCD009400FD9CC0 /* GuidanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceViewController.swift; sourceTree = "<group>"; };
 		5E536D6D1DDF82E6004541BB /* ProgramTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramTableViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +69,12 @@
 		5EB6C4871DBA803600AD52D3 /* TCTC StudentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TCTC StudentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB6C48B1DBA803600AD52D3 /* TCTC_StudentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCTC_StudentUITests.swift; sourceTree = "<group>"; };
 		5EB6C48D1DBA803600AD52D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7548845384A87406C38BB764 /* Pods_TCTC_Student.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCTC_Student.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98C7A9FF59AE9A741829FD70 /* Pods-TCTC Student.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCTC Student.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCTC Student/Pods-TCTC Student.release.xcconfig"; sourceTree = "<group>"; };
+		9B380E50E40BAD2052506E80 /* Pods_TCTC_StudentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCTC_StudentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCACD8806E2201B74D14B5A6 /* Pods-TCTC StudentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCTC StudentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCTC StudentUITests/Pods-TCTC StudentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EB3419EB48BE6F97E827559F /* Pods-TCTC StudentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCTC StudentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCTC StudentUITests/Pods-TCTC StudentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC4DDE4D33EC8E2A40B7E44D /* Pods_TCTC_StudentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCTC_StudentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9522EA7B057D7DA628C782FC /* Pods_TCTC_Student.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15ED0F67144AD86C6B140AEE /* Pods_TCTC_StudentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42AA36A66C579F39F79BB90A /* Pods_TCTC_StudentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +112,8 @@
 				5EB6C47F1DBA803600AD52D3 /* TCTC StudentTests */,
 				5EB6C48A1DBA803600AD52D3 /* TCTC StudentUITests */,
 				5EB6C4691DBA803600AD52D3 /* Products */,
+				C766655724E021AD79C6154D /* Pods */,
+				D042ECDA4C365BB850BBEFE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +166,29 @@
 			path = "TCTC StudentUITests";
 			sourceTree = "<group>";
 		};
+		C766655724E021AD79C6154D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C33C3A0A28A847BDB1165B6 /* Pods-TCTC Student.debug.xcconfig */,
+				98C7A9FF59AE9A741829FD70 /* Pods-TCTC Student.release.xcconfig */,
+				4A05091567B8FB89AEBDF6B3 /* Pods-TCTC StudentTests.debug.xcconfig */,
+				556201B89026265E4BEE32A0 /* Pods-TCTC StudentTests.release.xcconfig */,
+				EB3419EB48BE6F97E827559F /* Pods-TCTC StudentUITests.debug.xcconfig */,
+				DCACD8806E2201B74D14B5A6 /* Pods-TCTC StudentUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D042ECDA4C365BB850BBEFE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7548845384A87406C38BB764 /* Pods_TCTC_Student.framework */,
+				9B380E50E40BAD2052506E80 /* Pods_TCTC_StudentTests.framework */,
+				EC4DDE4D33EC8E2A40B7E44D /* Pods_TCTC_StudentUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EB6C4901DBA803600AD52D3 /* Build configuration list for PBXNativeTarget "TCTC Student" */;
 			buildPhases = (
+				32565698C1F7E4D2807B7A7C /* [CP] Check Pods Manifest.lock */,
 				5EB6C4641DBA803600AD52D3 /* Sources */,
 				5EB6C4651DBA803600AD52D3 /* Frameworks */,
 				5EB6C4661DBA803600AD52D3 /* Resources */,
+				537FCD083B23EEB346014269 /* [CP] Embed Pods Frameworks */,
+				570154598A7583ECD0BA466F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EB6C4931DBA803600AD52D3 /* Build configuration list for PBXNativeTarget "TCTC StudentTests" */;
 			buildPhases = (
+				ACCD0DEB2A91E2DCB776C08D /* [CP] Check Pods Manifest.lock */,
 				5EB6C4781DBA803600AD52D3 /* Sources */,
 				5EB6C4791DBA803600AD52D3 /* Frameworks */,
 				5EB6C47A1DBA803600AD52D3 /* Resources */,
+				5D2825948E62DDAA021F0DD8 /* [CP] Embed Pods Frameworks */,
+				3CE3470B8DDED413A6B35898 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EB6C4961DBA803600AD52D3 /* Build configuration list for PBXNativeTarget "TCTC StudentUITests" */;
 			buildPhases = (
+				BC0335CAA13EFDD6EBD9471D /* [CP] Check Pods Manifest.lock */,
 				5EB6C4831DBA803600AD52D3 /* Sources */,
 				5EB6C4841DBA803600AD52D3 /* Frameworks */,
 				5EB6C4851DBA803600AD52D3 /* Resources */,
+				11104207DB188365C0576460 /* [CP] Embed Pods Frameworks */,
+				BE55B880C3CA7F6C3963E135 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,6 +329,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11104207DB188365C0576460 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCTC StudentUITests/Pods-TCTC StudentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32565698C1F7E4D2807B7A7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3CE3470B8DDED413A6B35898 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCTC StudentTests/Pods-TCTC StudentTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		537FCD083B23EEB346014269 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCTC Student/Pods-TCTC Student-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		570154598A7583ECD0BA466F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCTC Student/Pods-TCTC Student-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D2825948E62DDAA021F0DD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCTC StudentTests/Pods-TCTC StudentTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACCD0DEB2A91E2DCB776C08D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC0335CAA13EFDD6EBD9471D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE55B880C3CA7F6C3963E135 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCTC StudentUITests/Pods-TCTC StudentUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5EB6C4641DBA803600AD52D3 /* Sources */ = {
@@ -447,7 +634,9 @@
 		};
 		5EB6C4911DBA803600AD52D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C33C3A0A28A847BDB1165B6 /* Pods-TCTC Student.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6E2D64GGFH;
 				INFOPLIST_FILE = "TCTC Student/Info.plist";
@@ -460,7 +649,9 @@
 		};
 		5EB6C4921DBA803600AD52D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C7A9FF59AE9A741829FD70 /* Pods-TCTC Student.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6E2D64GGFH;
 				INFOPLIST_FILE = "TCTC Student/Info.plist";
@@ -473,6 +664,7 @@
 		};
 		5EB6C4941DBA803600AD52D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A05091567B8FB89AEBDF6B3 /* Pods-TCTC StudentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +680,7 @@
 		};
 		5EB6C4951DBA803600AD52D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556201B89026265E4BEE32A0 /* Pods-TCTC StudentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -503,6 +696,7 @@
 		};
 		5EB6C4971DBA803600AD52D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB3419EB48BE6F97E827559F /* Pods-TCTC StudentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6E2D64GGFH;
@@ -517,6 +711,7 @@
 		};
 		5EB6C4981DBA803600AD52D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCACD8806E2201B74D14B5A6 /* Pods-TCTC StudentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6E2D64GGFH;
