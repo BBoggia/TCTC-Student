@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import LiquidFloatingActionButton
 
 class HomePageViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageScroller: UIScrollView!
+    
+    var cells = [LiquidFloatingCell]()      //data source
+    var floatingActionButton: LiquidFloatingActionButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +68,8 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate {
         self.imageScroller.delegate = self
         
         Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(moveToNextPage), userInfo: nil, repeats: true)
+        
+        createFloatingButton()
     }
     
     override func didReceiveMemoryWarning() {
@@ -86,4 +92,59 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate {
         self.imageScroller.scrollRectToVisible(CGRect(x:slideToX, y:0, width:pageWidth, height:self.imageScroller.frame.height), animated: true)
     }
     
+    func createFloatingButton() {
+        cells.append(createButtonCell(iconName: "floatingButton1"))
+        
+        let floatingFrame = CGRect(x: self.view.frame.width - 56 - 16, y: self.view.frame.height - 106 - 16, width: 56, height: 56)
+        let floatingButton = createButton(frame: floatingFrame, style: .up)
+        
+        self.view.addSubview(floatingButton)
+        self.floatingActionButton = floatingButton
+        
+        //floatingActionButton.
+    }
+    
+    private func createButtonCell(iconName: String) -> LiquidFloatingCell {
+        return LiquidFloatingCell(icon: UIImage(named: iconName)!)
+    }
+    
+    private func createButton(frame: CGRect, style: LiquidFloatingActionButtonAnimateStyle) -> LiquidFloatingActionButton {
+        
+        let floatingActionButton = LiquidFloatingActionButton(frame: frame)
+        
+        floatingActionButton.animateStyle = style
+        floatingActionButton.dataSource = self
+        floatingActionButton.delegate = self
+        
+        
+        return floatingActionButton
+    }
+    
 }
+
+extension HomePageViewController: LiquidFloatingActionButtonDataSource {
+    
+    func numberOfCells(_ liquidFloatingActionButton: LiquidFloatingActionButton) -> Int {
+        
+        return cells.count
+    }
+    
+    func cellForIndex(_ index: Int) -> LiquidFloatingCell {
+        
+        return cells[index]
+    }
+}
+
+extension HomePageViewController:LiquidFloatingActionButtonDelegate {
+    
+    func liquidFloatingActionButton(_ liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int) {
+        
+        print("button number \(index) did click")
+        self.floatingActionButton.close()
+    }
+    
+    func didTapped(liquidFloatingActionButton: LiquidFloatingActionButton) {
+        
+    }
+}
+
