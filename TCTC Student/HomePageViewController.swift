@@ -94,6 +94,7 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate {
     
     func createFloatingButton() {
         cells.append(createButtonCell(iconName: "floatingButton1"))
+        cells.append(createButtonCell(iconName: "calendar"))
         
         let floatingFrame = CGRect(x: self.view.frame.width - 56 - 16, y: self.view.frame.height - 106 - 16, width: 56, height: 56)
         let floatingButton = createButton(frame: floatingFrame, style: .up)
