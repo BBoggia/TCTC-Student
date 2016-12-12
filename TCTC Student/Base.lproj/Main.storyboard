@@ -978,17 +978,7 @@ Warren G. Harding High School</string>
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="21"/>
                                                 <color key="backgroundColor" red="0.54117647059999996" green="0.15686274510000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="21" id="JAN-hE-1B5"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.62201160192489624" green="0.22733086347579956" blue="0.26405832171440125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzb-ht-KMP">
-                                                <rect key="frame" x="0.0" y="101" width="375" height="21"/>
-                                                <color key="backgroundColor" red="0.54117647059999996" green="0.15686274510000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="21" id="Ks5-kg-54H"/>
+                                                    <constraint firstAttribute="height" constant="21" id="iGp-u8-lgs"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.62201160192489624" green="0.22733086347579956" blue="0.26405832171440125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -997,31 +987,25 @@ Warren G. Harding High School</string>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="002-Jk-gtz">
                                                 <rect key="frame" x="8" y="28" width="193" height="65"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="193" id="0Ou-7v-p7R"/>
-                                                    <constraint firstAttribute="height" constant="65" id="VZb-24-Egw"/>
+                                                    <constraint firstAttribute="height" constant="65" id="1WL-1M-tHF"/>
+                                                    <constraint firstAttribute="width" constant="193" id="AAr-Cy-e1P"/>
                                                 </constraints>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzb-ht-KMP">
+                                                <rect key="frame" x="0.0" y="101" width="375" height="21"/>
+                                                <color key="backgroundColor" red="0.54117647059999996" green="0.15686274510000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="Mfc-EK-wEW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.62201160192489624" green="0.22733086347579956" blue="0.26405832171440125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="748" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wms-hU-M5B">
-                                                <rect key="frame" x="0.0" y="122" width="375" height="200"/>
+                                                <rect key="frame" x="0.0" y="122" width="375" height="201"/>
                                             </scrollView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="QIA-QY-u9a">
-                                                <rect key="frame" x="268" y="330" width="62" height="62"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="62" id="Jgd-Qa-JJv"/>
-                                                    <constraint firstAttribute="height" constant="62" id="L3n-qy-s1F"/>
-                                                </constraints>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udh-qY-Y8W">
-                                                <rect key="frame" x="268" y="344" width="62" height="52"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="52" id="ai6-UU-Cb8"/>
-                                                </constraints>
-                                                <state key="normal" title="events">
-                                                    <color key="titleColor" red="0.039664030075073242" green="0.019092485308647156" blue="0.043824344873428345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ey2-R0-Qns">
-                                                <rect key="frame" x="8" y="330" width="179" height="98"/>
+                                                <rect key="frame" x="7" y="333" width="360" height="45"/>
                                                 <color key="backgroundColor" red="0.62201160192489624" green="0.22733086347579956" blue="0.26405832171440125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -1034,8 +1018,11 @@ Warren G. Harding High School</string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4u-fp-bVy">
-                                                <rect key="frame" x="13" y="335" width="169" height="88"/>
+                                                <rect key="frame" x="10.5" y="336" width="353" height="38"/>
                                                 <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="F6v-1o-TAo"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1046,11 +1033,8 @@ Warren G. Harding High School</string>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View the High School Announcements here!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="Mdc-YH-vID">
-                                                <rect key="frame" x="13" y="334" width="169" height="89"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="89" id="djV-64-zMz"/>
-                                                </constraints>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View the High School Announcements here!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Mdc-YH-vID">
+                                                <rect key="frame" x="11" y="336" width="352" height="38"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" red="0.99955970049999998" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1062,7 +1046,7 @@ Warren G. Harding High School</string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zv-QK-fEn">
-                                                <rect key="frame" x="13" y="335" width="169" height="88"/>
+                                                <rect key="frame" x="11" y="336" width="352" height="38"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -1074,42 +1058,61 @@ Warren G. Harding High School</string>
                                                     <segue destination="3xF-JY-oeG" kind="show" id="VlH-ho-3bE"/>
                                                 </connections>
                                             </button>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WHR-Xa-UDg">
+                                                <rect key="frame" x="0.0" y="382" width="375" height="169"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TextCell" textLabel="rYO-8C-2yo" style="IBUITableViewCellStyleDefault" id="uGQ-sI-ivJ">
+                                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uGQ-sI-ivJ" id="aLg-88-pid">
+                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rYO-8C-2yo">
+                                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </tableViewCellContentView>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                            </tableView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="Mdc-YH-vID" firstAttribute="leading" secondItem="9zv-QK-fEn" secondAttribute="leading" id="4ib-uw-TrQ"/>
-                                            <constraint firstItem="002-Jk-gtz" firstAttribute="top" secondItem="gqO-Ur-a3U" secondAttribute="bottom" constant="7" id="63J-VF-fDo"/>
-                                            <constraint firstItem="QIA-QY-u9a" firstAttribute="leading" secondItem="Udh-qY-Y8W" secondAttribute="leading" id="6q5-ZI-O8E"/>
-                                            <constraint firstItem="gqO-Ur-a3U" firstAttribute="leading" secondItem="zzb-ht-KMP" secondAttribute="leading" id="72J-mM-iU6"/>
-                                            <constraint firstItem="zzb-ht-KMP" firstAttribute="leading" secondItem="Wms-hU-M5B" secondAttribute="leading" id="8h8-4s-DR3"/>
-                                            <constraint firstItem="Udh-qY-Y8W" firstAttribute="leading" secondItem="9zv-QK-fEn" secondAttribute="trailing" constant="86" id="9ur-pW-eMB"/>
-                                            <constraint firstItem="9zv-QK-fEn" firstAttribute="top" secondItem="Mdc-YH-vID" secondAttribute="top" constant="1" id="BQk-PA-Dlu"/>
-                                            <constraint firstAttribute="trailing" secondItem="QIA-QY-u9a" secondAttribute="trailing" constant="45" id="CcU-De-u3q"/>
-                                            <constraint firstItem="ey2-R0-Qns" firstAttribute="centerY" secondItem="Mdc-YH-vID" secondAttribute="centerY" id="GOj-10-pgm"/>
-                                            <constraint firstItem="ey2-R0-Qns" firstAttribute="top" secondItem="Wms-hU-M5B" secondAttribute="bottom" constant="8" id="HR0-PY-VTS"/>
+                                            <constraint firstItem="9zv-QK-fEn" firstAttribute="leading" secondItem="002-Jk-gtz" secondAttribute="leading" constant="3" id="2z4-LB-piH"/>
+                                            <constraint firstItem="Mdc-YH-vID" firstAttribute="top" secondItem="Wms-hU-M5B" secondAttribute="bottom" constant="13" id="4UM-qp-7nm"/>
+                                            <constraint firstItem="zzb-ht-KMP" firstAttribute="top" secondItem="002-Jk-gtz" secondAttribute="bottom" constant="8" symbolic="YES" id="7Gt-ZN-jz9"/>
+                                            <constraint firstItem="Mdc-YH-vID" firstAttribute="leading" secondItem="Q4u-fp-bVy" secondAttribute="leading" id="8BV-2q-7Os"/>
+                                            <constraint firstItem="ey2-R0-Qns" firstAttribute="centerY" secondItem="Mdc-YH-vID" secondAttribute="centerY" id="Auc-04-Dug"/>
+                                            <constraint firstItem="9zv-QK-fEn" firstAttribute="top" secondItem="Wms-hU-M5B" secondAttribute="bottom" constant="13" id="Cbk-Pb-J36"/>
+                                            <constraint firstItem="Mdc-YH-vID" firstAttribute="centerY" secondItem="Q4u-fp-bVy" secondAttribute="centerY" id="Dob-dc-nYI"/>
                                             <constraint firstAttribute="height" constant="618" id="IKF-Mm-wiY"/>
-                                            <constraint firstItem="9zv-QK-fEn" firstAttribute="bottom" secondItem="Mdc-YH-vID" secondAttribute="bottom" id="IVO-LW-C1i"/>
-                                            <constraint firstItem="9zv-QK-fEn" firstAttribute="top" secondItem="Wms-hU-M5B" secondAttribute="bottom" constant="13" id="JL8-FW-nPu"/>
-                                            <constraint firstItem="ey2-R0-Qns" firstAttribute="leading" secondItem="002-Jk-gtz" secondAttribute="leading" id="L3T-vE-oRr"/>
-                                            <constraint firstAttribute="bottom" secondItem="Mdc-YH-vID" secondAttribute="bottom" constant="195" id="PT6-cN-hUU"/>
-                                            <constraint firstAttribute="trailing" secondItem="gqO-Ur-a3U" secondAttribute="trailing" id="QJZ-U3-Qun"/>
-                                            <constraint firstItem="002-Jk-gtz" firstAttribute="leading" secondItem="pfa-qS-9df" secondAttribute="leadingMargin" id="RgE-hW-9uu"/>
-                                            <constraint firstItem="zzb-ht-KMP" firstAttribute="trailing" secondItem="Wms-hU-M5B" secondAttribute="trailing" id="VfA-re-Nct"/>
-                                            <constraint firstItem="9zv-QK-fEn" firstAttribute="top" secondItem="Q4u-fp-bVy" secondAttribute="top" id="XPH-Hh-mkA"/>
-                                            <constraint firstItem="gqO-Ur-a3U" firstAttribute="leading" secondItem="pfa-qS-9df" secondAttribute="leading" id="XRs-po-EaK"/>
-                                            <constraint firstItem="zzb-ht-KMP" firstAttribute="top" secondItem="002-Jk-gtz" secondAttribute="bottom" constant="8" symbolic="YES" id="agF-VZ-Yda"/>
-                                            <constraint firstItem="QIA-QY-u9a" firstAttribute="trailing" secondItem="Udh-qY-Y8W" secondAttribute="trailing" id="d0g-ai-uxB"/>
-                                            <constraint firstItem="Q4u-fp-bVy" firstAttribute="leading" secondItem="9zv-QK-fEn" secondAttribute="leading" id="hfH-51-C4q"/>
-                                            <constraint firstItem="Udh-qY-Y8W" firstAttribute="top" secondItem="Wms-hU-M5B" secondAttribute="bottom" constant="22" id="itb-9s-WGU"/>
-                                            <constraint firstItem="Mdc-YH-vID" firstAttribute="leading" secondItem="pfa-qS-9df" secondAttribute="leading" constant="13" id="jWZ-LJ-2sg"/>
-                                            <constraint firstItem="9zv-QK-fEn" firstAttribute="centerX" secondItem="Mdc-YH-vID" secondAttribute="centerX" id="kgb-SS-yjF"/>
-                                            <constraint firstItem="gqO-Ur-a3U" firstAttribute="top" secondItem="pfa-qS-9df" secondAttribute="top" id="oFc-LD-Aoc"/>
-                                            <constraint firstItem="QIA-QY-u9a" firstAttribute="top" secondItem="Wms-hU-M5B" secondAttribute="bottom" constant="8" symbolic="YES" id="qBa-SW-rF2"/>
-                                            <constraint firstItem="Q4u-fp-bVy" firstAttribute="baseline" secondItem="Mdc-YH-vID" secondAttribute="baseline" id="sW9-nB-F9l"/>
-                                            <constraint firstItem="Q4u-fp-bVy" firstAttribute="trailing" secondItem="9zv-QK-fEn" secondAttribute="trailing" id="sva-yZ-fdK"/>
-                                            <constraint firstItem="ey2-R0-Qns" firstAttribute="centerX" secondItem="Mdc-YH-vID" secondAttribute="centerX" id="t9h-tT-NvX"/>
-                                            <constraint firstItem="Wms-hU-M5B" firstAttribute="top" secondItem="zzb-ht-KMP" secondAttribute="bottom" id="yoK-L4-are"/>
-                                            <constraint firstItem="gqO-Ur-a3U" firstAttribute="trailing" secondItem="zzb-ht-KMP" secondAttribute="trailing" id="zju-0C-sje"/>
+                                            <constraint firstItem="zzb-ht-KMP" firstAttribute="trailing" secondItem="Wms-hU-M5B" secondAttribute="trailing" id="MXN-1E-97Z"/>
+                                            <constraint firstItem="gqO-Ur-a3U" firstAttribute="leading" secondItem="pfa-qS-9df" secondAttribute="leading" id="OOI-Rz-wp7"/>
+                                            <constraint firstItem="ey2-R0-Qns" firstAttribute="centerX" secondItem="9zv-QK-fEn" secondAttribute="centerX" id="Ooq-eI-PCg"/>
+                                            <constraint firstItem="Wms-hU-M5B" firstAttribute="top" secondItem="zzb-ht-KMP" secondAttribute="bottom" id="Ra8-hz-Gjt"/>
+                                            <constraint firstItem="gqO-Ur-a3U" firstAttribute="leading" secondItem="zzb-ht-KMP" secondAttribute="leading" id="RuC-cr-Kq9"/>
+                                            <constraint firstItem="zzb-ht-KMP" firstAttribute="leading" secondItem="Wms-hU-M5B" secondAttribute="leading" id="Skt-f6-8Ua"/>
+                                            <constraint firstItem="gqO-Ur-a3U" firstAttribute="trailing" secondItem="zzb-ht-KMP" secondAttribute="trailing" id="UAz-AT-Mhk"/>
+                                            <constraint firstItem="Mdc-YH-vID" firstAttribute="leading" secondItem="pfa-qS-9df" secondAttribute="leading" constant="11" id="Vkq-oE-dXb"/>
+                                            <constraint firstItem="ey2-R0-Qns" firstAttribute="trailing" secondItem="9zv-QK-fEn" secondAttribute="trailing" constant="4" id="W09-k8-Tbl"/>
+                                            <constraint firstItem="9zv-QK-fEn" firstAttribute="top" secondItem="ey2-R0-Qns" secondAttribute="top" constant="3" id="Y0e-Dp-UAX"/>
+                                            <constraint firstAttribute="trailing" secondItem="gqO-Ur-a3U" secondAttribute="trailing" id="ZrR-mf-b6z"/>
+                                            <constraint firstItem="Q4u-fp-bVy" firstAttribute="baseline" secondItem="Mdc-YH-vID" secondAttribute="baseline" id="f3k-VA-U2t"/>
+                                            <constraint firstItem="9zv-QK-fEn" firstAttribute="bottom" secondItem="ey2-R0-Qns" secondAttribute="bottom" constant="-4" id="ifC-cf-WML"/>
+                                            <constraint firstItem="002-Jk-gtz" firstAttribute="top" secondItem="gqO-Ur-a3U" secondAttribute="bottom" constant="7" id="mP0-ii-KDv"/>
+                                            <constraint firstItem="gqO-Ur-a3U" firstAttribute="top" secondItem="pfa-qS-9df" secondAttribute="top" id="nPm-oH-LBs"/>
+                                            <constraint firstItem="Mdc-YH-vID" firstAttribute="trailing" secondItem="Q4u-fp-bVy" secondAttribute="trailing" id="rDH-mY-9X0"/>
+                                            <constraint firstItem="9zv-QK-fEn" firstAttribute="centerX" secondItem="Q4u-fp-bVy" secondAttribute="centerX" id="sK6-XE-5Xb"/>
+                                            <constraint firstItem="Mdc-YH-vID" firstAttribute="centerX" secondItem="Wms-hU-M5B" secondAttribute="centerX" id="uKw-2J-lLI"/>
+                                            <constraint firstItem="002-Jk-gtz" firstAttribute="leading" secondItem="pfa-qS-9df" secondAttribute="leadingMargin" id="wMc-Qh-HaQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="9zv-QK-fEn" secondAttribute="bottom" constant="244" id="z7h-0X-CrX"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1135,6 +1138,7 @@ Warren G. Harding High School</string>
                     <connections>
                         <outlet property="imageScroller" destination="Wms-hU-M5B" id="Erc-GI-XpW"/>
                         <outlet property="scrollView" destination="Ase-wM-zHc" id="N5y-I3-QgR"/>
+                        <outlet property="tableView" destination="WHR-Xa-UDg" id="jLp-JV-iHD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9I-bh-lqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1301,7 +1305,6 @@ Warren G. Harding High School</string>
         <image name="Screen Shot 2016-10-24 at 12.44.07 PM" width="416" height="296"/>
         <image name="Student-Laptop-48" width="48" height="48"/>
         <image name="User-Profile-48" width="48" height="48"/>
-        <image name="calendar" width="512" height="512"/>
         <image name="logo" width="272" height="99"/>
     </resources>
 </document>

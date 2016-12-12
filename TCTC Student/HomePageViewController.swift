@@ -9,13 +9,20 @@
 import UIKit
 import LiquidFloatingActionButton
 
-class HomePageViewController: UIViewController, UIScrollViewDelegate {
+class HomePageViewController: UIViewController, UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate, XMLParserDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageScroller: UIScrollView!
+    @IBOutlet weak var tableView: UITableView!
     
     var cells = [LiquidFloatingCell]()      //data source
     var floatingActionButton: LiquidFloatingActionButton!
+    
+    struct EventTableView {
+        var event:String
+    }
+    
+    var tableData: [EventTableView] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,11 +77,31 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate {
         Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(moveToNextPage), userInfo: nil, repeats: true)
         
         createFloatingButton()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //return swiftBlogs.cou
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: TextCell, for: indexPath)
+        
+        let row = indexPath.row
+        //cell.textLabel?.text = swiftBlogs[row]
+        
+        return cell
     }
     
     func moveToNextPage (){
