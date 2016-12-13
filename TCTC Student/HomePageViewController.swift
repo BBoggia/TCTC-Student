@@ -18,11 +18,14 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate, UITableVie
     var cells = [LiquidFloatingCell]()      //data source
     var floatingActionButton: LiquidFloatingActionButton!
     
-    struct EventTableView {
-        var event:String
-    }
-    
-    var tableData: [EventTableView] = []
+    var parser = XMLParser()
+    var feeds = NSMutableArray()
+    var item = NSMutableDictionary()
+    var titleString = NSMutableString()
+    var descString = NSMutableString()
+    var link = NSMutableString()
+    var element = NSString()
+    let url = "http://www.tctchome.com//RSS/Events/114580.rss"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,6 +83,12 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate, UITableVie
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        feeds = NSMutableArray()
+        parser = XMLParser(contentsOf: URL(string: url)!)!
+        parser.delegate = self
+        parser.shouldResolveExternalEntities = false
+        parser.parse()
     }
     
     override func didReceiveMemoryWarning() {
@@ -87,21 +96,61 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate, UITableVie
         // Dispose of any resources that can be recreated.
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return swiftBlogs.cou
+        // #warning Incomplete implementation, return the number of rows
+        return feeds.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: TextCell, for: indexPath)
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-        let row = indexPath.row
-        //cell.textLabel?.text = swiftBlogs[row]
+        // Configure the cell...
+        cell.textLabel?.text = (feeds.object(at: (indexPath as NSIndexPath).row) as AnyObject).object(forKey: "title") as? String
+        cell.detailTextLabel?.text = (feeds.object(at: (indexPath as NSIndexPath).row) as AnyObject).object(forKey: "description") as? String
         
         return cell
+    }
+    
+    
+    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
+        element = elementName as NSString
+        
+        if element == "item" {
+            item = NSMutableDictionary()
+            titleString = NSMutableString()
+            descString = NSMutableString()
+            link = NSMutableString()
+        }
+    }
+    
+    func parser(_ parser: XMLParser, foundCharacters string: String) {
+        if element == "title" {
+            titleString.append(string)
+        } else if element == "link" {
+            link.append(string)
+        } else if element == "description" {
+            descString.append(string)
+        }
+    }
+    
+    func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+        if elementName == "item" {
+            item.setObject(titleString, forKey: "title" as NSCopying)
+            item.setObject(link, forKey: "link" as NSCopying)
+            item.setObject(descString, forKey: "description" as NSCopying)
+            
+            feeds.add(item.copy())
+        }
+    }
+    
+    func parserDidEndDocument(_ parser: XMLParser) {
+        self.tableView.reloadData()
     }
     
     func moveToNextPage (){
@@ -120,8 +169,8 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate, UITableVie
     }
     
     func createFloatingButton() {
-        cells.append(createButtonCell(iconName: "floatingButton1"))
-        cells.append(createButtonCell(iconName: "calendar"))
+        cells.append(createButtonCellLink(iconName: "floatingButton1"))
+        cells.append(createButtonCellAnnouncements(iconName: "calendar"))
         
         let floatingFrame = CGRect(x: self.view.frame.width - 56 - 16, y: self.view.frame.height - 106 - 16, width: 56, height: 56)
         let floatingButton = createButton(frame: floatingFrame, style: .up)
@@ -132,7 +181,11 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate, UITableVie
         //floatingActionButton.
     }
     
-    private func createButtonCell(iconName: String) -> LiquidFloatingCell {
+    private func createButtonCellAnnouncements(iconName: String) -> LiquidFloatingCell {
+        return LiquidFloatingCell(icon: UIImage(named: iconName)!)
+    }
+    
+    private func createButtonCellLink(iconName: String) -> LiquidFloatingCell {
         return LiquidFloatingCell(icon: UIImage(named: iconName)!)
     }
     
