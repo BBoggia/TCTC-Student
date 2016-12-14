@@ -1005,7 +1005,7 @@ Warren G. Harding High School</string>
                                                 <rect key="frame" x="0.0" y="122" width="375" height="201"/>
                                             </scrollView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ey2-R0-Qns">
-                                                <rect key="frame" x="7" y="333" width="360" height="45"/>
+                                                <rect key="frame" x="268" y="333" width="107" height="242"/>
                                                 <color key="backgroundColor" red="0.62201160192489624" green="0.22733086347579956" blue="0.26405832171440125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -1018,10 +1018,10 @@ Warren G. Harding High School</string>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4u-fp-bVy">
-                                                <rect key="frame" x="10.5" y="336" width="353" height="38"/>
+                                                <rect key="frame" x="272" y="336" width="103" height="235"/>
                                                 <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="38" id="F6v-1o-TAo"/>
+                                                    <constraint firstAttribute="height" constant="235" id="F6v-1o-TAo"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -1033,52 +1033,29 @@ Warren G. Harding High School</string>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View the High School Announcements here!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Mdc-YH-vID">
-                                                <rect key="frame" x="11" y="336" width="352" height="38"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <color key="textColor" red="0.99955970049999998" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="20"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zv-QK-fEn">
-                                                <rect key="frame" x="11" y="336" width="352" height="38"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="20"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <segue destination="3xF-JY-oeG" kind="show" id="VlH-ho-3bE"/>
-                                                </connections>
-                                            </button>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="45" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WHR-Xa-UDg">
-                                                <rect key="frame" x="174" y="382" width="201" height="171"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="45" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WHR-Xa-UDg">
+                                                <rect key="frame" x="0.0" y="331" width="184" height="222"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="184" id="q68-5V-zpz"/>
+                                                </constraints>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="NDI-cs-ki4" detailTextLabel="jBi-Vq-xtp" rowHeight="45" style="IBUITableViewCellStyleSubtitle" id="uGQ-sI-ivJ" customClass="HomeTableViewCell" customModule="TCTC_Student" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="28" width="201" height="45"/>
+                                                        <rect key="frame" x="0.0" y="28" width="184" height="45"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uGQ-sI-ivJ" id="aLg-88-pid">
-                                                            <rect key="frame" x="0.0" y="0.0" width="201" height="44"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="184" height="44"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" id="NDI-cs-ki4">
-                                                                    <rect key="frame" x="15" y="4" width="34" height="21"/>
+                                                                    <rect key="frame" x="15" y="6" width="30" height="18"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" id="jBi-Vq-xtp">
-                                                                    <rect key="frame" x="15" y="25" width="33" height="15"/>
+                                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="jBi-Vq-xtp">
+                                                                    <rect key="frame" x="15" y="24" width="33" height="15"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <nil key="textColor"/>
@@ -1092,34 +1069,29 @@ Warren G. Harding High School</string>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="9zv-QK-fEn" firstAttribute="leading" secondItem="002-Jk-gtz" secondAttribute="leading" constant="3" id="2z4-LB-piH"/>
-                                            <constraint firstItem="Mdc-YH-vID" firstAttribute="top" secondItem="Wms-hU-M5B" secondAttribute="bottom" constant="13" id="4UM-qp-7nm"/>
+                                            <constraint firstItem="Q4u-fp-bVy" firstAttribute="leading" secondItem="WHR-Xa-UDg" secondAttribute="trailing" constant="88" id="41I-rZ-48x"/>
+                                            <constraint firstAttribute="bottom" secondItem="WHR-Xa-UDg" secondAttribute="bottom" constant="65" id="75D-A1-OCL"/>
                                             <constraint firstItem="zzb-ht-KMP" firstAttribute="top" secondItem="002-Jk-gtz" secondAttribute="bottom" constant="8" symbolic="YES" id="7Gt-ZN-jz9"/>
-                                            <constraint firstItem="Mdc-YH-vID" firstAttribute="leading" secondItem="Q4u-fp-bVy" secondAttribute="leading" id="8BV-2q-7Os"/>
-                                            <constraint firstItem="ey2-R0-Qns" firstAttribute="centerY" secondItem="Mdc-YH-vID" secondAttribute="centerY" id="Auc-04-Dug"/>
-                                            <constraint firstItem="9zv-QK-fEn" firstAttribute="top" secondItem="Wms-hU-M5B" secondAttribute="bottom" constant="13" id="Cbk-Pb-J36"/>
-                                            <constraint firstItem="Mdc-YH-vID" firstAttribute="centerY" secondItem="Q4u-fp-bVy" secondAttribute="centerY" id="Dob-dc-nYI"/>
+                                            <constraint firstItem="ey2-R0-Qns" firstAttribute="trailing" secondItem="Q4u-fp-bVy" secondAttribute="trailing" id="Agy-tT-wsd"/>
+                                            <constraint firstAttribute="bottom" secondItem="ey2-R0-Qns" secondAttribute="bottom" constant="43" id="GoO-nJ-OZj"/>
                                             <constraint firstAttribute="height" constant="618" id="IKF-Mm-wiY"/>
                                             <constraint firstItem="zzb-ht-KMP" firstAttribute="trailing" secondItem="Wms-hU-M5B" secondAttribute="trailing" id="MXN-1E-97Z"/>
                                             <constraint firstItem="gqO-Ur-a3U" firstAttribute="leading" secondItem="pfa-qS-9df" secondAttribute="leading" id="OOI-Rz-wp7"/>
-                                            <constraint firstItem="ey2-R0-Qns" firstAttribute="centerX" secondItem="9zv-QK-fEn" secondAttribute="centerX" id="Ooq-eI-PCg"/>
                                             <constraint firstItem="Wms-hU-M5B" firstAttribute="top" secondItem="zzb-ht-KMP" secondAttribute="bottom" id="Ra8-hz-Gjt"/>
                                             <constraint firstItem="gqO-Ur-a3U" firstAttribute="leading" secondItem="zzb-ht-KMP" secondAttribute="leading" id="RuC-cr-Kq9"/>
                                             <constraint firstItem="zzb-ht-KMP" firstAttribute="leading" secondItem="Wms-hU-M5B" secondAttribute="leading" id="Skt-f6-8Ua"/>
                                             <constraint firstItem="gqO-Ur-a3U" firstAttribute="trailing" secondItem="zzb-ht-KMP" secondAttribute="trailing" id="UAz-AT-Mhk"/>
-                                            <constraint firstItem="Mdc-YH-vID" firstAttribute="leading" secondItem="pfa-qS-9df" secondAttribute="leading" constant="11" id="Vkq-oE-dXb"/>
-                                            <constraint firstItem="ey2-R0-Qns" firstAttribute="trailing" secondItem="9zv-QK-fEn" secondAttribute="trailing" constant="4" id="W09-k8-Tbl"/>
-                                            <constraint firstItem="9zv-QK-fEn" firstAttribute="top" secondItem="ey2-R0-Qns" secondAttribute="top" constant="3" id="Y0e-Dp-UAX"/>
+                                            <constraint firstItem="WHR-Xa-UDg" firstAttribute="leading" secondItem="pfa-qS-9df" secondAttribute="leading" id="VTi-4K-2Jy"/>
+                                            <constraint firstItem="Q4u-fp-bVy" firstAttribute="top" secondItem="Wms-hU-M5B" secondAttribute="bottom" constant="13" id="Vsz-4v-IbC"/>
                                             <constraint firstAttribute="trailing" secondItem="gqO-Ur-a3U" secondAttribute="trailing" id="ZrR-mf-b6z"/>
-                                            <constraint firstItem="Q4u-fp-bVy" firstAttribute="baseline" secondItem="Mdc-YH-vID" secondAttribute="baseline" id="f3k-VA-U2t"/>
-                                            <constraint firstItem="9zv-QK-fEn" firstAttribute="bottom" secondItem="ey2-R0-Qns" secondAttribute="bottom" constant="-4" id="ifC-cf-WML"/>
+                                            <constraint firstItem="ey2-R0-Qns" firstAttribute="centerY" secondItem="Q4u-fp-bVy" secondAttribute="centerY" id="kyD-Cm-0bG"/>
                                             <constraint firstItem="002-Jk-gtz" firstAttribute="top" secondItem="gqO-Ur-a3U" secondAttribute="bottom" constant="7" id="mP0-ii-KDv"/>
                                             <constraint firstItem="gqO-Ur-a3U" firstAttribute="top" secondItem="pfa-qS-9df" secondAttribute="top" id="nPm-oH-LBs"/>
-                                            <constraint firstItem="Mdc-YH-vID" firstAttribute="trailing" secondItem="Q4u-fp-bVy" secondAttribute="trailing" id="rDH-mY-9X0"/>
-                                            <constraint firstItem="9zv-QK-fEn" firstAttribute="centerX" secondItem="Q4u-fp-bVy" secondAttribute="centerX" id="sK6-XE-5Xb"/>
-                                            <constraint firstItem="Mdc-YH-vID" firstAttribute="centerX" secondItem="Wms-hU-M5B" secondAttribute="centerX" id="uKw-2J-lLI"/>
+                                            <constraint firstItem="ey2-R0-Qns" firstAttribute="top" secondItem="Wms-hU-M5B" secondAttribute="bottom" constant="10" id="nS6-2r-bDS"/>
+                                            <constraint firstItem="ey2-R0-Qns" firstAttribute="leading" secondItem="WHR-Xa-UDg" secondAttribute="trailing" constant="84" id="nco-gW-nmX"/>
                                             <constraint firstItem="002-Jk-gtz" firstAttribute="leading" secondItem="pfa-qS-9df" secondAttribute="leadingMargin" id="wMc-Qh-HaQ"/>
-                                            <constraint firstAttribute="bottom" secondItem="9zv-QK-fEn" secondAttribute="bottom" constant="244" id="z7h-0X-CrX"/>
+                                            <constraint firstItem="WHR-Xa-UDg" firstAttribute="trailing" secondItem="Wms-hU-M5B" secondAttribute="trailing" constant="-191" id="wp3-g0-dmc"/>
+                                            <constraint firstItem="WHR-Xa-UDg" firstAttribute="trailing" secondItem="ey2-R0-Qns" secondAttribute="trailing" constant="-191" id="xJh-hM-fZf"/>
                                         </constraints>
                                     </view>
                                 </subviews>
