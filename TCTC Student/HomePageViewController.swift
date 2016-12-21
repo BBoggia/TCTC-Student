@@ -27,6 +27,8 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate, UITableVie
     var element = NSString()
     let url = "http://www.tctchome.com//RSS/Events/114580.rss"
     
+    var theIndex: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -182,10 +184,12 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate, UITableVie
     }
     
     private func createButtonCellAnnouncements(iconName: String) -> LiquidFloatingCell {
+        
         return LiquidFloatingCell(icon: UIImage(named: iconName)!)
     }
     
     private func createButtonCellLink(iconName: String) -> LiquidFloatingCell {
+        
         return LiquidFloatingCell(icon: UIImage(named: iconName)!)
     }
     
@@ -218,9 +222,16 @@ extension HomePageViewController: LiquidFloatingActionButtonDataSource {
 
 extension HomePageViewController:LiquidFloatingActionButtonDelegate {
     
+    
     func liquidFloatingActionButton(_ liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int) {
         
         print("button number \(index) did click")
+        if index == 0 {
+        
+        } else if index == 1 {
+            performSegue(withIdentifier: "toAnnouncements", sender: nil)
+        }
+        
         self.floatingActionButton.close()
     }
     
