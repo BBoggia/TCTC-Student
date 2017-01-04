@@ -25,6 +25,10 @@
 		5EB6C4761DBA803600AD52D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EB6C4741DBA803600AD52D3 /* LaunchScreen.storyboard */; };
 		5EB6C4811DBA803600AD52D3 /* TCTC_StudentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6C4801DBA803600AD52D3 /* TCTC_StudentTests.swift */; };
 		5EB6C48C1DBA803600AD52D3 /* TCTC_StudentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6C48B1DBA803600AD52D3 /* TCTC_StudentUITests.swift */; };
+		5ED064B21E1D71AF00B9AFA3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED064B11E1D71AF00B9AFA3 /* SWRevealViewController.m */; };
+		5ED064B71E1D7B5900B9AFA3 /* SlideOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED064B61E1D7B5900B9AFA3 /* SlideOutViewController.swift */; };
+		5ED064B91E1D7BFB00B9AFA3 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED064B81E1D7BFB00B9AFA3 /* MenuCell.swift */; };
+		5ED064BB1E1D7CC100B9AFA3 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED064BA1E1D7CC100B9AFA3 /* MessageViewController.swift */; };
 		9522EA7B057D7DA628C782FC /* Pods_TCTC_Student.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7548845384A87406C38BB764 /* Pods_TCTC_Student.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +75,12 @@
 		5EB6C4871DBA803600AD52D3 /* TCTC StudentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TCTC StudentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB6C48B1DBA803600AD52D3 /* TCTC_StudentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCTC_StudentUITests.swift; sourceTree = "<group>"; };
 		5EB6C48D1DBA803600AD52D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ED064B01E1D70FC00B9AFA3 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		5ED064B11E1D71AF00B9AFA3 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		5ED064B31E1D722F00B9AFA3 /* TCTC Student-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TCTC Student-Bridging-Header.h"; sourceTree = "<group>"; };
+		5ED064B61E1D7B5900B9AFA3 /* SlideOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideOutViewController.swift; sourceTree = "<group>"; };
+		5ED064B81E1D7BFB00B9AFA3 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		5ED064BA1E1D7CC100B9AFA3 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		7548845384A87406C38BB764 /* Pods_TCTC_Student.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCTC_Student.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C7A9FF59AE9A741829FD70 /* Pods-TCTC Student.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCTC Student.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCTC Student/Pods-TCTC Student.release.xcconfig"; sourceTree = "<group>"; };
 		9B380E50E40BAD2052506E80 /* Pods_TCTC_StudentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCTC_StudentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +153,12 @@
 				5E536D6F1DE36DB0004541BB /* ProgramTableViewCell.swift */,
 				5E5FBE731DEF31A80093DFDE /* ProgramDetailViewController.swift */,
 				5E5FBE751DF1DE220093DFDE /* StudentsViewController.swift */,
+				5ED064B61E1D7B5900B9AFA3 /* SlideOutViewController.swift */,
+				5ED064B81E1D7BFB00B9AFA3 /* MenuCell.swift */,
+				5ED064BA1E1D7CC100B9AFA3 /* MessageViewController.swift */,
+				5ED064B01E1D70FC00B9AFA3 /* SWRevealViewController.h */,
+				5ED064B11E1D71AF00B9AFA3 /* SWRevealViewController.m */,
+				5ED064B31E1D722F00B9AFA3 /* TCTC Student-Bridging-Header.h */,
 				5EB6C46F1DBA803600AD52D3 /* Main.storyboard */,
 				5EB6C4721DBA803600AD52D3 /* Assets.xcassets */,
 				5EB6C4741DBA803600AD52D3 /* LaunchScreen.storyboard */,
@@ -270,6 +286,7 @@
 					5EB6C4671DBA803600AD52D3 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 6E2D64GGFH;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					5EB6C47B1DBA803600AD52D3 = {
@@ -476,9 +493,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED064B91E1D7BFB00B9AFA3 /* MenuCell.swift in Sources */,
 				5E5FBE741DEF31A80093DFDE /* ProgramDetailViewController.swift in Sources */,
 				5E536D701DE36DB0004541BB /* ProgramTableViewCell.swift in Sources */,
 				5E65A2591DD2476F00972C49 /* RssTableViewController.swift in Sources */,
+				5ED064BB1E1D7CC100B9AFA3 /* MessageViewController.swift in Sources */,
 				5E536D6E1DDF82E6004541BB /* ProgramTableViewController.swift in Sources */,
 				5EB6C46E1DBA803600AD52D3 /* ViewController.swift in Sources */,
 				5E1C6FC21DFF23EB00D33929 /* HomeTableViewCell.swift in Sources */,
@@ -486,7 +505,9 @@
 				5EB6C46C1DBA803600AD52D3 /* AppDelegate.swift in Sources */,
 				5E0900AD1DCD009400FD9CC0 /* GuidanceViewController.swift in Sources */,
 				5E5FBE761DF1DE220093DFDE /* StudentsViewController.swift in Sources */,
+				5ED064B71E1D7B5900B9AFA3 /* SlideOutViewController.swift in Sources */,
 				5E75CDE11DC3B7830036CEE5 /* HomePageViewController.swift in Sources */,
+				5ED064B21E1D71AF00B9AFA3 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,11 +663,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6E2D64GGFH;
 				INFOPLIST_FILE = "TCTC Student/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tctcapp.TCTC-Student";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TCTC Student/TCTC Student-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -657,11 +681,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6E2D64GGFH;
 				INFOPLIST_FILE = "TCTC Student/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tctcapp.TCTC-Student";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TCTC Student/TCTC Student-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

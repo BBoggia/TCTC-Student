@@ -225,12 +225,13 @@ extension HomePageViewController:LiquidFloatingActionButtonDelegate {
     
     func liquidFloatingActionButton(_ liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int) {
         
-        print("button number \(index) did click")
         if index == 0 {
         
         } else if index == 1 {
             performSegue(withIdentifier: "toAnnouncements", sender: nil)
         }
+        
+        print("button number \(index) did click")
         
         self.floatingActionButton.close()
     }
