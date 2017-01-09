@@ -18,6 +18,7 @@
 		5E5FBE761DF1DE220093DFDE /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5FBE751DF1DE220093DFDE /* StudentsViewController.swift */; };
 		5E65A2591DD2476F00972C49 /* RssTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65A2581DD2476F00972C49 /* RssTableViewController.swift */; };
 		5E75CDE11DC3B7830036CEE5 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75CDE01DC3B7830036CEE5 /* HomePageViewController.swift */; };
+		5EB296131E240635004FB916 /* MainUITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB296121E240635004FB916 /* MainUITabBarController.swift */; };
 		5EB6C46C1DBA803600AD52D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6C46B1DBA803600AD52D3 /* AppDelegate.swift */; };
 		5EB6C46E1DBA803600AD52D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6C46D1DBA803600AD52D3 /* ViewController.swift */; };
 		5EB6C4711DBA803600AD52D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EB6C46F1DBA803600AD52D3 /* Main.storyboard */; };
@@ -28,7 +29,6 @@
 		5ED064B21E1D71AF00B9AFA3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED064B11E1D71AF00B9AFA3 /* SWRevealViewController.m */; };
 		5ED064B71E1D7B5900B9AFA3 /* SlideOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED064B61E1D7B5900B9AFA3 /* SlideOutViewController.swift */; };
 		5ED064B91E1D7BFB00B9AFA3 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED064B81E1D7BFB00B9AFA3 /* MenuCell.swift */; };
-		5ED064BB1E1D7CC100B9AFA3 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED064BA1E1D7CC100B9AFA3 /* MessageViewController.swift */; };
 		9522EA7B057D7DA628C782FC /* Pods_TCTC_Student.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7548845384A87406C38BB764 /* Pods_TCTC_Student.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +62,7 @@
 		5E5FBE751DF1DE220093DFDE /* StudentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
 		5E65A2581DD2476F00972C49 /* RssTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssTableViewController.swift; sourceTree = "<group>"; };
 		5E75CDE01DC3B7830036CEE5 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		5EB296121E240635004FB916 /* MainUITabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainUITabBarController.swift; sourceTree = "<group>"; };
 		5EB6C4681DBA803600AD52D3 /* TCTC Student.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TCTC Student.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB6C46B1DBA803600AD52D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EB6C46D1DBA803600AD52D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +81,6 @@
 		5ED064B31E1D722F00B9AFA3 /* TCTC Student-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TCTC Student-Bridging-Header.h"; sourceTree = "<group>"; };
 		5ED064B61E1D7B5900B9AFA3 /* SlideOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideOutViewController.swift; sourceTree = "<group>"; };
 		5ED064B81E1D7BFB00B9AFA3 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
-		5ED064BA1E1D7CC100B9AFA3 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		7548845384A87406C38BB764 /* Pods_TCTC_Student.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCTC_Student.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C7A9FF59AE9A741829FD70 /* Pods-TCTC Student.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCTC Student.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCTC Student/Pods-TCTC Student.release.xcconfig"; sourceTree = "<group>"; };
 		9B380E50E40BAD2052506E80 /* Pods_TCTC_StudentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCTC_StudentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,7 +155,7 @@
 				5E5FBE751DF1DE220093DFDE /* StudentsViewController.swift */,
 				5ED064B61E1D7B5900B9AFA3 /* SlideOutViewController.swift */,
 				5ED064B81E1D7BFB00B9AFA3 /* MenuCell.swift */,
-				5ED064BA1E1D7CC100B9AFA3 /* MessageViewController.swift */,
+				5EB296121E240635004FB916 /* MainUITabBarController.swift */,
 				5ED064B01E1D70FC00B9AFA3 /* SWRevealViewController.h */,
 				5ED064B11E1D71AF00B9AFA3 /* SWRevealViewController.m */,
 				5ED064B31E1D722F00B9AFA3 /* TCTC Student-Bridging-Header.h */,
@@ -493,11 +493,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EB296131E240635004FB916 /* MainUITabBarController.swift in Sources */,
 				5ED064B91E1D7BFB00B9AFA3 /* MenuCell.swift in Sources */,
 				5E5FBE741DEF31A80093DFDE /* ProgramDetailViewController.swift in Sources */,
 				5E536D701DE36DB0004541BB /* ProgramTableViewCell.swift in Sources */,
 				5E65A2591DD2476F00972C49 /* RssTableViewController.swift in Sources */,
-				5ED064BB1E1D7CC100B9AFA3 /* MessageViewController.swift in Sources */,
 				5E536D6E1DDF82E6004541BB /* ProgramTableViewController.swift in Sources */,
 				5EB6C46E1DBA803600AD52D3 /* ViewController.swift in Sources */,
 				5E1C6FC21DFF23EB00D33929 /* HomeTableViewCell.swift in Sources */,

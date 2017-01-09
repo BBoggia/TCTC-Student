@@ -27,6 +27,8 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate, UITableVie
     var element = NSString()
     let url = "http://www.tctchome.com//RSS/Events/114580.rss"
     
+    let uiTabBar = MainUITabBarController()
+    
     var theIndex: String!
     
     override func viewDidLoad() {
@@ -91,6 +93,7 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate, UITableVie
         parser.delegate = self
         parser.shouldResolveExternalEntities = false
         parser.parse()
+        
     }
     
     override func didReceiveMemoryWarning() {

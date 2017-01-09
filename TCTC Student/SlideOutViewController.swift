@@ -12,13 +12,10 @@ class slideOutViewController: UIViewController,UITableViewDelegate,UITableViewDa
     
     @IBOutlet weak var tblTableView: UITableView!
     
-    
     var ManuNameArray:Array = [String]()
-    var iconArray:Array = [UIImage]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        ManuNameArray = ["Home","Message","Map","Setting"]
-        iconArray = [UIImage(named:"home")!,UIImage(named:"message")!,UIImage(named:"map")!,UIImage(named:"setting")!]
+        ManuNameArray = ["Cove Menu","Public/Annual Notices","Students of the Month","Student Youth Organization","Career Development","Academics","Contact Us","High Schools That Work","Media Center & Other","Special Needs"]
         
     }
     
@@ -34,54 +31,57 @@ class slideOutViewController: UIViewController,UITableViewDelegate,UITableViewDa
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCell", for: indexPath) as! MenuCell
         
         cell.lblMenuname.text! = ManuNameArray[indexPath.row]
-        cell.imgIcon.image = iconArray[indexPath.row]
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let revealviewcontroller:SWRevealViewController = self.revealViewController()
+        //let revealviewcontroller:SWRevealViewController = self.revealViewController()
         
         let cell:MenuCell = tableView.cellForRow(at: indexPath) as! MenuCell
         print(cell.lblMenuname.text!)
-        if cell.lblMenuname.text! == "Home"
+        if cell.lblMenuname.text! == "Cove Menu"
         {
-            print("Home Tapped")
-            let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-            let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
-            
-            revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
-            
+            print("Cove Menu Tapped")
         }
-        if cell.lblMenuname.text! == "Message"
+        if cell.lblMenuname.text! == "Public/Annual Notices"
         {
-            print("message Tapped")
-            
-            let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "MessageViewController") as! MessageViewController
-            let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
-            
-            revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
+            print("Public/Annual Notices Tapped")
         }
-        if cell.lblMenuname.text! == "Map"
+        if cell.lblMenuname.text! == "Students of the Month"
         {
-            print("Map Tapped")
+            print("Students of the Month Tapped")
         }
-        if cell.lblMenuname.text! == "Setting"
+        if cell.lblMenuname.text! == "Student Youth Organization"
         {
-            print("setting Tapped")
+            print("Student Youth Organization Tapped")
+        }
+        if cell.lblMenuname.text! == "Career Development"
+        {
+            print("Career Development Tapped")
+        }
+        if cell.lblMenuname.text! == "Academics"
+        {
+            print("Academics Tapped")
+        }
+        if cell.lblMenuname.text! == "Contact Us"
+        {
+            print("Contact Us Tapped")
+        }
+        if cell.lblMenuname.text! == "High Schools That Work"
+        {
+            print("High Schools That Work Tapped")
+        }
+        if cell.lblMenuname.text! == "Media Center & Other"
+        {
+            print("Media Center & Other Tapped")
+        }
+        if cell.lblMenuname.text! == "Special Needs"
+        {
+            print("Special Needs Tapped")
         }
     }
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+
     
 }

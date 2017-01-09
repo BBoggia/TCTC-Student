@@ -94,7 +94,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="jr0-9O-0WR" kind="showDetail" action="showViewController:sender:" id="gnq-se-fv2"/>
+                                    <segue destination="t5i-Sw-8Cd" kind="showDetail" id="FJH-n8-QKl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkV-p3-0li">
@@ -154,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1098" y="173"/>
+            <point key="canvasLocation" x="-3137" y="947"/>
         </scene>
         <!--Students-->
         <scene sceneID="fmw-Wm-kU4">
@@ -325,7 +325,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vwz-dd-vpO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4698" y="1200"/>
+            <point key="canvasLocation" x="2583" y="942"/>
         </scene>
         <!--Program Detail View Controller-->
         <scene sceneID="lAz-XK-IOg">
@@ -474,7 +474,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OHE-Nv-G7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2839" y="1200"/>
+            <point key="canvasLocation" x="1842" y="1685"/>
         </scene>
         <!--Guidance-->
         <scene sceneID="syL-RF-Tng">
@@ -812,7 +812,7 @@ Warren G. Harding High School</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cG5-Sj-bpg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3770" y="1200"/>
+            <point key="canvasLocation" x="2583" y="1685"/>
         </scene>
         <!--TCTC Programs-->
         <scene sceneID="9J4-ks-VzH">
@@ -827,7 +827,7 @@ Warren G. Harding High School</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qTI-MZ-PxS" id="crt-b3-wHy">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Of8-xX-y8A">
@@ -862,7 +862,7 @@ Warren G. Harding High School</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yvn-mG-jL4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1894" y="1200"/>
+            <point key="canvasLocation" x="1122" y="1685"/>
         </scene>
         <!--Slide Out View Controller-->
         <scene sceneID="hPW-dQ-gil">
@@ -881,40 +881,28 @@ Warren G. Harding High School</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuCell" id="bDX-PJ-JsZ" customClass="MenuCell" customModule="TCTC_Student" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MenuCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuCell" id="bDX-PJ-JsZ" customClass="MenuCell" customModule="TCTC_Student" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bDX-PJ-JsZ" id="czD-J2-cKi">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Win-72-gmp">
-                                                    <rect key="frame" x="61" y="8" width="306" height="27"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="27" id="k1J-nD-rLQ"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="8" y="8" width="359" height="27"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="csV-ag-wGp">
-                                                    <rect key="frame" x="20" y="8" width="30" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="2ZW-iO-mgO"/>
-                                                        <constraint firstAttribute="width" constant="30" id="B9L-fT-hqS"/>
-                                                    </constraints>
-                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Win-72-gmp" firstAttribute="leading" secondItem="csV-ag-wGp" secondAttribute="trailing" constant="11" id="Cn4-br-jVa"/>
-                                                <constraint firstItem="csV-ag-wGp" firstAttribute="top" secondItem="czD-J2-cKi" secondAttribute="topMargin" id="GcS-O3-oSK"/>
-                                                <constraint firstItem="Win-72-gmp" firstAttribute="top" secondItem="czD-J2-cKi" secondAttribute="topMargin" id="Hlo-Vt-b6b"/>
-                                                <constraint firstItem="csV-ag-wGp" firstAttribute="leading" secondItem="czD-J2-cKi" secondAttribute="leadingMargin" constant="12" id="PNh-qs-o4V"/>
-                                                <constraint firstItem="Win-72-gmp" firstAttribute="trailing" secondItem="czD-J2-cKi" secondAttribute="trailingMargin" id="fsO-ek-3Cz"/>
+                                                <constraint firstItem="Win-72-gmp" firstAttribute="top" secondItem="czD-J2-cKi" secondAttribute="topMargin" id="1sl-ay-hVf"/>
+                                                <constraint firstItem="Win-72-gmp" firstAttribute="bottom" secondItem="czD-J2-cKi" secondAttribute="bottomMargin" id="5HO-tw-ywV"/>
+                                                <constraint firstItem="Win-72-gmp" firstAttribute="trailing" secondItem="czD-J2-cKi" secondAttribute="trailingMargin" id="agP-1P-odx"/>
+                                                <constraint firstItem="Win-72-gmp" firstAttribute="leading" secondItem="czD-J2-cKi" secondAttribute="leadingMargin" id="iKI-jr-sKu"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="imgIcon" destination="csV-ag-wGp" id="AW6-rb-iVv"/>
                                             <outlet property="lblMenuname" destination="Win-72-gmp" id="aVg-5A-JzN"/>
                                         </connections>
                                     </tableViewCell>
@@ -923,47 +911,15 @@ Warren G. Harding High School</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="tblTableView" destination="olW-Lm-qZf" id="Y2D-GQ-ntu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffb-pP-gJv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-212" y="-697"/>
+            <point key="canvasLocation" x="-1106" y="206"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="YbH-Jc-Lbj">
-            <objects>
-                <navigationController id="24W-Lo-gAs" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VsV-ry-ljC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GjR-kY-qtL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1041" y="-641"/>
-        </scene>
-        <!--Reveal View Controller-->
-        <scene sceneID="4hQ-wv-aaD">
-            <objects>
-                <viewController id="uOA-49-CfF" customClass="SWRevealViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RZI-Xf-Cic"/>
-                        <viewControllerLayoutGuide type="bottom" id="SNb-bu-j5s"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="XEt-Dt-QFp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <segue destination="bL7-VI-fmq" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="08N-nB-QAd"/>
-                        <segue destination="24W-Lo-gAs" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="fYp-q1-sYa"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tbu-IT-Cn0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="340" y="119"/>
-        </scene>
-        <!--High School-->
+        <!--Home-->
         <scene sceneID="ToD-q0-u3C">
             <objects>
                 <viewController id="WMa-MC-XN2" customClass="HomePageViewController" customModule="TCTC_Student" customModuleProvider="target" sceneMemberID="viewController">
@@ -1084,21 +1040,21 @@ Warren G. Harding High School</string>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="Home-48" selectedImage="Home-48" id="tSl-vg-kaM"/>
-                    <navigationItem key="navigationItem" title="High School" id="AFF-y6-Emn"/>
+                    <navigationItem key="navigationItem" id="uRu-c0-EM1"/>
                     <connections>
                         <outlet property="imageScroller" destination="Wms-hU-M5B" id="Erc-GI-XpW"/>
                         <outlet property="scrollView" destination="Ase-wM-zHc" id="N5y-I3-QgR"/>
                         <outlet property="tableView" destination="WHR-Xa-UDg" id="jLp-JV-iHD"/>
-                        <segue destination="3xF-JY-oeG" kind="show" identifier="toAnnouncements" id="DgW-2K-bK6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9I-bh-lqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1892" y="457"/>
+            <point key="canvasLocation" x="1119" y="942"/>
         </scene>
         <!--Home-->
         <scene sceneID="qog-S0-4Rb">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Njb-SB-uaF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="jr0-9O-0WR" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="Home-48" id="g1t-A2-DWJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vdg-Hx-xGi">
@@ -1109,9 +1065,8 @@ Warren G. Harding High School</string>
                         <segue destination="KSy-VT-euD" kind="relationship" relationship="rootViewController" id="p3E-Ly-Lge"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Njb-SB-uaF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1098" y="947"/>
+            <point key="canvasLocation" x="-1106" y="947"/>
         </scene>
         <!--High School-->
         <scene sceneID="lf2-YZ-Lvf">
@@ -1152,7 +1107,7 @@ Warren G. Harding High School</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aS5-e8-bSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1894" y="-291"/>
+            <point key="canvasLocation" x="1842" y="207"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="GzL-Zt-spp">
@@ -1202,7 +1157,7 @@ Warren G. Harding High School</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dCp-fe-YiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2839" y="-292"/>
+            <point key="canvasLocation" x="2583" y="207"/>
         </scene>
         <!--Parents-->
         <scene sceneID="9wE-ZD-ZHD">
@@ -1221,14 +1176,16 @@ Warren G. Harding High School</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="taf-Nt-Rjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2839" y="457"/>
+            <point key="canvasLocation" x="1842" y="942"/>
         </scene>
-        <!--High School-->
+        <!--TCTC-->
         <scene sceneID="PjM-9r-eIJ">
             <objects>
-                <tabBarController id="KSy-VT-euD" sceneMemberID="viewController">
+                <tabBarController id="KSy-VT-euD" customClass="MainUITabBarController" customModule="TCTC_Student" customModuleProvider="target" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
-                    <navigationItem key="navigationItem" title="High School" id="j7D-wE-FSs"/>
+                    <navigationItem key="navigationItem" title="TCTC" id="j7D-wE-FSs">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="gJW-gV-vTi" userLabel="Btn Menu Button"/>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Lhs-Fh-nzf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1236,6 +1193,7 @@ Warren G. Harding High School</string>
                         <color key="tintColor" red="0.61804336309432983" green="0.22747176885604858" blue="0.2599882185459137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
+                        <outlet property="btnMenuButton" destination="gJW-gV-vTi" id="HvG-6V-FWd"/>
                         <segue destination="WMa-MC-XN2" kind="relationship" relationship="viewControllers" id="LWa-aA-xxk"/>
                         <segue destination="hGV-Fe-f2d" kind="relationship" relationship="viewControllers" id="jjO-mX-vvN"/>
                         <segue destination="gf8-oh-2pU" kind="relationship" relationship="viewControllers" id="oDQ-s1-d6e"/>
@@ -1247,45 +1205,29 @@ Warren G. Harding High School</string>
             </objects>
             <point key="canvasLocation" x="-70" y="947"/>
         </scene>
-        <!--Message View Controller-->
-        <scene sceneID="vge-u4-zC5">
+        <!--Reveal View Controller-->
+        <scene sceneID="RsO-xC-oKU">
             <objects>
-                <viewController storyboardIdentifier="MessageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kO9-ph-Oal" customClass="MessageViewController" customModule="memuDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SWRevealViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="t5i-Sw-8Cd" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="N22-Kj-cwz"/>
-                        <viewControllerLayoutGuide type="bottom" id="VzX-VG-VJ5"/>
+                        <viewControllerLayoutGuide type="top" id="RaC-K6-7wE"/>
+                        <viewControllerLayoutGuide type="bottom" id="HCC-dr-NgI"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aWx-77-qCV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="8Kl-Zr-oyK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="message view controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWE-Gd-D14">
-                                <rect key="frame" x="10" y="59" width="349" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="NJQ-1g-tgF"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="nWE-Gd-D14" firstAttribute="top" secondItem="N22-Kj-cwz" secondAttribute="bottom" constant="39" id="1FV-8I-7BI"/>
-                            <constraint firstItem="nWE-Gd-D14" firstAttribute="leading" secondItem="aWx-77-qCV" secondAttribute="leading" constant="10" id="1Wt-qN-8YL"/>
-                            <constraint firstAttribute="trailing" secondItem="nWE-Gd-D14" secondAttribute="trailing" constant="16" id="c1r-KU-n5y"/>
-                        </constraints>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="upn-wp-PHX">
-                        <barButtonItem key="leftBarButtonItem" image="menu" id="Fkd-LA-2Ee"/>
-                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
                     <connections>
-                        <outlet property="menu" destination="Fkd-LA-2Ee" id="88O-q4-piw"/>
+                        <segue destination="bL7-VI-fmq" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="p1P-ej-c57"/>
+                        <segue destination="jr0-9O-0WR" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="bMa-GO-pss"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1BH-ZR-FJ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LYy-Yd-hpr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1041" y="-1338"/>
+            <point key="canvasLocation" x="-2117" y="946"/>
         </scene>
     </scenes>
     <resources>
@@ -1297,6 +1239,6 @@ Warren G. Harding High School</string>
         <image name="Student-Laptop-48" width="48" height="48"/>
         <image name="User-Profile-48" width="48" height="48"/>
         <image name="logo" width="272" height="99"/>
-        <image name="menu" width="225" height="225"/>
+        <image name="menu" width="32" height="32"/>
     </resources>
 </document>
