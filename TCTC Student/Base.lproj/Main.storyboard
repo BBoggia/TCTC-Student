@@ -154,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3137" y="947"/>
+            <point key="canvasLocation" x="-2599" y="942"/>
         </scene>
         <!--Students-->
         <scene sceneID="fmw-Wm-kU4">
@@ -876,48 +876,68 @@ Warren G. Harding High School</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="olW-Lm-qZf">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jLC-4m-v0v">
+                                <rect key="frame" x="0.0" y="50" width="375" height="617"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MenuCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuCell" id="bDX-PJ-JsZ" customClass="MenuCell" customModule="TCTC_Student" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuCell" id="PzU-lH-9eM" customClass="MenuCell" customModule="TCTC_Student" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bDX-PJ-JsZ" id="czD-J2-cKi">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PzU-lH-9eM" id="0Hs-A0-QqG">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Win-72-gmp">
-                                                    <rect key="frame" x="8" y="8" width="359" height="27"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuM-mf-Ul2">
+                                                    <rect key="frame" x="61" y="8" width="306" height="27"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o7A-un-h3o">
+                                                    <rect key="frame" x="20" y="8" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="aq0-Ii-RQh"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Win-72-gmp" firstAttribute="top" secondItem="czD-J2-cKi" secondAttribute="topMargin" id="1sl-ay-hVf"/>
-                                                <constraint firstItem="Win-72-gmp" firstAttribute="bottom" secondItem="czD-J2-cKi" secondAttribute="bottomMargin" id="5HO-tw-ywV"/>
-                                                <constraint firstItem="Win-72-gmp" firstAttribute="trailing" secondItem="czD-J2-cKi" secondAttribute="trailingMargin" id="agP-1P-odx"/>
-                                                <constraint firstItem="Win-72-gmp" firstAttribute="leading" secondItem="czD-J2-cKi" secondAttribute="leadingMargin" id="iKI-jr-sKu"/>
+                                                <constraint firstItem="yuM-mf-Ul2" firstAttribute="leading" secondItem="o7A-un-h3o" secondAttribute="trailing" constant="11" id="K18-qZ-XnX"/>
+                                                <constraint firstItem="o7A-un-h3o" firstAttribute="top" secondItem="0Hs-A0-QqG" secondAttribute="topMargin" id="Uba-vp-sje"/>
+                                                <constraint firstItem="yuM-mf-Ul2" firstAttribute="trailing" secondItem="0Hs-A0-QqG" secondAttribute="trailingMargin" id="ayE-s1-Q2B"/>
+                                                <constraint firstItem="o7A-un-h3o" firstAttribute="leading" secondItem="0Hs-A0-QqG" secondAttribute="leadingMargin" constant="12" id="gBM-aT-V2a"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="o7A-un-h3o" secondAttribute="bottom" constant="-3" id="iAL-T7-may"/>
+                                                <constraint firstItem="o7A-un-h3o" firstAttribute="top" secondItem="yuM-mf-Ul2" secondAttribute="top" id="nEb-n0-2g4"/>
+                                                <constraint firstItem="yuM-mf-Ul2" firstAttribute="bottom" secondItem="0Hs-A0-QqG" secondAttribute="bottomMargin" id="zWF-xv-Azk"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="lblMenuname" destination="Win-72-gmp" id="aVg-5A-JzN"/>
+                                            <outlet property="imgIcon" destination="o7A-un-h3o" id="tVS-ZM-6jj"/>
+                                            <outlet property="lblMenuname" destination="yuM-mf-Ul2" id="OwC-AJ-V63"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="bL7-VI-fmq" id="EGV-mj-ryF"/>
+                                    <outlet property="delegate" destination="bL7-VI-fmq" id="KDQ-9Q-OdE"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jLC-4m-v0v" secondAttribute="trailing" id="Fid-1D-2Ms"/>
+                            <constraint firstItem="jLC-4m-v0v" firstAttribute="leading" secondItem="bfC-PO-fid" secondAttribute="leading" id="VBR-7S-qnG"/>
+                            <constraint firstItem="jLC-4m-v0v" firstAttribute="top" secondItem="bfC-PO-fid" secondAttribute="top" constant="50" id="ec0-Rb-5mr"/>
+                            <constraint firstItem="jLC-4m-v0v" firstAttribute="bottom" secondItem="ugw-72-MtR" secondAttribute="top" id="fUX-Ri-tta"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="tblTableView" destination="olW-Lm-qZf" id="Y2D-GQ-ntu"/>
+                        <outlet property="tblTableView" destination="jLC-4m-v0v" id="h8L-QG-L7S"/>
+                        <segue destination="mP3-fr-q21" kind="show" identifier="toAnnouncements" id="W98-tZ-60K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffb-pP-gJv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1106" y="206"/>
+            <point key="canvasLocation" x="-476" y="205.54722638680661"/>
         </scene>
         <!--Home-->
         <scene sceneID="ToD-q0-u3C">
@@ -1066,12 +1086,28 @@ Warren G. Harding High School</string>
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-1106" y="947"/>
+            <point key="canvasLocation" x="-474" y="942"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hZx-zN-b9s">
+            <objects>
+                <navigationController id="mP3-fr-q21" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8A2-2t-FKP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3xF-JY-oeG" kind="relationship" relationship="rootViewController" id="1Yy-uD-uPi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x3q-ef-d8g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="206"/>
         </scene>
         <!--High School-->
         <scene sceneID="lf2-YZ-Lvf">
             <objects>
-                <tableViewController id="3xF-JY-oeG" customClass="MasterTableViewController" customModule="TCTC_Student" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="announcementTable" id="3xF-JY-oeG" customClass="MasterTableViewController" customModule="TCTC_Student" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JCk-mB-XHG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1107,7 +1143,7 @@ Warren G. Harding High School</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aS5-e8-bSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1842" y="207"/>
+            <point key="canvasLocation" x="1122" y="206"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="GzL-Zt-spp">
@@ -1157,7 +1193,7 @@ Warren G. Harding High School</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dCp-fe-YiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2583" y="207"/>
+            <point key="canvasLocation" x="1842" y="206"/>
         </scene>
         <!--Parents-->
         <scene sceneID="9wE-ZD-ZHD">
@@ -1203,7 +1239,7 @@ Warren G. Harding High School</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWX-ZL-BRA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-70" y="947"/>
+            <point key="canvasLocation" x="339" y="942"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="RsO-xC-oKU">
@@ -1227,7 +1263,7 @@ Warren G. Harding High School</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYy-Yd-hpr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2117" y="946"/>
+            <point key="canvasLocation" x="-1561" y="941"/>
         </scene>
     </scenes>
     <resources>

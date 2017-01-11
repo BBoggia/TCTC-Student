@@ -15,7 +15,7 @@ class slideOutViewController: UIViewController,UITableViewDelegate,UITableViewDa
     var ManuNameArray:Array = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        ManuNameArray = ["Cove Menu","Public/Annual Notices","Students of the Month","Student Youth Organization","Career Development","Academics","Contact Us","High Schools That Work","Media Center & Other","Special Needs"]
+        ManuNameArray = ["Announcements","Events","Cove Menu","Public/Annual Notices","Students of the Month","Student Youth Organization","Career Development","Academics","Media Center & Other"]
         
     }
     
@@ -23,6 +23,7 @@ class slideOutViewController: UIViewController,UITableViewDelegate,UITableViewDa
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ManuNameArray.count
         
@@ -37,10 +38,25 @@ class slideOutViewController: UIViewController,UITableViewDelegate,UITableViewDa
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        //let revealviewcontroller:SWRevealViewController = self.revealViewController()
+        let revealviewcontroller:SWRevealViewController = self.revealViewController()
         
         let cell:MenuCell = tableView.cellForRow(at: indexPath) as! MenuCell
         print(cell.lblMenuname.text!)
+        if cell.lblMenuname.text! == "Announcements"
+        {
+            
+            let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "announcementTable") as! MasterTableViewController
+            let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
+            
+            revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
+            
+            print("Announcements Tapped")
+        }
+        if cell.lblMenuname.text! == "Events"
+        {
+            print("Events Tapped")
+        }
         if cell.lblMenuname.text! == "Cove Menu"
         {
             print("Cove Menu Tapped")
@@ -65,23 +81,9 @@ class slideOutViewController: UIViewController,UITableViewDelegate,UITableViewDa
         {
             print("Academics Tapped")
         }
-        if cell.lblMenuname.text! == "Contact Us"
-        {
-            print("Contact Us Tapped")
-        }
-        if cell.lblMenuname.text! == "High Schools That Work"
-        {
-            print("High Schools That Work Tapped")
-        }
         if cell.lblMenuname.text! == "Media Center & Other"
         {
             print("Media Center & Other Tapped")
         }
-        if cell.lblMenuname.text! == "Special Needs"
-        {
-            print("Special Needs Tapped")
-        }
     }
-
-    
 }
