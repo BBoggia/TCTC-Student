@@ -18,6 +18,7 @@
 		5E5FBE761DF1DE220093DFDE /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5FBE751DF1DE220093DFDE /* StudentsViewController.swift */; };
 		5E65A2591DD2476F00972C49 /* RssTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65A2581DD2476F00972C49 /* RssTableViewController.swift */; };
 		5E75CDE11DC3B7830036CEE5 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75CDE01DC3B7830036CEE5 /* HomePageViewController.swift */; };
+		5E7D26211E28048900577551 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D26201E28048900577551 /* EventsViewController.swift */; };
 		5EB296131E240635004FB916 /* MainUITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB296121E240635004FB916 /* MainUITabBarController.swift */; };
 		5EB6C46C1DBA803600AD52D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6C46B1DBA803600AD52D3 /* AppDelegate.swift */; };
 		5EB6C46E1DBA803600AD52D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6C46D1DBA803600AD52D3 /* ViewController.swift */; };
@@ -62,6 +63,7 @@
 		5E5FBE751DF1DE220093DFDE /* StudentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
 		5E65A2581DD2476F00972C49 /* RssTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssTableViewController.swift; sourceTree = "<group>"; };
 		5E75CDE01DC3B7830036CEE5 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		5E7D26201E28048900577551 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		5EB296121E240635004FB916 /* MainUITabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainUITabBarController.swift; sourceTree = "<group>"; };
 		5EB6C4681DBA803600AD52D3 /* TCTC Student.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TCTC Student.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB6C46B1DBA803600AD52D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				5ED064B61E1D7B5900B9AFA3 /* SlideOutViewController.swift */,
 				5ED064B81E1D7BFB00B9AFA3 /* MenuCell.swift */,
 				5EB296121E240635004FB916 /* MainUITabBarController.swift */,
+				5E7D26201E28048900577551 /* EventsViewController.swift */,
 				5ED064B01E1D70FC00B9AFA3 /* SWRevealViewController.h */,
 				5ED064B11E1D71AF00B9AFA3 /* SWRevealViewController.m */,
 				5ED064B31E1D722F00B9AFA3 /* TCTC Student-Bridging-Header.h */,
@@ -502,6 +505,7 @@
 				5EB6C46E1DBA803600AD52D3 /* ViewController.swift in Sources */,
 				5E1C6FC21DFF23EB00D33929 /* HomeTableViewCell.swift in Sources */,
 				5E0900A51DC7BAFA00FD9CC0 /* AnnouncementsViewController.swift in Sources */,
+				5E7D26211E28048900577551 /* EventsViewController.swift in Sources */,
 				5EB6C46C1DBA803600AD52D3 /* AppDelegate.swift in Sources */,
 				5E0900AD1DCD009400FD9CC0 /* GuidanceViewController.swift in Sources */,
 				5E5FBE761DF1DE220093DFDE /* StudentsViewController.swift in Sources */,
