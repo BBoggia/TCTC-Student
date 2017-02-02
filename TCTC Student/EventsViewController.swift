@@ -10,7 +10,7 @@ import UIKit
 
 class EventsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, XMLParserDelegate {
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var eventTableView: UITableView!
     
     var parser = XMLParser()
     var feeds = NSMutableArray()
@@ -20,14 +20,12 @@ class EventsViewController: UIViewController, UITableViewDataSource, UITableView
     var link = NSMutableString()
     var element = NSString()
     let url = "http://www.tctchome.com//RSS/Events/114580.rss"
-    
-    var theIndex: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
+        eventTableView.delegate = self
+        eventTableView.dataSource = self
         
         feeds = NSMutableArray()
         parser = XMLParser(contentsOf: URL(string: url)!)!
@@ -43,19 +41,14 @@ class EventsViewController: UIViewController, UITableViewDataSource, UITableView
         // Dispose of any resources that can be recreated.
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+        
         return feeds.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath)
         
         // Configure the cell...
         cell.textLabel?.text = (feeds.object(at: (indexPath as NSIndexPath).row) as AnyObject).object(forKey: "title") as? String
@@ -97,7 +90,7 @@ class EventsViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func parserDidEndDocument(_ parser: XMLParser) {
-        self.tableView.reloadData()
+        self.eventTableView.reloadData()
     }
 
 }

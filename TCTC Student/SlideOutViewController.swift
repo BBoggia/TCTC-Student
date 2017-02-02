@@ -50,16 +50,22 @@ class slideOutViewController: UIViewController,UITableViewDelegate,UITableViewDa
             let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
             
             revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
-            
-            print("Announcements Tapped")
         }
         if cell.lblMenuname.text! == "Events"
         {
-            print("Events Tapped")
+            let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "eventsTable") as! EventsViewController
+            let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
+            
+            revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
         }
         if cell.lblMenuname.text! == "Cove Menu"
         {
-            print("Cove Menu Tapped")
+            let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "covePDFMenu") as! PDFViewController
+            let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
+            
+            revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
         }
         if cell.lblMenuname.text! == "Public/Annual Notices"
         {

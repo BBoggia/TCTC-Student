@@ -21,7 +21,7 @@ class DetailViewController: UIViewController, UIWebViewDelegate {
         
         self.customNav.topItem?.title = titleString
         
-        let myURL = URL(string: url .addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)
+        let myURL = URL(string: url .addingPercentEscapes(using: String.Encoding.utf8)!)
         
         let request = URLRequest(url: myURL!)
         
@@ -32,3 +32,4 @@ class DetailViewController: UIViewController, UIWebViewDelegate {
         self.dismiss(animated: true, completion: nil)
     }
 }
+

@@ -7,21 +7,26 @@
 //
 
 import UIKit
-import LiquidFloatingActionButton
+import AVKit
+import AVFoundation
+//import LiquidFloatingActionButton
 
 class StudentsViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBAction func videoButton(_ sender: Any) {
+        playVideo()
+    }
     
-    var cells = [LiquidFloatingCell]()      //data source
-    var floatingActionButton: LiquidFloatingActionButton!
+/*    var cells = [LiquidFloatingCell]()      //data source
+    var floatingActionButton: LiquidFloatingActionButton!*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.contentInset = UIEdgeInsetsMake(0, 0, 950, 0)
+        scrollView.contentInset = UIEdgeInsetsMake(0, 0, 650, 0)
 
-        createFloatingButton()
+        //createFloatingButton()
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,7 +34,18 @@ class StudentsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func createFloatingButton() {
+    func playVideo() {
+        
+        let videoURL = NSURL(string: "http://www.tctchome.com/VideoUp/3f900c6b-4454-4350-aedf-2bb7b9be31d1.mp4.mp4")
+        let player = AVPlayer(url: videoURL! as URL)
+        let playerViewController = AVViewController()
+        playerViewController.player = player
+        self.present(playerViewController, animated: true) {
+            playerViewController.player!.play()
+        }
+    }
+    
+    /*func createFloatingButton() {
         cells.append(createButtonCell(iconName: "floatingButton1"))
         
         let floatingFrame = CGRect(x: self.view.frame.width - 56 - 16, y: self.view.frame.height - 106 - 16, width: 56, height: 56)
@@ -55,11 +71,11 @@ class StudentsViewController: UIViewController {
         
         
         return floatingActionButton
-    }
+    }*/
 
 }
 
-extension StudentsViewController: LiquidFloatingActionButtonDataSource {
+/*extension StudentsViewController: LiquidFloatingActionButtonDataSource {
 
     func numberOfCells(_ liquidFloatingActionButton: LiquidFloatingActionButton) -> Int {
     
@@ -83,7 +99,7 @@ extension StudentsViewController:LiquidFloatingActionButtonDelegate {
     func didTapped(liquidFloatingActionButton: LiquidFloatingActionButton) {
         
     }
-}
+}*/
 
 
 

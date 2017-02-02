@@ -7,25 +7,18 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 import LiquidFloatingActionButton
 
-class HomePageViewController: UIViewController, UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate, XMLParserDelegate {
+class HomePageViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageScroller: UIScrollView!
-    @IBOutlet weak var tableView: UITableView!
-    
-    var cells = [LiquidFloatingCell]()      //data source
-    var floatingActionButton: LiquidFloatingActionButton!
-    
-    var parser = XMLParser()
-    var feeds = NSMutableArray()
-    var item = NSMutableDictionary()
-    var titleString = NSMutableString()
-    var descString = NSMutableString()
-    var link = NSMutableString()
-    var element = NSString()
-    let url = "http://www.tctchome.com//RSS/Events/114580.rss"
+    @IBAction func playVideo1(_ sender: Any) {
+        playVideo()
+    }
+
     
     let uiTabBar = MainUITabBarController()
     
@@ -82,18 +75,7 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate, UITableVie
         self.imageScroller.delegate = self
         
         Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(moveToNextPage), userInfo: nil, repeats: true)
-        
-        createFloatingButton()
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-        
-        feeds = NSMutableArray()
-        parser = XMLParser(contentsOf: URL(string: url)!)!
-        parser.delegate = self
-        parser.shouldResolveExternalEntities = false
-        parser.parse()
-        
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -101,64 +83,18 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate, UITableVie
         // Dispose of any resources that can be recreated.
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return feeds.count
-    }
-    
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+    func playVideo() {
         
-        // Configure the cell...
-        cell.textLabel?.text = (feeds.object(at: (indexPath as NSIndexPath).row) as AnyObject).object(forKey: "title") as? String
-        cell.detailTextLabel?.text = (feeds.object(at: (indexPath as NSIndexPath).row) as AnyObject).object(forKey: "description") as? String
-        
-        return cell
-    }
-    
-    
-    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
-        element = elementName as NSString
-        
-        if element == "item" {
-            item = NSMutableDictionary()
-            titleString = NSMutableString()
-            descString = NSMutableString()
-            link = NSMutableString()
+        let videoURL = NSURL(string: "http://www.tctchome.com/VideoUp/98451c15-b027-4ec9-a579-7738333448b5.mp4.mp4")
+        let player = AVPlayer(url: videoURL! as URL)
+        let playerViewController = AVViewController()
+        playerViewController.player = player
+        self.present(playerViewController, animated: true) {
+            playerViewController.player!.play()
         }
     }
     
-    func parser(_ parser: XMLParser, foundCharacters string: String) {
-        if element == "title" {
-            titleString.append(string)
-        } else if element == "link" {
-            link.append(string)
-        } else if element == "description" {
-            descString.append(string)
-        }
-    }
-    
-    func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
-        if elementName == "item" {
-            item.setObject(titleString, forKey: "title" as NSCopying)
-            item.setObject(link, forKey: "link" as NSCopying)
-            item.setObject(descString, forKey: "description" as NSCopying)
-            
-            feeds.add(item.copy())
-        }
-    }
-    
-    func parserDidEndDocument(_ parser: XMLParser) {
-        self.tableView.reloadData()
-    }
-    
-    func moveToNextPage (){
+    func moveToNextPage() {
         
         let pageWidth:CGFloat = self.view.frame.width
         let maxWidth:CGFloat = pageWidth * 12
@@ -171,76 +107,6 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate, UITableVie
             slideToX = 0
         }
         self.imageScroller.scrollRectToVisible(CGRect(x:slideToX, y:0, width:pageWidth, height:self.imageScroller.frame.height), animated: true)
-    }
-    
-    func createFloatingButton() {
-        cells.append(createButtonCellLink(iconName: "floatingButton1"))
-        cells.append(createButtonCellAnnouncements(iconName: "megaphone"))
-        
-        let floatingFrame = CGRect(x: self.view.frame.width - 56 - 16, y: self.view.frame.height - 106 - 16, width: 56, height: 56)
-        let floatingButton = createButton(frame: floatingFrame, style: .up)
-        
-        self.view.addSubview(floatingButton)
-        self.floatingActionButton = floatingButton
-        
-        //floatingActionButton.
-    }
-    
-    private func createButtonCellAnnouncements(iconName: String) -> LiquidFloatingCell {
-        
-        return LiquidFloatingCell(icon: UIImage(named: iconName)!)
-    }
-    
-    private func createButtonCellLink(iconName: String) -> LiquidFloatingCell {
-        
-        return LiquidFloatingCell(icon: UIImage(named: iconName)!)
-    }
-    
-    private func createButton(frame: CGRect, style: LiquidFloatingActionButtonAnimateStyle) -> LiquidFloatingActionButton {
-        
-        let floatingActionButton = LiquidFloatingActionButton(frame: frame)
-        
-        floatingActionButton.animateStyle = style
-        floatingActionButton.dataSource = self
-        floatingActionButton.delegate = self
-        
-        
-        return floatingActionButton
-    }
-    
-}
-
-extension HomePageViewController: LiquidFloatingActionButtonDataSource {
-    
-    func numberOfCells(_ liquidFloatingActionButton: LiquidFloatingActionButton) -> Int {
-        
-        return cells.count
-    }
-    
-    func cellForIndex(_ index: Int) -> LiquidFloatingCell {
-        
-        return cells[index]
-    }
-}
-
-extension HomePageViewController:LiquidFloatingActionButtonDelegate {
-    
-    
-    func liquidFloatingActionButton(_ liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int) {
-        
-        if index == 0 {
-        
-        } else if index == 1 {
-            performSegue(withIdentifier: "toAnnouncements", sender: nil)
-        }
-        
-        print("button number \(index) did click")
-        
-        self.floatingActionButton.close()
-    }
-    
-    func didTapped(liquidFloatingActionButton: LiquidFloatingActionButton) {
-        
     }
 }
 

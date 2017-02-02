@@ -30,6 +30,9 @@
 		5ED064B21E1D71AF00B9AFA3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED064B11E1D71AF00B9AFA3 /* SWRevealViewController.m */; };
 		5ED064B71E1D7B5900B9AFA3 /* SlideOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED064B61E1D7B5900B9AFA3 /* SlideOutViewController.swift */; };
 		5ED064B91E1D7BFB00B9AFA3 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED064B81E1D7BFB00B9AFA3 /* MenuCell.swift */; };
+		5EE918191E327691008B2AFE /* coveMenu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5EE918181E327691008B2AFE /* coveMenu.pdf */; };
+		5EE9181B1E3283C0008B2AFE /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE9181A1E3283C0008B2AFE /* PDFViewController.swift */; };
+		5EE9181D1E42638F008B2AFE /* AVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE9181C1E42638F008B2AFE /* AVViewController.swift */; };
 		9522EA7B057D7DA628C782FC /* Pods_TCTC_Student.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7548845384A87406C38BB764 /* Pods_TCTC_Student.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +86,9 @@
 		5ED064B31E1D722F00B9AFA3 /* TCTC Student-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TCTC Student-Bridging-Header.h"; sourceTree = "<group>"; };
 		5ED064B61E1D7B5900B9AFA3 /* SlideOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideOutViewController.swift; sourceTree = "<group>"; };
 		5ED064B81E1D7BFB00B9AFA3 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		5EE918181E327691008B2AFE /* coveMenu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = coveMenu.pdf; sourceTree = "<group>"; };
+		5EE9181A1E3283C0008B2AFE /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		5EE9181C1E42638F008B2AFE /* AVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVViewController.swift; sourceTree = "<group>"; };
 		7548845384A87406C38BB764 /* Pods_TCTC_Student.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCTC_Student.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C7A9FF59AE9A741829FD70 /* Pods-TCTC Student.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCTC Student.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCTC Student/Pods-TCTC Student.release.xcconfig"; sourceTree = "<group>"; };
 		9B380E50E40BAD2052506E80 /* Pods_TCTC_StudentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCTC_StudentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +165,8 @@
 				5ED064B81E1D7BFB00B9AFA3 /* MenuCell.swift */,
 				5EB296121E240635004FB916 /* MainUITabBarController.swift */,
 				5E7D26201E28048900577551 /* EventsViewController.swift */,
+				5EE9181A1E3283C0008B2AFE /* PDFViewController.swift */,
+				5EE9181C1E42638F008B2AFE /* AVViewController.swift */,
 				5ED064B01E1D70FC00B9AFA3 /* SWRevealViewController.h */,
 				5ED064B11E1D71AF00B9AFA3 /* SWRevealViewController.m */,
 				5ED064B31E1D722F00B9AFA3 /* TCTC Student-Bridging-Header.h */,
@@ -166,6 +174,7 @@
 				5EB6C4721DBA803600AD52D3 /* Assets.xcassets */,
 				5EB6C4741DBA803600AD52D3 /* LaunchScreen.storyboard */,
 				5EB6C4771DBA803600AD52D3 /* Info.plist */,
+				5EE918181E327691008B2AFE /* coveMenu.pdf */,
 			);
 			path = "TCTC Student";
 			sourceTree = "<group>";
@@ -333,6 +342,7 @@
 			files = (
 				5EB6C4761DBA803600AD52D3 /* LaunchScreen.storyboard in Resources */,
 				5EB6C4731DBA803600AD52D3 /* Assets.xcassets in Resources */,
+				5EE918191E327691008B2AFE /* coveMenu.pdf in Resources */,
 				5EB6C4711DBA803600AD52D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,12 +509,14 @@
 				5EB296131E240635004FB916 /* MainUITabBarController.swift in Sources */,
 				5ED064B91E1D7BFB00B9AFA3 /* MenuCell.swift in Sources */,
 				5E5FBE741DEF31A80093DFDE /* ProgramDetailViewController.swift in Sources */,
+				5EE9181D1E42638F008B2AFE /* AVViewController.swift in Sources */,
 				5E536D701DE36DB0004541BB /* ProgramTableViewCell.swift in Sources */,
 				5E65A2591DD2476F00972C49 /* RssTableViewController.swift in Sources */,
 				5E536D6E1DDF82E6004541BB /* ProgramTableViewController.swift in Sources */,
 				5EB6C46E1DBA803600AD52D3 /* ViewController.swift in Sources */,
 				5E1C6FC21DFF23EB00D33929 /* HomeTableViewCell.swift in Sources */,
 				5E0900A51DC7BAFA00FD9CC0 /* AnnouncementsViewController.swift in Sources */,
+				5EE9181B1E3283C0008B2AFE /* PDFViewController.swift in Sources */,
 				5E7D26211E28048900577551 /* EventsViewController.swift in Sources */,
 				5EB6C46C1DBA803600AD52D3 /* AppDelegate.swift in Sources */,
 				5E0900AD1DCD009400FD9CC0 /* GuidanceViewController.swift in Sources */,
