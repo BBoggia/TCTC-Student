@@ -16,11 +16,12 @@ class GuidanceViewController: UIViewController {
     @IBAction func phoneLaunch(sender: AnyObject) {
         callNumber(phoneNumber: "3308470503", extensionNum: "1005")
     }
+    @IBOutlet var bottomText: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        scrollView.contentInset = UIEdgeInsetsMake(0, 0, 700, 0)
+        let theInset = bottomText.bounds.maxY + bottomText.bounds.height + 90
+        scrollView.contentInset = UIEdgeInsetsMake(0, 0, theInset, 0)
     }
 
     override func didReceiveMemoryWarning() {

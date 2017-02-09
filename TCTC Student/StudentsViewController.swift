@@ -24,7 +24,7 @@ class StudentsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.contentInset = UIEdgeInsetsMake(0, 0, 650, 0)
+        scrollView.contentInset = UIEdgeInsetsMake(0, 0, 265, 0)
 
         //createFloatingButton()
     }

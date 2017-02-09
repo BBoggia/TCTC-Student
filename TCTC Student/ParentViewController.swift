@@ -11,13 +11,25 @@ import UIKit
 class ParentViewController: UIViewController {
 
     var strings:[String] = []
+    var titleString: String?
+    var urlString = NSString()
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var bulletLabel: UILabel!
+    @IBAction func parentAccessButton(_ sender: Any) {
+        titleString = "Parent Access"
+        urlString = "https://progressbook.neomin.org/ParentAccess/district/tctc"
+        self.performSegue(withIdentifier: "toUniversalWebView", sender: self)
+    }
+    @IBAction func studentFormsButton(_ sender: Any) {
+        titleString = "Student Forms"
+        urlString = "https://tctcforms.neomin.org/start/"
+        self.performSegue(withIdentifier: "toUniversalWebView", sender: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.contentInset = UIEdgeInsetsMake(0, 0, 300, 0)
+        scrollView.contentInset = UIEdgeInsetsMake(0, 0, 179, 0)
         
         let bullet1 = "Allow parents secure access to view their child’s academic progress of grades and assignments"
         let bullet2 = "Easily view daily attendance, homework, teacher web pages, student schedule and more"
@@ -55,6 +67,17 @@ class ParentViewController: UIViewController {
         paragraphStyle.headIndent = 15
         
         return paragraphStyle
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toUniversalWebView" {
+            var detail: UniversalWebViewController
+            
+            detail = segue.destination as! UniversalWebViewController
+            detail.url = urlString as String
+            detail.titleString = titleString! as String
+            
+        }
     }
 
 }

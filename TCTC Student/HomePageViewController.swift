@@ -9,7 +9,6 @@
 import UIKit
 import AVKit
 import AVFoundation
-import LiquidFloatingActionButton
 
 class HomePageViewController: UIViewController, UIScrollViewDelegate {
     
@@ -27,7 +26,7 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.contentInset = UIEdgeInsetsMake(0, 0, 400, 0)
+        scrollView.contentInset = UIEdgeInsetsMake(0, 0, 200, 0)
         
         self.imageScroller.frame = CGRect(x:0, y:122, width:self.imageScroller.frame.width, height:205)
         let imageScrollerWidth:CGFloat = self.view.frame.width

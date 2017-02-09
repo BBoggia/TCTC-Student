@@ -72,6 +72,15 @@
                                                 <color key="textColor" red="1" green="0.043124280869960785" blue="0.16396176815032959" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out our new programs and register for TCTC Career Days below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Oly-4h-ali">
+                                                <rect key="frame" x="22" y="230" width="331" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="U3E-x8-pnE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register here to attend TCTC Career Days!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="jRb-X1-EzM">
                                                 <rect key="frame" x="8" y="277" width="222" height="40"/>
                                                 <constraints>
@@ -179,15 +188,6 @@
                                                     <action selector="videoButton:" destination="gf8-oh-2pU" eventType="touchUpInside" id="1bE-PL-QwI"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out our new programs and register for TCTC Career Days below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Oly-4h-ali">
-                                                <rect key="frame" x="22" y="230" width="331" height="44"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="44" id="U3E-x8-pnE"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -774,6 +774,7 @@ Warren G. Harding High School</string>
                     </view>
                     <tabBarItem key="tabBarItem" title="Guidance" image="Certificate-02-48" selectedImage="Certificate-02-48" id="YyQ-Vc-oju"/>
                     <connections>
+                        <outlet property="bottomText" destination="ct5-zE-CMv" id="0Nd-GE-VsL"/>
                         <outlet property="guidancePhone" destination="v9h-O1-BmM" id="3Rn-vX-cLj"/>
                         <outlet property="scrollView" destination="LzP-gt-AR8" id="o9G-Tj-7dq"/>
                     </connections>
@@ -803,7 +804,7 @@ Warren G. Harding High School</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qTI-MZ-PxS" id="crt-b3-wHy">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Of8-xX-y8A">
@@ -1003,7 +1004,7 @@ Warren G. Harding High School</string>
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PzU-lH-9eM" id="0Hs-A0-QqG">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuM-mf-Ul2">
@@ -1225,6 +1226,7 @@ Warren G. Harding High School</string>
                     </navigationBar>
                     <connections>
                         <segue destination="KSy-VT-euD" kind="relationship" relationship="rootViewController" id="p3E-Ly-Lge"/>
+                        <segue destination="mP3-fr-q21" kind="show" identifier="toAnnouncements" id="bbN-z4-Fez"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Njb-SB-uaF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1260,11 +1262,11 @@ Warren G. Harding High School</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="817-40-qVz" id="0OW-IS-iWD">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yCm-B0-H4Y">
-                                            <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1307,14 +1309,14 @@ Warren G. Harding High School</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView opaque="NO" contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j3e-mV-Jvz">
-                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPJ-Im-2F6">
-                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="ibg-Ng-Obi">
-                                        <barButtonItem key="leftBarButtonItem" title="Close" id="vIe-Hk-izy">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="vIe-Hk-izy">
                                             <connections>
                                                 <action selector="closeBarButtonAction:" destination="emX-wQ-vCx" id="SUj-ZP-Pz4"/>
                                             </connections>
@@ -1332,9 +1334,10 @@ Warren G. Harding High School</string>
                             <constraint firstItem="j3e-mV-Jvz" firstAttribute="top" secondItem="PPJ-Im-2F6" secondAttribute="bottom" id="LMj-Qh-Ui7"/>
                             <constraint firstItem="kZV-NI-Rnc" firstAttribute="top" secondItem="j3e-mV-Jvz" secondAttribute="bottom" id="fBk-OP-TA9"/>
                             <constraint firstItem="j3e-mV-Jvz" firstAttribute="top" secondItem="PPJ-Im-2F6" secondAttribute="bottom" id="opS-3C-TXC"/>
-                            <constraint firstItem="PPJ-Im-2F6" firstAttribute="top" secondItem="VCq-OI-iaQ" secondAttribute="bottom" id="rH1-r4-8mH"/>
+                            <constraint firstItem="PPJ-Im-2F6" firstAttribute="top" secondItem="VCq-OI-iaQ" secondAttribute="bottom" constant="-20" id="rH1-r4-8mH"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="customNav" destination="PPJ-Im-2F6" id="hYV-VB-dvt"/>
                         <outlet property="webView" destination="j3e-mV-Jvz" id="eUH-kz-y3P"/>
@@ -1342,7 +1345,41 @@ Warren G. Harding High School</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dCp-fe-YiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1842" y="206"/>
+            <point key="canvasLocation" x="1840.8" y="205.54722638680661"/>
+        </scene>
+        <!--Universal Web View Controller-->
+        <scene sceneID="8TB-zW-Q9c">
+            <objects>
+                <viewController id="XGV-Me-LRI" customClass="UniversalWebViewController" customModule="TCTC_Student" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aYM-tG-Bhp"/>
+                        <viewControllerLayoutGuide type="bottom" id="xqP-Cx-eVs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mZy-tP-Eqq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bEE-1m-APd">
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bEE-1m-APd" firstAttribute="top" secondItem="aYM-tG-Bhp" secondAttribute="bottom" constant="8" symbolic="YES" id="4v2-wB-nPz"/>
+                            <constraint firstAttribute="trailing" secondItem="bEE-1m-APd" secondAttribute="trailing" id="AXb-Lk-hiU"/>
+                            <constraint firstItem="bEE-1m-APd" firstAttribute="leading" secondItem="mZy-tP-Eqq" secondAttribute="leading" id="M2C-tG-DVr"/>
+                            <constraint firstItem="bEE-1m-APd" firstAttribute="bottom" secondItem="xqP-Cx-eVs" secondAttribute="top" id="cp9-ON-AGT"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="bEE-1m-APd" id="alX-Dm-tdx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MBq-Sd-QxK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2581.5999999999999" y="205.54722638680661"/>
         </scene>
         <!--Parents-->
         <scene sceneID="9wE-ZD-ZHD">
@@ -1424,6 +1461,20 @@ Warren G. Harding High School</string>
                                                     <constraint firstAttribute="height" constant="30" id="beX-g6-nPm"/>
                                                 </constraints>
                                                 <state key="normal" title="Logon to Parent Access here!"/>
+                                                <connections>
+                                                    <action selector="parentAccessButton:" destination="iAC-pv-LMG" eventType="touchUpInside" id="Msf-Dj-Stk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="06U-5X-Zcn">
+                                                <rect key="frame" x="8" y="724" width="214" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="0Uu-XV-qJd"/>
+                                                    <constraint firstAttribute="width" constant="214" id="6RX-wc-cY2"/>
+                                                </constraints>
+                                                <state key="normal" title="ONLINE STUDENT FORMS 2016/2017"/>
+                                                <connections>
+                                                    <action selector="studentFormsButton:" destination="iAC-pv-LMG" eventType="touchUpInside" id="DaL-Rl-Ox4"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PA will provide us with the ability to:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Yj5-qj-O8U">
                                                 <rect key="frame" x="8" y="334" width="221" height="44"/>
@@ -1443,6 +1494,16 @@ Warren G. Harding High School</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="gda-Ul-pLS">
+                                                <rect key="frame" x="8" y="636" width="359" height="65"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="3IP-qY-dsF"/>
+                                                </constraints>
+                                                <string key="text">We look forward to a successful year using Parent Access and if you have further questions or need additional information please send an email to TCTCPAHelp@tctchome.com</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -1453,9 +1514,13 @@ Warren G. Harding High School</string>
                                             <constraint firstItem="cAO-7F-c8H" firstAttribute="trailing" secondItem="z4N-PN-Xak" secondAttribute="trailing" id="9W7-SM-nHL"/>
                                             <constraint firstItem="SfM-QU-sCH" firstAttribute="top" secondItem="cAO-7F-c8H" secondAttribute="bottom" constant="6" id="Aux-Oe-JkP"/>
                                             <constraint firstItem="3oI-Kk-mgW" firstAttribute="leading" secondItem="a2u-oh-aGg" secondAttribute="leading" id="Hzc-HY-8Dd"/>
+                                            <constraint firstItem="06U-5X-Zcn" firstAttribute="leading" secondItem="gda-Ul-pLS" secondAttribute="leading" id="IUI-sH-YSQ"/>
                                             <constraint firstItem="Yj5-qj-O8U" firstAttribute="trailing" secondItem="VGq-O5-bO9" secondAttribute="trailing" constant="-84" id="JtB-wC-0JE"/>
+                                            <constraint firstItem="06U-5X-Zcn" firstAttribute="top" secondItem="gda-Ul-pLS" secondAttribute="bottom" constant="23" id="Koa-L8-tYS"/>
                                             <constraint firstItem="3oI-Kk-mgW" firstAttribute="leading" secondItem="Yj5-qj-O8U" secondAttribute="leading" id="KwJ-Qt-QUr"/>
+                                            <constraint firstItem="gda-Ul-pLS" firstAttribute="top" secondItem="VGq-O5-bO9" secondAttribute="bottom" constant="12" id="Say-CR-vNk"/>
                                             <constraint firstItem="a2u-oh-aGg" firstAttribute="top" secondItem="hyV-m1-65N" secondAttribute="bottom" constant="8" symbolic="YES" id="Uhq-Qz-lyp"/>
+                                            <constraint firstItem="gda-Ul-pLS" firstAttribute="trailing" secondItem="hyV-m1-65N" secondAttribute="trailing" id="Z1a-Ha-0ga"/>
                                             <constraint firstItem="VGq-O5-bO9" firstAttribute="leading" secondItem="yZR-RM-51o" secondAttribute="leading" constant="8" id="a5l-iP-O36"/>
                                             <constraint firstAttribute="trailing" secondItem="cAO-7F-c8H" secondAttribute="trailing" id="abU-K3-Uh5"/>
                                             <constraint firstItem="7Su-bn-hjm" firstAttribute="top" secondItem="SfM-QU-sCH" secondAttribute="bottom" constant="28" id="cBT-Hb-y1D"/>
@@ -1469,6 +1534,7 @@ Warren G. Harding High School</string>
                                             <constraint firstItem="3oI-Kk-mgW" firstAttribute="trailing" secondItem="Yj5-qj-O8U" secondAttribute="trailing" id="qGJ-tZ-rgB"/>
                                             <constraint firstItem="VGq-O5-bO9" firstAttribute="top" secondItem="Yj5-qj-O8U" secondAttribute="bottom" constant="1" id="qfg-HK-vXd"/>
                                             <constraint firstItem="hyV-m1-65N" firstAttribute="leading" secondItem="yZR-RM-51o" secondAttribute="leading" constant="8" id="qug-hd-lCW"/>
+                                            <constraint firstItem="gda-Ul-pLS" firstAttribute="leading" secondItem="VGq-O5-bO9" secondAttribute="leading" id="uVM-RV-RZW"/>
                                             <constraint firstItem="z4N-PN-Xak" firstAttribute="leading" secondItem="7Su-bn-hjm" secondAttribute="leading" id="vZa-dF-AXd"/>
                                             <constraint firstItem="7Su-bn-hjm" firstAttribute="centerX" secondItem="hyV-m1-65N" secondAttribute="centerX" id="wRe-ef-3t2"/>
                                         </constraints>
@@ -1500,6 +1566,7 @@ Warren G. Harding High School</string>
                     <connections>
                         <outlet property="bulletLabel" destination="VGq-O5-bO9" id="iQE-Hi-dcP"/>
                         <outlet property="scrollView" destination="oeB-ZL-WCm" id="QbR-PE-3jF"/>
+                        <segue destination="XGV-Me-LRI" kind="show" identifier="toUniversalWebView" id="IrP-fF-ZUa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="taf-Nt-Rjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
