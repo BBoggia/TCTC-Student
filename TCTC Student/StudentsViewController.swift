@@ -13,9 +13,40 @@ import AVFoundation
 
 class StudentsViewController: UIViewController {
 
+    var titleString: String?
+    var urlString = NSString()
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBAction func videoButton(_ sender: Any) {
-        playVideo()
+    @IBOutlet weak var wv: UIWebView!
+    
+    @IBAction func registerCareerDay(_ sender: Any) {
+        titleString = ""
+        urlString = ""
+        self.performSegue(withIdentifier: "fromStudents", sender: self)
+    }
+    @IBAction func dentalAssistance(_ sender: Any) {
+        titleString = ""
+        urlString = ""
+        self.performSegue(withIdentifier: "fromStudents", sender: self)
+    }
+    @IBAction func hVAC(_ sender: Any) {
+        titleString = ""
+        urlString = ""
+        self.performSegue(withIdentifier: "fromStudents", sender: self)
+    }
+    @IBAction func eMTBasic(_ sender: Any) {
+        titleString = ""
+        urlString = ""
+        self.performSegue(withIdentifier: "fromStudents", sender: self)
+    }
+    @IBAction func nailTech(_ sender: Any) {
+        titleString = ""
+        urlString = ""
+        self.performSegue(withIdentifier: "fromStudents", sender: self)
+    }
+    @IBAction func ccpRegister(_ sender: Any) {
+        titleString = ""
+        urlString = ""
+        self.performSegue(withIdentifier: "fromStudents", sender: self)
     }
     
 /*    var cells = [LiquidFloatingCell]()      //data source
@@ -23,6 +54,7 @@ class StudentsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadYoutube(videoID: "jFrS2gulSXc")
         
         scrollView.contentInset = UIEdgeInsetsMake(0, 0, 265, 0)
 
@@ -34,14 +66,21 @@ class StudentsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func playVideo() {
-        
-        let videoURL = NSURL(string: "http://www.tctchome.com/VideoUp/3f900c6b-4454-4350-aedf-2bb7b9be31d1.mp4.mp4")
-        let player = AVPlayer(url: videoURL! as URL)
-        let playerViewController = AVViewController()
-        playerViewController.player = player
-        self.present(playerViewController, animated: true) {
-            playerViewController.player!.play()
+    func loadYoutube(videoID:String) {
+        guard
+            let youtubeURL = URL(string: "https://www.youtube.com/embed/\(videoID)")
+            else { return }
+        wv.loadRequest( URLRequest(url: youtubeURL) )
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toUniversalWebView" {
+            var detail: UniversalWebViewController
+            
+            detail = segue.destination as! UniversalWebViewController
+            detail.url = urlString as String
+            detail.titleString = titleString! as String
+            
         }
     }
     

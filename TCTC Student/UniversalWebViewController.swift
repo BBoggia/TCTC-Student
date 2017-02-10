@@ -11,7 +11,6 @@ import UIKit
 class UniversalWebViewController: UIViewController, UIWebViewDelegate {
 
     @IBOutlet weak var webView: UIWebView!
-    @IBOutlet weak var customNav: UINavigationBar!
     var url = ""
     var titleString = ""
     
@@ -19,7 +18,7 @@ class UniversalWebViewController: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.customNav.topItem?.title = titleString
+        //self.customNav.topItem?.title = titleString
         
         let myURL = URL(string: url .addingPercentEscapes(using: String.Encoding.utf8)!)
         

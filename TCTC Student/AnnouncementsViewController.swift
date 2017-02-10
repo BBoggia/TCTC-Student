@@ -19,7 +19,7 @@ class DetailViewController: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.customNav.topItem?.title = titleString
+        self.navigationItem.title = titleString as String
         
         let myURL = URL(string: url .addingPercentEscapes(using: String.Encoding.utf8)!)
         

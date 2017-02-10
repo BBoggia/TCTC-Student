@@ -18,13 +18,15 @@ class ParentViewController: UIViewController {
     @IBAction func parentAccessButton(_ sender: Any) {
         titleString = "Parent Access"
         urlString = "https://progressbook.neomin.org/ParentAccess/district/tctc"
-        self.performSegue(withIdentifier: "toUniversalWebView", sender: self)
+        self.performSegue(withIdentifier: "fromParent", sender: self)
     }
     @IBAction func studentFormsButton(_ sender: Any) {
         titleString = "Student Forms"
         urlString = "https://tctcforms.neomin.org/start/"
-        self.performSegue(withIdentifier: "toUniversalWebView", sender: self)
+        self.performSegue(withIdentifier: "fromParent", sender: self)
+        print("it works")
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,7 +72,7 @@ class ParentViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toUniversalWebView" {
+        if segue.identifier == "fromParent" {
             var detail: UniversalWebViewController
             
             detail = segue.destination as! UniversalWebViewController
