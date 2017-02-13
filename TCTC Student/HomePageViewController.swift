@@ -14,10 +14,7 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageScroller: UIScrollView!
-    @IBAction func playVideo1(_ sender: Any) {
-        playVideo()
-    }
-
+    @IBOutlet weak var wv: UIWebView!
     
     let uiTabBar = MainUITabBarController()
     
@@ -74,23 +71,14 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate {
         self.imageScroller.delegate = self
         
         Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(moveToNextPage), userInfo: nil, repeats: true)
+        
+        loadYoutube(videoID: "HLOZuEw3DAU")
 
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func playVideo() {
-        
-        let videoURL = NSURL(string: "http://www.tctchome.com/VideoUp/98451c15-b027-4ec9-a579-7738333448b5.mp4.mp4")
-        let player = AVPlayer(url: videoURL! as URL)
-        let playerViewController = AVViewController()
-        playerViewController.player = player
-        self.present(playerViewController, animated: true) {
-            playerViewController.player!.play()
-        }
     }
     
     func moveToNextPage() {
@@ -106,6 +94,13 @@ class HomePageViewController: UIViewController, UIScrollViewDelegate {
             slideToX = 0
         }
         self.imageScroller.scrollRectToVisible(CGRect(x:slideToX, y:0, width:pageWidth, height:self.imageScroller.frame.height), animated: true)
+    }
+    
+    func loadYoutube(videoID:String) {
+        guard
+            let youtubeURL = URL(string: "https://www.youtube.com/embed/\(videoID)")
+            else { return }
+        wv.loadRequest( URLRequest(url: youtubeURL) )
     }
 }
 

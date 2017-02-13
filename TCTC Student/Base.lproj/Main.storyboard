@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -498,7 +499,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mrs. Cynthia Goff" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="UqX-5B-LeU">
-                                                <rect key="frame" x="8" y="216" width="175" height="16"/>
+                                                <rect key="frame" x="8" y="216" width="133.5" height="16"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="16" id="lFt-eU-GLF"/>
                                                 </constraints>
@@ -515,6 +516,34 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzW-6U-AEv">
+                                                <rect key="frame" x="8" y="235" width="229" height="27"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="secretaryEmail:" destination="vZB-GY-rmT" eventType="touchUpInside" id="IBk-G1-pLk"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="330-847-0503 ext.1005" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="pyl-Vi-I3j">
+                                                <rect key="frame" x="241" y="216" width="126" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="e8n-u6-PBm"/>
+                                                    <constraint firstAttribute="height" constant="46" id="hyU-mt-ycz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.47934520244598389" blue="0.99908632040023804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9h-O1-BmM">
+                                                <rect key="frame" x="241" y="216" width="126" height="46"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="secretaryPhone:" destination="vZB-GY-rmT" eventType="touchUpInside" id="Y94-fN-ILY"/>
+                                                </connections>
+                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counselors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="7gV-Vn-Wat">
                                                 <rect key="frame" x="0.0" y="279" width="375" height="21"/>
                                                 <constraints>
@@ -534,7 +563,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: maria.len@tctchome.com" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="cne-jU-gre">
-                                                <rect key="frame" x="8" y="334" width="180" height="30"/>
+                                                <rect key="frame" x="8" y="337" width="180" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="1xg-zu-4mA"/>
                                                 </constraints>
@@ -542,8 +571,17 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="330-847-0503 ext.1007" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="qsK-wR-x6L">
-                                                <rect key="frame" x="8" y="357" width="126" height="46"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qW-yM-rRY">
+                                                <rect key="frame" x="8" y="337" width="180" height="30"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="lenEmail:" destination="vZB-GY-rmT" eventType="touchUpInside" id="zQY-70-JO6"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="330-847-0503 ext.1007" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="qsK-wR-x6L">
+                                                <rect key="frame" x="8" y="370" width="126" height="46"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="46" id="Kvb-mD-J2E"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="ONf-iG-iFb"/>
@@ -553,6 +591,15 @@
                                                 <color key="textColor" red="0.0" green="0.4793452024" blue="0.99908632040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Bz-wP-L4O">
+                                                <rect key="frame" x="8" y="370" width="126" height="46"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="lenPhone:" destination="vZB-GY-rmT" eventType="touchUpInside" id="VZZ-dA-1fH"/>
+                                                </connections>
+                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="OCI-s5-gsA">
                                                 <rect key="frame" x="191" y="316" width="176" height="132"/>
                                                 <string key="text">Badger High School
@@ -583,7 +630,7 @@ Niles High School</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: tina.hentosh@tctchome.com" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Yt5-ut-cTa">
-                                                <rect key="frame" x="8" y="487" width="178" height="35"/>
+                                                <rect key="frame" x="8" y="490" width="178" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="Wae-BU-vYq"/>
                                                 </constraints>
@@ -591,8 +638,8 @@ Niles High School</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="330-847-0503 ext.1006" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Vwz-64-hkp">
-                                                <rect key="frame" x="8" y="519" width="126" height="46"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="330-847-0503 ext.1006" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="Vwz-64-hkp">
+                                                <rect key="frame" x="8" y="526" width="126" height="46"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="46" id="bH9-ae-sZh"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="pzz-ME-MIw"/>
@@ -601,6 +648,15 @@ Niles High School</string>
                                                 <color key="textColor" red="0.0" green="0.4793452024" blue="0.99908632040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyW-1k-h3K">
+                                                <rect key="frame" x="8" y="526" width="126" height="46"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="hentoshPhone:" destination="vZB-GY-rmT" eventType="touchUpInside" id="HWu-yB-yBH"/>
+                                                </connections>
+                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="gmb-N2-RRZ">
                                                 <rect key="frame" x="191" y="468" width="176" height="170"/>
                                                 <string key="text">Champion High School
@@ -630,8 +686,8 @@ Southington Chalker High School</string>
                                                 <color key="textColor" red="0.61407083269999996" green="0.2275239825" blue="0.26011970639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: denise.sparacino@tctchome.com" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="th0-kX-IJT">
-                                                <rect key="frame" x="8" y="674" width="190" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: denise.sparacino@tctchome.com" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="th0-kX-IJT">
+                                                <rect key="frame" x="8" y="677" width="190" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="YUP-bI-NXd"/>
                                                 </constraints>
@@ -639,8 +695,17 @@ Southington Chalker High School</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="330-847-0503 ext.1010" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="gjJ-0K-IOC">
-                                                <rect key="frame" x="8" y="703" width="126" height="46"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMm-42-D2J">
+                                                <rect key="frame" x="8" y="677" width="190" height="30"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sparacinoEmail:" destination="vZB-GY-rmT" eventType="touchUpInside" id="xQ8-RO-UvC"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="330-847-0503 ext.1010" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="gjJ-0K-IOC">
+                                                <rect key="frame" x="8" y="710" width="126" height="46"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="46" id="Nbf-b6-fgx"/>
                                                 </constraints>
@@ -648,6 +713,15 @@ Southington Chalker High School</string>
                                                 <color key="textColor" red="0.0" green="0.4793452024" blue="0.99908632040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42t-nI-zGp">
+                                                <rect key="frame" x="8" y="710" width="126" height="46"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sparacinoPhone:" destination="vZB-GY-rmT" eventType="touchUpInside" id="RKK-Bs-mS9"/>
+                                                </connections>
+                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ct5-zE-CMv">
                                                 <rect key="frame" x="191" y="656" width="176" height="134"/>
                                                 <string key="text">Bloomfield High                     School
@@ -660,91 +734,104 @@ Warren G. Harding High School</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="330-847-0503 ext.1005" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="pyl-Vi-I3j">
-                                                <rect key="frame" x="241" y="216" width="126" height="46"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="e8n-u6-PBm"/>
-                                                    <constraint firstAttribute="height" constant="46" id="hyU-mt-ycz"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" red="0.0" green="0.47934520244598389" blue="0.99908632040023804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9h-O1-BmM">
-                                                <rect key="frame" x="241" y="216" width="126" height="46"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byI-0y-cYR">
+                                                <rect key="frame" x="8" y="490" width="178" height="35"/>
                                                 <state key="normal">
-                                                    <color key="titleColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="phoneLaunchWithSender:" destination="vZB-GY-rmT" eventType="touchUpInside" id="72s-Ac-b7x"/>
+                                                    <action selector="hentoshEmail:" destination="vZB-GY-rmT" eventType="touchUpInside" id="eTf-vU-N3c"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="gmb-N2-RRZ" firstAttribute="leading" secondItem="Yt5-ut-cTa" secondAttribute="trailing" constant="5" id="0dY-sZ-i9k"/>
-                                            <constraint firstItem="cne-jU-gre" firstAttribute="top" secondItem="Cnl-IX-pqp" secondAttribute="bottom" constant="1" id="2Kg-C3-jBf"/>
-                                            <constraint firstItem="v9h-O1-BmM" firstAttribute="height" secondItem="pyl-Vi-I3j" secondAttribute="height" id="2as-VN-xCv"/>
+                                            <constraint firstItem="cne-jU-gre" firstAttribute="top" secondItem="Cnl-IX-pqp" secondAttribute="bottom" constant="4" id="2Kg-C3-jBf"/>
                                             <constraint firstItem="gjJ-0K-IOC" firstAttribute="trailing" secondItem="Vwz-64-hkp" secondAttribute="trailing" id="31T-3n-ame"/>
                                             <constraint firstItem="Zfg-rT-l1p" firstAttribute="top" secondItem="gmb-N2-RRZ" secondAttribute="bottom" constant="9" id="4iI-kc-OAW"/>
                                             <constraint firstItem="gmb-N2-RRZ" firstAttribute="trailing" secondItem="ct5-zE-CMv" secondAttribute="trailing" id="5jQ-XQ-j6x"/>
-                                            <constraint firstItem="v9h-O1-BmM" firstAttribute="leading" secondItem="jp7-w6-Yu7" secondAttribute="trailing" constant="4" id="65Z-W4-BAG"/>
-                                            <constraint firstItem="Vwz-64-hkp" firstAttribute="top" secondItem="Yt5-ut-cTa" secondAttribute="bottom" constant="-3" id="6tc-eG-nmf"/>
+                                            <constraint firstItem="Vwz-64-hkp" firstAttribute="top" secondItem="Yt5-ut-cTa" secondAttribute="bottom" constant="1" id="6tc-eG-nmf"/>
                                             <constraint firstItem="ct5-zE-CMv" firstAttribute="top" secondItem="gmb-N2-RRZ" secondAttribute="bottom" constant="18" id="7Fj-O2-SDM"/>
-                                            <constraint firstItem="qsK-wR-x6L" firstAttribute="top" secondItem="cne-jU-gre" secondAttribute="bottom" constant="-7" id="81I-St-qAl"/>
+                                            <constraint firstItem="uyW-1k-h3K" firstAttribute="leading" secondItem="Vwz-64-hkp" secondAttribute="leading" id="7zI-zh-y9f"/>
+                                            <constraint firstItem="qsK-wR-x6L" firstAttribute="top" secondItem="cne-jU-gre" secondAttribute="bottom" constant="3" id="81I-St-qAl"/>
                                             <constraint firstItem="Zfg-rT-l1p" firstAttribute="trailing" secondItem="EIe-fj-fde" secondAttribute="trailing" id="9Ax-oR-SmZ"/>
-                                            <constraint firstItem="v9h-O1-BmM" firstAttribute="width" secondItem="pyl-Vi-I3j" secondAttribute="width" id="A9g-5B-8Z1"/>
-                                            <constraint firstItem="Yt5-ut-cTa" firstAttribute="top" secondItem="JHl-Hv-pth" secondAttribute="bottom" constant="1" id="AAQ-i3-Rhs"/>
+                                            <constraint firstItem="Yt5-ut-cTa" firstAttribute="top" secondItem="JHl-Hv-pth" secondAttribute="bottom" constant="4" id="AAQ-i3-Rhs"/>
+                                            <constraint firstItem="uyW-1k-h3K" firstAttribute="top" secondItem="Vwz-64-hkp" secondAttribute="top" id="AWl-Jn-bz6"/>
                                             <constraint firstItem="Yt5-ut-cTa" firstAttribute="leading" secondItem="Vwz-64-hkp" secondAttribute="leading" id="Agy-JM-OWK"/>
                                             <constraint firstItem="5UY-9r-KwJ" firstAttribute="trailing" secondItem="cne-jU-gre" secondAttribute="trailing" constant="13" id="B5i-hf-aoM"/>
                                             <constraint firstItem="JHl-Hv-pth" firstAttribute="top" secondItem="gmb-N2-RRZ" secondAttribute="top" constant="2" id="BKU-ec-JkE"/>
+                                            <constraint firstItem="byI-0y-cYR" firstAttribute="trailing" secondItem="Yt5-ut-cTa" secondAttribute="trailing" id="Bgj-N7-b6O"/>
+                                            <constraint firstItem="XMm-42-D2J" firstAttribute="top" secondItem="th0-kX-IJT" secondAttribute="top" id="Bxq-Yv-Cqp"/>
                                             <constraint firstItem="th0-kX-IJT" firstAttribute="leading" secondItem="FNB-Rk-Mxd" secondAttribute="leading" id="CvT-80-hN9"/>
-                                            <constraint firstItem="pyl-Vi-I3j" firstAttribute="leading" secondItem="v9h-O1-BmM" secondAttribute="leading" id="D6Q-ed-6jc"/>
                                             <constraint firstItem="jqd-el-7jM" firstAttribute="leading" secondItem="HWe-mf-F1q" secondAttribute="leading" id="DIX-CC-KmQ"/>
-                                            <constraint firstItem="th0-kX-IJT" firstAttribute="top" secondItem="FNB-Rk-Mxd" secondAttribute="bottom" constant="2" id="Dkb-Np-Z8Z"/>
-                                            <constraint firstItem="FNB-Rk-Mxd" firstAttribute="top" secondItem="Vwz-64-hkp" secondAttribute="bottom" constant="91" id="GFg-fT-Fpt"/>
+                                            <constraint firstItem="th0-kX-IJT" firstAttribute="top" secondItem="FNB-Rk-Mxd" secondAttribute="bottom" constant="5" id="Dkb-Np-Z8Z"/>
+                                            <constraint firstItem="uyW-1k-h3K" firstAttribute="trailing" secondItem="Vwz-64-hkp" secondAttribute="trailing" id="Fb4-2r-nzA"/>
+                                            <constraint firstItem="42t-nI-zGp" firstAttribute="bottom" secondItem="gjJ-0K-IOC" secondAttribute="bottom" id="GEm-BQ-lw0"/>
+                                            <constraint firstItem="FNB-Rk-Mxd" firstAttribute="top" secondItem="Vwz-64-hkp" secondAttribute="bottom" constant="84" id="GFg-fT-Fpt"/>
                                             <constraint firstItem="ct5-zE-CMv" firstAttribute="leading" secondItem="FNB-Rk-Mxd" secondAttribute="trailing" constant="6" id="GWJ-RQ-Ld1"/>
+                                            <constraint firstItem="v9h-O1-BmM" firstAttribute="top" secondItem="UqX-5B-LeU" secondAttribute="top" id="Gan-Fx-z62"/>
                                             <constraint firstItem="qsK-wR-x6L" firstAttribute="trailing" secondItem="Vwz-64-hkp" secondAttribute="trailing" id="I1s-Kb-XRI"/>
+                                            <constraint firstItem="5Bz-wP-L4O" firstAttribute="bottom" secondItem="qsK-wR-x6L" secondAttribute="bottom" id="IGz-lk-4vS"/>
                                             <constraint firstItem="OCI-s5-gsA" firstAttribute="leading" secondItem="Cnl-IX-pqp" secondAttribute="trailing" constant="67" id="Jfd-eV-DEK"/>
                                             <constraint firstItem="cpE-U1-lMx" firstAttribute="leading" secondItem="VWF-LA-NxY" secondAttribute="leading" id="KUY-iK-ebK"/>
-                                            <constraint firstItem="v9h-O1-BmM" firstAttribute="top" secondItem="VWF-LA-NxY" secondAttribute="bottom" constant="17" id="KrT-gS-ZTe"/>
                                             <constraint firstItem="OCI-s5-gsA" firstAttribute="leading" secondItem="qsK-wR-x6L" secondAttribute="trailing" constant="57" id="LD9-Dg-mlI"/>
+                                            <constraint firstItem="8qW-yM-rRY" firstAttribute="top" secondItem="cne-jU-gre" secondAttribute="top" id="Lqa-0L-Imy"/>
                                             <constraint firstItem="fua-XK-kLU" firstAttribute="trailing" secondItem="cpE-U1-lMx" secondAttribute="trailing" id="MHm-01-XQk"/>
+                                            <constraint firstItem="fzW-6U-AEv" firstAttribute="leading" secondItem="jp7-w6-Yu7" secondAttribute="leading" id="Mf8-fs-Bmw"/>
+                                            <constraint firstItem="5Bz-wP-L4O" firstAttribute="leading" secondItem="qsK-wR-x6L" secondAttribute="leading" id="NWB-X1-GBf"/>
+                                            <constraint firstItem="byI-0y-cYR" firstAttribute="top" secondItem="Yt5-ut-cTa" secondAttribute="top" id="NiU-7e-gbD"/>
+                                            <constraint firstItem="fzW-6U-AEv" firstAttribute="top" secondItem="jp7-w6-Yu7" secondAttribute="top" id="Nmu-fk-9wD"/>
+                                            <constraint firstItem="uyW-1k-h3K" firstAttribute="bottom" secondItem="Vwz-64-hkp" secondAttribute="bottom" id="O1l-fB-IvZ"/>
                                             <constraint firstItem="gmb-N2-RRZ" firstAttribute="leading" secondItem="ct5-zE-CMv" secondAttribute="leading" id="OZS-bI-mpg"/>
+                                            <constraint firstItem="fzW-6U-AEv" firstAttribute="bottom" secondItem="jp7-w6-Yu7" secondAttribute="bottom" id="Oyk-Xq-0Lf"/>
+                                            <constraint firstItem="5Bz-wP-L4O" firstAttribute="firstBaseline" secondItem="qsK-wR-x6L" secondAttribute="firstBaseline" id="P0k-Wi-4Dw"/>
                                             <constraint firstItem="pyl-Vi-I3j" firstAttribute="trailing" secondItem="HWe-mf-F1q" secondAttribute="trailingMargin" id="Pg7-6s-Nl9"/>
+                                            <constraint firstItem="byI-0y-cYR" firstAttribute="bottom" secondItem="Yt5-ut-cTa" secondAttribute="bottom" id="Pkh-C9-0PB"/>
                                             <constraint firstItem="fua-XK-kLU" firstAttribute="leading" secondItem="cpE-U1-lMx" secondAttribute="leading" id="PqV-gk-ANC"/>
+                                            <constraint firstItem="v9h-O1-BmM" firstAttribute="top" secondItem="pyl-Vi-I3j" secondAttribute="top" id="Q6Q-m4-BnW"/>
                                             <constraint firstItem="OCI-s5-gsA" firstAttribute="leading" secondItem="cne-jU-gre" secondAttribute="trailing" constant="3" id="QHd-lp-i7G"/>
                                             <constraint firstItem="UqX-5B-LeU" firstAttribute="leading" secondItem="Cnl-IX-pqp" secondAttribute="leading" id="QTS-rh-t9V"/>
                                             <constraint firstItem="cpE-U1-lMx" firstAttribute="top" secondItem="fua-XK-kLU" secondAttribute="bottom" id="RIe-Ie-xic"/>
                                             <constraint firstItem="5UY-9r-KwJ" firstAttribute="top" secondItem="jqd-el-7jM" secondAttribute="bottom" constant="8" symbolic="YES" id="RNL-Ql-zft"/>
                                             <constraint firstItem="FNB-Rk-Mxd" firstAttribute="top" secondItem="Zfg-rT-l1p" secondAttribute="bottom" constant="8" symbolic="YES" id="Rbq-ky-8Dl"/>
-                                            <constraint firstItem="JHl-Hv-pth" firstAttribute="top" secondItem="qsK-wR-x6L" secondAttribute="bottom" constant="67" id="RiR-E2-cpY"/>
+                                            <constraint firstItem="JHl-Hv-pth" firstAttribute="top" secondItem="qsK-wR-x6L" secondAttribute="bottom" constant="54" id="RiR-E2-cpY"/>
                                             <constraint firstItem="EIe-fj-fde" firstAttribute="trailing" secondItem="7gV-Vn-Wat" secondAttribute="trailing" id="T8F-fn-r7q"/>
                                             <constraint firstItem="gmb-N2-RRZ" firstAttribute="leading" secondItem="JHl-Hv-pth" secondAttribute="trailing" constant="38" id="Tha-7p-isR"/>
-                                            <constraint firstItem="gjJ-0K-IOC" firstAttribute="top" secondItem="th0-kX-IJT" secondAttribute="bottom" constant="-1" id="Y5R-Za-SJ1"/>
+                                            <constraint firstItem="XMm-42-D2J" firstAttribute="leading" secondItem="th0-kX-IJT" secondAttribute="leading" id="VRH-6g-nvG"/>
+                                            <constraint firstItem="v9h-O1-BmM" firstAttribute="leading" secondItem="fzW-6U-AEv" secondAttribute="trailing" constant="4" id="Xqq-h7-rr5"/>
+                                            <constraint firstItem="42t-nI-zGp" firstAttribute="leading" secondItem="gjJ-0K-IOC" secondAttribute="leading" id="Y0W-MH-4tt"/>
+                                            <constraint firstItem="gjJ-0K-IOC" firstAttribute="top" secondItem="th0-kX-IJT" secondAttribute="bottom" constant="3" id="Y5R-Za-SJ1"/>
+                                            <constraint firstItem="XMm-42-D2J" firstAttribute="trailing" secondItem="th0-kX-IJT" secondAttribute="trailing" id="YLJ-BO-7U2"/>
+                                            <constraint firstItem="8qW-yM-rRY" firstAttribute="leading" secondItem="cne-jU-gre" secondAttribute="leading" id="Yep-vR-2gq"/>
                                             <constraint firstItem="EIe-fj-fde" firstAttribute="leading" secondItem="7gV-Vn-Wat" secondAttribute="leading" id="YwK-hA-68m"/>
                                             <constraint firstItem="th0-kX-IJT" firstAttribute="leading" secondItem="gjJ-0K-IOC" secondAttribute="leading" id="Z87-Ot-mzN"/>
+                                            <constraint firstItem="fzW-6U-AEv" firstAttribute="trailing" secondItem="jp7-w6-Yu7" secondAttribute="trailing" id="ZHS-vE-Rry"/>
                                             <constraint firstItem="UqX-5B-LeU" firstAttribute="leading" secondItem="HWe-mf-F1q" secondAttribute="leading" constant="8" id="Zjj-rF-RtL"/>
                                             <constraint firstItem="5UY-9r-KwJ" firstAttribute="leading" secondItem="HWe-mf-F1q" secondAttribute="leadingMargin" id="Zqx-ym-Cxa"/>
                                             <constraint firstItem="fua-XK-kLU" firstAttribute="top" secondItem="5UY-9r-KwJ" secondAttribute="bottom" constant="8" symbolic="YES" id="ZtR-mb-cte"/>
+                                            <constraint firstItem="42t-nI-zGp" firstAttribute="firstBaseline" secondItem="gjJ-0K-IOC" secondAttribute="firstBaseline" id="aqd-om-WLM"/>
                                             <constraint firstItem="qsK-wR-x6L" firstAttribute="leading" secondItem="Yt5-ut-cTa" secondAttribute="leading" id="b6v-6X-saQ"/>
                                             <constraint firstItem="EIe-fj-fde" firstAttribute="top" secondItem="OCI-s5-gsA" secondAttribute="bottom" constant="9" id="bZ4-Oo-QPt"/>
                                             <constraint firstItem="UqX-5B-LeU" firstAttribute="top" secondItem="VWF-LA-NxY" secondAttribute="bottom" constant="17" id="bay-aZ-Dwl"/>
+                                            <constraint firstItem="5Bz-wP-L4O" firstAttribute="top" secondItem="qsK-wR-x6L" secondAttribute="top" id="c0o-FM-Bhd"/>
                                             <constraint firstItem="jqd-el-7jM" firstAttribute="trailing" secondItem="fua-XK-kLU" secondAttribute="trailing" id="cIv-DX-wEn"/>
+                                            <constraint firstItem="uyW-1k-h3K" firstAttribute="firstBaseline" secondItem="Vwz-64-hkp" secondAttribute="firstBaseline" id="cdh-op-QaU"/>
                                             <constraint firstItem="FNB-Rk-Mxd" firstAttribute="leading" secondItem="Vwz-64-hkp" secondAttribute="leading" id="daG-c5-B74"/>
-                                            <constraint firstItem="pyl-Vi-I3j" firstAttribute="bottom" secondItem="v9h-O1-BmM" secondAttribute="bottom" id="drg-zn-Din"/>
                                             <constraint firstItem="7gV-Vn-Wat" firstAttribute="top" secondItem="jp7-w6-Yu7" secondAttribute="bottom" constant="17" id="hOh-jA-epr"/>
                                             <constraint firstItem="jqd-el-7jM" firstAttribute="leading" secondItem="fua-XK-kLU" secondAttribute="leading" id="hxe-gc-sOa"/>
+                                            <constraint firstItem="v9h-O1-BmM" firstAttribute="trailing" secondItem="pyl-Vi-I3j" secondAttribute="trailing" id="iSy-IQ-Eng"/>
                                             <constraint firstItem="VWF-LA-NxY" firstAttribute="leading" secondItem="7gV-Vn-Wat" secondAttribute="leading" id="j3h-ba-zhk"/>
                                             <constraint firstItem="pyl-Vi-I3j" firstAttribute="trailing" secondItem="OCI-s5-gsA" secondAttribute="trailing" id="jqU-fo-fb4"/>
                                             <constraint firstItem="cne-jU-gre" firstAttribute="leading" secondItem="qsK-wR-x6L" secondAttribute="leading" id="kRB-Ek-tRE"/>
-                                            <constraint firstItem="jp7-w6-Yu7" firstAttribute="bottom" secondItem="v9h-O1-BmM" secondAttribute="bottom" id="l4U-Zl-caP"/>
+                                            <constraint firstItem="v9h-O1-BmM" firstAttribute="firstBaseline" secondItem="pyl-Vi-I3j" secondAttribute="firstBaseline" id="l2C-9o-CYD"/>
                                             <constraint firstItem="gmb-N2-RRZ" firstAttribute="top" secondItem="OCI-s5-gsA" secondAttribute="bottom" constant="20" id="lcz-PU-013"/>
-                                            <constraint firstItem="v9h-O1-BmM" firstAttribute="top" secondItem="cpE-U1-lMx" secondAttribute="bottom" constant="37" id="mTB-ag-6LW"/>
                                             <constraint firstAttribute="trailing" secondItem="jqd-el-7jM" secondAttribute="trailing" id="n7t-FY-ieg"/>
+                                            <constraint firstItem="v9h-O1-BmM" firstAttribute="leading" secondItem="pyl-Vi-I3j" secondAttribute="leading" id="nd0-jK-vcy"/>
+                                            <constraint firstItem="v9h-O1-BmM" firstAttribute="bottom" secondItem="pyl-Vi-I3j" secondAttribute="bottom" id="oOy-jK-wGX"/>
                                             <constraint firstItem="VWF-LA-NxY" firstAttribute="top" secondItem="fua-XK-kLU" secondAttribute="bottom" constant="52" id="obi-Dy-JBV"/>
+                                            <constraint firstItem="42t-nI-zGp" firstAttribute="trailing" secondItem="gjJ-0K-IOC" secondAttribute="trailing" id="on0-Il-3gR"/>
                                             <constraint firstItem="VWF-LA-NxY" firstAttribute="trailing" secondItem="7gV-Vn-Wat" secondAttribute="trailing" id="oyA-bD-M7X"/>
-                                            <constraint firstItem="v9h-O1-BmM" firstAttribute="trailing" secondItem="pyl-Vi-I3j" secondAttribute="trailing" id="pob-di-kpT"/>
                                             <constraint firstItem="Cnl-IX-pqp" firstAttribute="top" secondItem="OCI-s5-gsA" secondAttribute="top" id="q1a-Sy-4uX"/>
                                             <constraint firstItem="pyl-Vi-I3j" firstAttribute="height" secondItem="qsK-wR-x6L" secondAttribute="height" id="qFw-J9-Yvh"/>
                                             <constraint firstItem="Cnl-IX-pqp" firstAttribute="top" secondItem="7gV-Vn-Wat" secondAttribute="bottom" constant="16" id="qOA-Xl-whq"/>
@@ -753,16 +840,18 @@ Warren G. Harding High School</string>
                                             <constraint firstItem="jp7-w6-Yu7" firstAttribute="top" secondItem="UqX-5B-LeU" secondAttribute="bottom" constant="3" id="riD-iG-V8X"/>
                                             <constraint firstItem="jqd-el-7jM" firstAttribute="top" secondItem="HWe-mf-F1q" secondAttribute="top" id="rz8-gU-wQD"/>
                                             <constraint firstItem="th0-kX-IJT" firstAttribute="trailing" secondItem="5UY-9r-KwJ" secondAttribute="trailing" constant="-3" id="sL1-zr-S5o"/>
-                                            <constraint firstItem="pyl-Vi-I3j" firstAttribute="top" secondItem="v9h-O1-BmM" secondAttribute="top" id="sme-oD-Y1U"/>
                                             <constraint firstItem="VWF-LA-NxY" firstAttribute="top" secondItem="cpE-U1-lMx" secondAttribute="bottom" constant="-4" id="tc1-vg-htj"/>
                                             <constraint firstItem="OCI-s5-gsA" firstAttribute="leading" secondItem="gmb-N2-RRZ" secondAttribute="leading" id="tdW-D3-58L"/>
+                                            <constraint firstItem="byI-0y-cYR" firstAttribute="leading" secondItem="Yt5-ut-cTa" secondAttribute="leading" id="tlF-AK-9CG"/>
+                                            <constraint firstItem="42t-nI-zGp" firstAttribute="top" secondItem="gjJ-0K-IOC" secondAttribute="top" id="u6S-tq-hdb"/>
                                             <constraint firstItem="pyl-Vi-I3j" firstAttribute="width" secondItem="qsK-wR-x6L" secondAttribute="width" id="vNb-oB-CC1"/>
+                                            <constraint firstItem="8qW-yM-rRY" firstAttribute="trailing" secondItem="cne-jU-gre" secondAttribute="trailing" id="vmS-HJ-grB"/>
                                             <constraint firstItem="gmb-N2-RRZ" firstAttribute="top" secondItem="EIe-fj-fde" secondAttribute="bottom" constant="10" id="wL9-Qn-Skd"/>
                                             <constraint firstItem="cpE-U1-lMx" firstAttribute="trailing" secondItem="VWF-LA-NxY" secondAttribute="trailing" id="wTt-ug-vkU"/>
                                             <constraint firstItem="Cnl-IX-pqp" firstAttribute="leading" secondItem="JHl-Hv-pth" secondAttribute="leading" id="wh4-eH-ClI"/>
                                             <constraint firstItem="Zfg-rT-l1p" firstAttribute="leading" secondItem="EIe-fj-fde" secondAttribute="leading" id="xRo-Dj-9Xb"/>
                                             <constraint firstItem="jp7-w6-Yu7" firstAttribute="leading" secondItem="cne-jU-gre" secondAttribute="leading" id="xW1-fU-eg5"/>
-                                            <constraint firstItem="v9h-O1-BmM" firstAttribute="leading" secondItem="UqX-5B-LeU" secondAttribute="trailing" constant="58" id="y2c-xJ-7xA"/>
+                                            <constraint firstItem="5Bz-wP-L4O" firstAttribute="trailing" secondItem="qsK-wR-x6L" secondAttribute="trailing" id="xca-Xr-oJY"/>
                                             <constraint firstItem="FNB-Rk-Mxd" firstAttribute="top" secondItem="ct5-zE-CMv" secondAttribute="top" id="zzT-w5-QLw"/>
                                         </constraints>
                                     </view>
@@ -793,7 +882,6 @@ Warren G. Harding High School</string>
                     <tabBarItem key="tabBarItem" title="Guidance" image="Certificate-02-48" selectedImage="Certificate-02-48" id="YyQ-Vc-oju"/>
                     <connections>
                         <outlet property="bottomText" destination="ct5-zE-CMv" id="0Nd-GE-VsL"/>
-                        <outlet property="guidancePhone" destination="v9h-O1-BmM" id="3Rn-vX-cLj"/>
                         <outlet property="scrollView" destination="LzP-gt-AR8" id="o9G-Tj-7dq"/>
                     </connections>
                 </viewController>
@@ -1092,7 +1180,7 @@ Warren G. Harding High School</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfa-qS-9df">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="793"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqO-Ur-a3U">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="21"/>
@@ -1158,16 +1246,13 @@ Warren G. Harding High School</string>
                                                 <color key="textColor" red="0.62352941179999999" green="0.2274509804" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsF-b0-Bso">
+                                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nxb-7N-jWn">
                                                 <rect key="frame" x="8" y="589" width="359" height="196"/>
+                                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="196" id="mM8-ob-bOX"/>
+                                                    <constraint firstAttribute="height" constant="196" id="UkO-U5-x9H"/>
                                                 </constraints>
-                                                <state key="normal" image="play-button"/>
-                                                <connections>
-                                                    <action selector="playVideo1:" destination="WMa-MC-XN2" eventType="touchUpInside" id="7Km-xM-9rg"/>
-                                                </connections>
-                                            </button>
+                                            </webView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -1178,27 +1263,27 @@ Warren G. Harding High School</string>
                                             <constraint firstItem="BCl-O2-4gx" firstAttribute="top" secondItem="jBL-vJ-utd" secondAttribute="bottom" constant="22" id="6RU-pH-BnU"/>
                                             <constraint firstItem="Wms-hU-M5B" firstAttribute="top" secondItem="zzb-ht-KMP" secondAttribute="bottom" id="A0e-fI-AWb"/>
                                             <constraint firstItem="WO8-qe-7ME" firstAttribute="trailing" secondItem="BCl-O2-4gx" secondAttribute="trailing" id="BwX-BD-rnZ"/>
-                                            <constraint firstItem="wsF-b0-Bso" firstAttribute="trailing" secondItem="WO8-qe-7ME" secondAttribute="trailing" id="Fhm-bu-gWN"/>
                                             <constraint firstItem="jBL-vJ-utd" firstAttribute="centerX" secondItem="Wms-hU-M5B" secondAttribute="centerX" id="GQ5-Ho-Tsy"/>
-                                            <constraint firstAttribute="height" constant="618" id="IKF-Mm-wiY"/>
+                                            <constraint firstAttribute="height" constant="793" id="IKF-Mm-wiY"/>
                                             <constraint firstItem="BCl-O2-4gx" firstAttribute="width" secondItem="jBL-vJ-utd" secondAttribute="width" id="LmF-wv-TKS"/>
-                                            <constraint firstItem="wsF-b0-Bso" firstAttribute="top" secondItem="WO8-qe-7ME" secondAttribute="bottom" constant="10" id="M32-oy-QHA"/>
                                             <constraint firstItem="WO8-qe-7ME" firstAttribute="top" secondItem="BCl-O2-4gx" secondAttribute="bottom" constant="16" id="RsY-HD-xbJ"/>
+                                            <constraint firstItem="Nxb-7N-jWn" firstAttribute="top" secondItem="WO8-qe-7ME" secondAttribute="bottom" constant="10" id="TuP-8j-YIS"/>
                                             <constraint firstItem="BCl-O2-4gx" firstAttribute="width" secondItem="WO8-qe-7ME" secondAttribute="width" id="X7K-J2-kSv"/>
                                             <constraint firstItem="gqO-Ur-a3U" firstAttribute="leading" secondItem="zzb-ht-KMP" secondAttribute="leading" id="XHm-e3-pqB"/>
-                                            <constraint firstAttribute="bottom" secondItem="Wms-hU-M5B" secondAttribute="bottom" constant="295" id="XaP-PI-oLQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="Wms-hU-M5B" secondAttribute="bottom" constant="470" id="XaP-PI-oLQ"/>
                                             <constraint firstItem="zzb-ht-KMP" firstAttribute="top" secondItem="002-Jk-gtz" secondAttribute="bottom" constant="8" symbolic="YES" id="cDb-Ya-0x8"/>
                                             <constraint firstItem="gqO-Ur-a3U" firstAttribute="top" secondItem="pfa-qS-9df" secondAttribute="top" id="fy6-I9-SI3"/>
-                                            <constraint firstItem="wsF-b0-Bso" firstAttribute="leading" secondItem="WO8-qe-7ME" secondAttribute="leading" id="nza-NV-sJC"/>
                                             <constraint firstItem="jBL-vJ-utd" firstAttribute="top" secondItem="Wms-hU-M5B" secondAttribute="bottom" constant="8" id="od2-qZ-3gF"/>
                                             <constraint firstItem="zzb-ht-KMP" firstAttribute="leading" secondItem="Wms-hU-M5B" secondAttribute="leading" id="oiS-3K-9gq"/>
                                             <constraint firstItem="jBL-vJ-utd" firstAttribute="leading" secondItem="pfa-qS-9df" secondAttribute="leading" constant="8" id="oot-pG-fAp"/>
                                             <constraint firstItem="002-Jk-gtz" firstAttribute="leading" secondItem="pfa-qS-9df" secondAttribute="leadingMargin" id="qMj-S2-lM8"/>
                                             <constraint firstItem="WO8-qe-7ME" firstAttribute="leading" secondItem="BCl-O2-4gx" secondAttribute="leading" id="sHo-HQ-cgB"/>
+                                            <constraint firstItem="Nxb-7N-jWn" firstAttribute="trailing" secondItem="WO8-qe-7ME" secondAttribute="trailing" id="teY-Ns-C8n"/>
                                             <constraint firstItem="gqO-Ur-a3U" firstAttribute="leading" secondItem="pfa-qS-9df" secondAttribute="leading" id="u75-eY-Xzk"/>
+                                            <constraint firstItem="Nxb-7N-jWn" firstAttribute="leading" secondItem="WO8-qe-7ME" secondAttribute="leading" id="uYX-iR-aMb"/>
                                             <constraint firstItem="jBL-vJ-utd" firstAttribute="centerX" secondItem="rcN-cF-i2e" secondAttribute="centerX" id="uvm-uN-77p"/>
                                             <constraint firstAttribute="trailing" secondItem="gqO-Ur-a3U" secondAttribute="trailing" id="yK1-4q-mGD"/>
-                                            <constraint firstAttribute="bottom" secondItem="WO8-qe-7ME" secondAttribute="bottom" constant="39" id="yoX-6A-BVX"/>
+                                            <constraint firstAttribute="bottom" secondItem="WO8-qe-7ME" secondAttribute="bottom" constant="214" id="yoX-6A-BVX"/>
                                             <constraint firstItem="gqO-Ur-a3U" firstAttribute="trailing" secondItem="zzb-ht-KMP" secondAttribute="trailing" id="zIO-9j-WUE"/>
                                             <constraint firstItem="002-Jk-gtz" firstAttribute="top" secondItem="gqO-Ur-a3U" secondAttribute="bottom" constant="7" id="zg3-bp-9Ll"/>
                                         </constraints>
@@ -1207,7 +1292,7 @@ Warren G. Harding High School</string>
                                 <constraints>
                                     <constraint firstItem="pfa-qS-9df" firstAttribute="top" secondItem="Ase-wM-zHc" secondAttribute="top" id="4vK-0u-KnV"/>
                                     <constraint firstItem="pfa-qS-9df" firstAttribute="leading" secondItem="Ase-wM-zHc" secondAttribute="leading" id="8qy-E2-XEM"/>
-                                    <constraint firstAttribute="bottom" secondItem="pfa-qS-9df" secondAttribute="bottom" id="RNg-KL-OFx"/>
+                                    <constraint firstAttribute="bottom" secondItem="pfa-qS-9df" secondAttribute="bottom" constant="-175" id="RNg-KL-OFx"/>
                                     <constraint firstAttribute="trailing" secondItem="pfa-qS-9df" secondAttribute="trailing" id="oBa-MF-bJ4"/>
                                     <constraint firstItem="pfa-qS-9df" firstAttribute="centerX" secondItem="Ase-wM-zHc" secondAttribute="centerX" id="sVE-If-zD6"/>
                                 </constraints>
@@ -1226,6 +1311,7 @@ Warren G. Harding High School</string>
                     <connections>
                         <outlet property="imageScroller" destination="Wms-hU-M5B" id="Erc-GI-XpW"/>
                         <outlet property="scrollView" destination="Ase-wM-zHc" id="N5y-I3-QgR"/>
+                        <outlet property="wv" destination="Nxb-7N-jWn" id="NJX-sV-31w"/>
                         <segue destination="nS1-nd-fpO" kind="show" identifier="toVid" id="PpE-xn-20U"/>
                     </connections>
                 </viewController>
@@ -1654,11 +1740,10 @@ Warren G. Harding High School</string>
         <image name="User-Profile-48" width="48" height="48"/>
         <image name="logo" width="272" height="99"/>
         <image name="menu" width="32" height="32"/>
-        <image name="play-button" width="2048" height="1200"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Ws9-cl-ZTb"/>
-        <segue reference="jWh-fN-qFg"/>
+        <segue reference="PpE-xn-20U"/>
         <segue reference="9WS-DF-TWr"/>
     </inferredMetricsTieBreakers>
 </document>

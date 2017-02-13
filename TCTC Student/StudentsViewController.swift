@@ -19,33 +19,35 @@ class StudentsViewController: UIViewController {
     @IBOutlet weak var wv: UIWebView!
     
     @IBAction func registerCareerDay(_ sender: Any) {
-        titleString = ""
-        urlString = ""
-        self.performSegue(withIdentifier: "fromStudents", sender: self)
+        //Change when students can signup again next year
+        //titleString = ""
+        //urlString = ""
+        //self.performSegue(withIdentifier: "fromStudents", sender: self)
+        displayMyAlertMessage(title: "Oops", userMessage: "It looks like you missed TCTC's Career Day 😥. Check back later for next years dates.")
     }
     @IBAction func dentalAssistance(_ sender: Any) {
-        titleString = ""
-        urlString = ""
+        titleString = "Dental Assisting"
+        urlString = "http://www.tctchome.com/DentalAssisting.aspx"
         self.performSegue(withIdentifier: "fromStudents", sender: self)
     }
     @IBAction func hVAC(_ sender: Any) {
-        titleString = ""
-        urlString = ""
+        titleString = "HVAC"
+        urlString = "http://www.tctchome.com/HeatingVentilationAirConditioningRefrigeration.aspx"
         self.performSegue(withIdentifier: "fromStudents", sender: self)
     }
     @IBAction func eMTBasic(_ sender: Any) {
-        titleString = ""
-        urlString = ""
+        titleString = "EMT Basic"
+        urlString = "http://www.tctchome.com/Downloads/1EMTBasic.pdf"
         self.performSegue(withIdentifier: "fromStudents", sender: self)
     }
     @IBAction func nailTech(_ sender: Any) {
-        titleString = ""
-        urlString = ""
+        titleString = "Nail Technition"
+        urlString = "http://www.tctchome.com/Downloads/NailTech2.pdf"
         self.performSegue(withIdentifier: "fromStudents", sender: self)
     }
     @IBAction func ccpRegister(_ sender: Any) {
-        titleString = ""
-        urlString = ""
+        titleString = "College Credit Plus"
+        urlString = "https://www.ohiohighered.org/content/college_credit_plus_info_students_families"
         self.performSegue(withIdentifier: "fromStudents", sender: self)
     }
     
@@ -74,7 +76,7 @@ class StudentsViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toUniversalWebView" {
+        if segue.identifier == "fromStudents" {
             var detail: UniversalWebViewController
             
             detail = segue.destination as! UniversalWebViewController
@@ -82,6 +84,18 @@ class StudentsViewController: UIViewController {
             detail.titleString = titleString! as String
             
         }
+    }
+    
+    func displayMyAlertMessage(title:String, userMessage:String)
+    {
+        let myAlert = UIAlertController(title: title, message: userMessage, preferredStyle: UIAlertControllerStyle.alert)
+        
+        let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil)
+        
+        myAlert.addAction(okAction)
+        
+        self.present(myAlert, animated: true, completion: nil)
+        
     }
     
     /*func createFloatingButton() {
