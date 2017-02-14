@@ -67,10 +67,6 @@ class slideOutViewController: UIViewController,UITableViewDelegate,UITableViewDa
             
             revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
         }
-        if cell.lblMenuname.text! == "Public/Annual Notices"
-        {
-            print("Public/Annual Notices Tapped")
-        }
         if cell.lblMenuname.text! == "Students of the Month"
         {
             print("Students of the Month Tapped")
