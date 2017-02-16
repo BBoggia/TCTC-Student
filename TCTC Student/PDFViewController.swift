@@ -12,7 +12,7 @@ class PDFViewController: UIViewController {
 
     @IBOutlet weak var pdfWebView: UIWebView!
     @IBAction func orderButton(_ sender: Any) {
-        
+        performSegue(withIdentifier: "toCoveOrder", sender: self)
     }
     
     override func viewDidLoad() {

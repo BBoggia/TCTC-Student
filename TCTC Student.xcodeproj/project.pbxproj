@@ -20,6 +20,7 @@
 		5E65A2591DD2476F00972C49 /* RssTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65A2581DD2476F00972C49 /* RssTableViewController.swift */; };
 		5E75CDE11DC3B7830036CEE5 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75CDE01DC3B7830036CEE5 /* HomePageViewController.swift */; };
 		5E7D26211E28048900577551 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D26201E28048900577551 /* EventsViewController.swift */; };
+		5EA451601E54B60B00CA869D /* CoveOrderFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA4515F1E54B60B00CA869D /* CoveOrderFormViewController.swift */; };
 		5EB296131E240635004FB916 /* MainUITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB296121E240635004FB916 /* MainUITabBarController.swift */; };
 		5EB6C46C1DBA803600AD52D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6C46B1DBA803600AD52D3 /* AppDelegate.swift */; };
 		5EB6C46E1DBA803600AD52D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6C46D1DBA803600AD52D3 /* ViewController.swift */; };
@@ -70,6 +71,7 @@
 		5E65A2581DD2476F00972C49 /* RssTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssTableViewController.swift; sourceTree = "<group>"; };
 		5E75CDE01DC3B7830036CEE5 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		5E7D26201E28048900577551 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		5EA4515F1E54B60B00CA869D /* CoveOrderFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoveOrderFormViewController.swift; sourceTree = "<group>"; };
 		5EB296121E240635004FB916 /* MainUITabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainUITabBarController.swift; sourceTree = "<group>"; };
 		5EB6C4681DBA803600AD52D3 /* TCTC Student.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TCTC Student.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB6C46B1DBA803600AD52D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				5EE9181C1E42638F008B2AFE /* AVViewController.swift */,
 				5EE9181E1E48ED1B008B2AFE /* ParentViewController.swift */,
 				5E51A8061E4CDBA900906776 /* UniversalWebViewController.swift */,
+				5EA4515F1E54B60B00CA869D /* CoveOrderFormViewController.swift */,
 				5ED064B01E1D70FC00B9AFA3 /* SWRevealViewController.h */,
 				5ED064B11E1D71AF00B9AFA3 /* SWRevealViewController.m */,
 				5ED064B31E1D722F00B9AFA3 /* TCTC Student-Bridging-Header.h */,
@@ -298,7 +301,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Pinetree Studios";
 				TargetAttributes = {
 					5EB6C4671DBA803600AD52D3 = {
@@ -517,6 +520,7 @@
 				5E51A8071E4CDBA900906776 /* UniversalWebViewController.swift in Sources */,
 				5E5FBE741DEF31A80093DFDE /* ProgramDetailViewController.swift in Sources */,
 				5EE9181F1E48ED1B008B2AFE /* ParentViewController.swift in Sources */,
+				5EA451601E54B60B00CA869D /* CoveOrderFormViewController.swift in Sources */,
 				5EE9181D1E42638F008B2AFE /* AVViewController.swift in Sources */,
 				5E536D701DE36DB0004541BB /* ProgramTableViewCell.swift in Sources */,
 				5E65A2591DD2476F00972C49 /* RssTableViewController.swift in Sources */,
