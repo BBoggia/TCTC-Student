@@ -9,7 +9,7 @@
 import UIKit
 import MessageUI
 
-class CoveOrderFormViewController: UIViewController, MFMailComposeViewControllerDelegate {
+class CoveOrderFormViewController: UIViewController, MFMailComposeViewControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet var nameField: UITextField!
     @IBOutlet var lunchSegController: UISegmentedControl!
@@ -20,7 +20,7 @@ class CoveOrderFormViewController: UIViewController, MFMailComposeViewController
     @IBAction func submitButton(_ sender: Any) {
         selectLunch()
         createOrderTemplate(orderName: nameField.text!, foodOrder: orderField.text!)
-        //emailTemplate(order: orderField.text!)
+        emailTemplate(order: orderField.text!)
     }
     
     var name = ""
@@ -35,6 +35,8 @@ class CoveOrderFormViewController: UIViewController, MFMailComposeViewController
         super.viewDidLoad()
 
         mc.mailComposeDelegate = self
+        nameField.delegate = self
+        orderField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,22 +76,26 @@ class CoveOrderFormViewController: UIViewController, MFMailComposeViewController
     }
     
     func emailTemplate(order: String) {
-        if MFMailComposeViewController.canSendMail() {
-            print("Mail services are available")
-            let recipients = [""]
-            let title = "Cove Order"
-            let message = "\(orderTemplate)"
-            
-            mc.setToRecipients(recipients)
-            mc.setSubject(title)
-            mc.setMessageBody(message, isHTML: false)
-            
-            self.present(mc, animated: true, completion: nil)
-            return
-        } else if !MFMailComposeViewController.canSendMail() {
-            displayMyAlertMessage(title: "Uh-Oh😰", userMessage: "It looks like the mail services are not available, please try again later.")
+        if nameField.text != "" || orderField.text != "" {
+            if MFMailComposeViewController.canSendMail() {
+                print("Mail services are available")
+                let recipients = ["bb254926@tctchome.com"]
+                let title = "Cove Order"
+                let message = "\(orderTemplate)"
+                
+                mc.setToRecipients(recipients)
+                mc.setSubject(title)
+                mc.setMessageBody(message, isHTML: false)
+                
+                self.present(mc, animated: true, completion: nil)
+                return
+            } else if !MFMailComposeViewController.canSendMail() {
+                displayMyAlertMessage(title: "Uh-Oh😰", userMessage: "It looks like the mail services are not available, please try again later.")
+            } else {
+                print(LocalizedError.self)
+            }
         } else {
-            print(LocalizedError.self)
+            displayMyAlertMessage(title: "Uh-Oh😰", userMessage: "It looks like you forgot to fill in one of the required fields.")
         }
     }
     
@@ -107,6 +113,11 @@ class CoveOrderFormViewController: UIViewController, MFMailComposeViewController
             break
         }
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true);
+        return false;
     }
     
     func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {

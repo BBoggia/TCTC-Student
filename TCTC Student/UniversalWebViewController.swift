@@ -18,7 +18,7 @@ class UniversalWebViewController: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.customNav.topItem?.title = titleString
+        self.navigationController?.title = titleString
         
         let myURL = URL(string: url .addingPercentEscapes(using: String.Encoding.utf8)!)
         
@@ -31,4 +31,3 @@ class UniversalWebViewController: UIViewController, UIWebViewDelegate {
         self.dismiss(animated: true, completion: nil)
     }
 }
-

@@ -15,7 +15,7 @@ class slideOutViewController: UIViewController,UITableViewDelegate,UITableViewDa
     var ManuNameArray:Array = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        ManuNameArray = ["Announcements","Events","Cove Menu","Public/Annual Notices","Students of the Month","Student Youth Organization","Career Development","Academics","Media Center & Other"]
+        ManuNameArray = ["Announcements","Events","Cove Menu","Student Youth Organization","Academics"]
         
     }
     
@@ -67,25 +67,17 @@ class slideOutViewController: UIViewController,UITableViewDelegate,UITableViewDa
             
             revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
         }
-        if cell.lblMenuname.text! == "Students of the Month"
-        {
-            print("Students of the Month Tapped")
-        }
         if cell.lblMenuname.text! == "Student Youth Organization"
         {
-            print("Student Youth Organization Tapped")
-        }
-        if cell.lblMenuname.text! == "Career Development"
-        {
-            print("Career Development Tapped")
+            let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "SYOTable") as! SYOTableViewController
+            let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
+            
+            revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
         }
         if cell.lblMenuname.text! == "Academics"
         {
             print("Academics Tapped")
-        }
-        if cell.lblMenuname.text! == "Media Center & Other"
-        {
-            print("Media Center & Other Tapped")
         }
     }
 }

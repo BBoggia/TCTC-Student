@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="t5i-Sw-8Cd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="t5i-Sw-8Cd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -287,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vwz-dd-vpO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2581.5999999999999" y="941.37931034482767"/>
+            <point key="canvasLocation" x="2658" y="941"/>
         </scene>
         <!--Program Detail View Controller-->
         <scene sceneID="lAz-XK-IOg">
@@ -308,10 +308,14 @@
                                         <rect key="frame" x="0.0" y="-66" width="375" height="654"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="71f-Rd-z6K">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="171"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="140" id="CjD-eQ-7ed"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="ey8-Ve-PAt"/>
+                                                </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwB-EY-Wdh">
-                                                <rect key="frame" x="16" y="179" width="343" height="29"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="CwB-EY-Wdh">
+                                                <rect key="frame" x="16" y="148" width="343" height="29"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="29" id="C8k-vp-7wy"/>
                                                 </constraints>
@@ -319,56 +323,56 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher(s):" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6o-pL-KTx">
-                                                <rect key="frame" x="8" y="225" width="107" height="25"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher(s):" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Y6o-pL-KTx">
+                                                <rect key="frame" x="8" y="194" width="107" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="TGH-9k-gsw"/>
                                                     <constraint firstAttribute="width" constant="107" id="fH5-59-cs9"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Mail:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3h4-lF-9Je">
-                                                <rect key="frame" x="8" y="379" width="65" height="25"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Mail:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="3h4-lF-9Je">
+                                                <rect key="frame" x="8" y="333" width="65" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="JBr-hL-tqc"/>
                                                     <constraint firstAttribute="width" constant="65" id="Qod-N1-bIO"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMf-6g-Apy">
-                                                <rect key="frame" x="8" y="285" width="80" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="qlt-IQ-jTU">
-                                                <rect key="frame" x="129" y="216" width="238" height="43"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="Npt-kj-BUX">
-                                                <rect key="frame" x="107" y="288" width="260" height="43"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="hMf-6g-Apy">
+                                                <rect key="frame" x="8" y="249" width="80" height="43"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="qlt-IQ-jTU">
+                                                <rect key="frame" x="129" y="185" width="238" height="43"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Npt-kj-BUX">
+                                                <rect key="frame" x="107" y="252" width="260" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <color key="textColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="eE1-Kk-5QE">
-                                                <rect key="frame" x="107" y="370" width="260" height="43"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="eE1-Kk-5QE">
+                                                <rect key="frame" x="107" y="324" width="260" height="58"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqg-3f-e9c">
-                                                <rect key="frame" x="8" y="434" width="359" height="170"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="Tqg-3f-e9c">
+                                                <rect key="frame" x="8" y="390" width="359" height="164"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="170" id="gjI-kg-xkF"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="164" id="gjI-kg-xkF"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -380,27 +384,27 @@
                                             <constraint firstItem="qlt-IQ-jTU" firstAttribute="trailing" secondItem="Npt-kj-BUX" secondAttribute="trailing" id="1xi-7m-YTw"/>
                                             <constraint firstItem="Y6o-pL-KTx" firstAttribute="centerY" secondItem="qlt-IQ-jTU" secondAttribute="centerY" id="2zN-Cv-vJd"/>
                                             <constraint firstItem="Npt-kj-BUX" firstAttribute="trailing" secondItem="eE1-Kk-5QE" secondAttribute="trailing" id="4t6-z4-lEN"/>
-                                            <constraint firstItem="Npt-kj-BUX" firstAttribute="top" secondItem="qlt-IQ-jTU" secondAttribute="bottom" constant="29" id="8S7-SH-bd3"/>
+                                            <constraint firstItem="Npt-kj-BUX" firstAttribute="top" secondItem="qlt-IQ-jTU" secondAttribute="bottom" constant="24" id="8S7-SH-bd3"/>
                                             <constraint firstItem="71f-Rd-z6K" firstAttribute="centerX" secondItem="CwB-EY-Wdh" secondAttribute="centerX" id="G17-Yn-ftM"/>
                                             <constraint firstItem="Npt-kj-BUX" firstAttribute="leading" secondItem="hMf-6g-Apy" secondAttribute="trailing" constant="19" id="G6J-Ds-3X0"/>
-                                            <constraint firstItem="3h4-lF-9Je" firstAttribute="centerY" secondItem="eE1-Kk-5QE" secondAttribute="centerY" id="GLT-H5-lAM"/>
+                                            <constraint firstItem="3h4-lF-9Je" firstAttribute="centerY" secondItem="eE1-Kk-5QE" secondAttribute="centerY" constant="-7.5" id="GLT-H5-lAM"/>
                                             <constraint firstItem="Y6o-pL-KTx" firstAttribute="leading" secondItem="ywR-uX-Cax" secondAttribute="leadingMargin" id="IXv-19-HFs"/>
                                             <constraint firstItem="hMf-6g-Apy" firstAttribute="leading" secondItem="3h4-lF-9Je" secondAttribute="leading" id="IvR-Uy-5Mj"/>
-                                            <constraint firstItem="hMf-6g-Apy" firstAttribute="top" secondItem="Y6o-pL-KTx" secondAttribute="bottom" constant="35" id="JF5-Nq-9Zs"/>
+                                            <constraint firstItem="hMf-6g-Apy" firstAttribute="top" secondItem="Y6o-pL-KTx" secondAttribute="bottom" constant="30" id="JF5-Nq-9Zs"/>
                                             <constraint firstItem="CwB-EY-Wdh" firstAttribute="top" secondItem="71f-Rd-z6K" secondAttribute="bottom" constant="8" symbolic="YES" id="Jy9-I9-xbF"/>
                                             <constraint firstItem="Y6o-pL-KTx" firstAttribute="leading" secondItem="hMf-6g-Apy" secondAttribute="leading" id="Sec-yf-Ysm"/>
                                             <constraint firstItem="qlt-IQ-jTU" firstAttribute="leading" secondItem="Y6o-pL-KTx" secondAttribute="trailing" constant="14" id="T9U-Gf-8N1"/>
-                                            <constraint firstItem="eE1-Kk-5QE" firstAttribute="top" secondItem="Npt-kj-BUX" secondAttribute="bottom" constant="39" id="Wiq-ua-pPW"/>
+                                            <constraint firstItem="eE1-Kk-5QE" firstAttribute="top" secondItem="Npt-kj-BUX" secondAttribute="bottom" constant="34" id="Wiq-ua-pPW"/>
                                             <constraint firstItem="eE1-Kk-5QE" firstAttribute="leading" secondItem="3h4-lF-9Je" secondAttribute="trailing" constant="34" id="a3C-iL-LGO"/>
                                             <constraint firstItem="Npt-kj-BUX" firstAttribute="leading" secondItem="eE1-Kk-5QE" secondAttribute="leading" id="ahg-0h-2pF"/>
                                             <constraint firstItem="qlt-IQ-jTU" firstAttribute="top" secondItem="CwB-EY-Wdh" secondAttribute="bottom" constant="8" symbolic="YES" id="alO-gB-QMa"/>
                                             <constraint firstAttribute="height" constant="654" id="dGI-eC-gV4"/>
-                                            <constraint firstItem="Tqg-3f-e9c" firstAttribute="top" secondItem="3h4-lF-9Je" secondAttribute="bottom" constant="30" id="giH-zv-Lqm"/>
-                                            <constraint firstAttribute="bottom" secondItem="Tqg-3f-e9c" secondAttribute="bottom" constant="50" id="js1-An-2N3"/>
+                                            <constraint firstItem="Tqg-3f-e9c" firstAttribute="top" secondItem="3h4-lF-9Je" secondAttribute="bottom" constant="32" id="giH-zv-Lqm"/>
+                                            <constraint firstAttribute="bottom" secondItem="Tqg-3f-e9c" secondAttribute="bottom" constant="100" id="js1-An-2N3"/>
                                             <constraint firstItem="Y6o-pL-KTx" firstAttribute="top" secondItem="CwB-EY-Wdh" secondAttribute="bottom" constant="17" id="kf3-6a-hxo"/>
                                             <constraint firstItem="eE1-Kk-5QE" firstAttribute="trailing" secondItem="Tqg-3f-e9c" secondAttribute="trailing" id="lfb-sW-CTh"/>
                                             <constraint firstItem="71f-Rd-z6K" firstAttribute="top" secondItem="ywR-uX-Cax" secondAttribute="top" id="moG-C4-4I7"/>
-                                            <constraint firstItem="Tqg-3f-e9c" firstAttribute="top" secondItem="eE1-Kk-5QE" secondAttribute="bottom" constant="21" id="nyc-F1-zUq"/>
+                                            <constraint firstItem="Tqg-3f-e9c" firstAttribute="top" secondItem="eE1-Kk-5QE" secondAttribute="bottom" constant="8" id="nyc-F1-zUq"/>
                                             <constraint firstItem="71f-Rd-z6K" firstAttribute="leading" secondItem="ywR-uX-Cax" secondAttribute="leading" id="sDi-4R-xAX"/>
                                             <constraint firstItem="CwB-EY-Wdh" firstAttribute="leading" secondItem="ywR-uX-Cax" secondAttribute="leading" constant="16" id="sgT-yb-8AC"/>
                                             <constraint firstItem="hMf-6g-Apy" firstAttribute="centerY" secondItem="Npt-kj-BUX" secondAttribute="centerY" id="swb-6y-0d3"/>
@@ -426,6 +430,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="programDescription" destination="Tqg-3f-e9c" id="IEz-hM-2RZ"/>
                         <outlet property="programImageView" destination="71f-Rd-z6K" id="mW8-2b-YhZ"/>
                         <outlet property="programTitle" destination="CwB-EY-Wdh" id="uxq-rE-A4N"/>
                         <outlet property="scrollView" destination="Kc0-fU-1uk" id="ikV-hX-AFW"/>
@@ -436,7 +441,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OHE-Nv-G7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1842" y="1685"/>
+            <point key="canvasLocation" x="1884" y="1752.7736131934034"/>
         </scene>
         <!--Guidance-->
         <scene sceneID="syL-RF-Tng">
@@ -887,7 +892,48 @@ Warren G. Harding High School</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cG5-Sj-bpg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2581.5999999999999" y="1684.4077961019491"/>
+            <point key="canvasLocation" x="4119" y="941"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="blA-Au-GTk">
+            <objects>
+                <tableViewController storyboardIdentifier="SYOTable" id="hFi-xS-Cvu" customClass="SYOTableViewController" customModule="TCTC_Student" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="41" sectionHeaderHeight="28" sectionFooterHeight="28" id="hPe-wG-dEa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SYOCell" rowHeight="41" id="sG2-qm-beL">
+                                <rect key="frame" x="0.0" y="28" width="375" height="41"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sG2-qm-beL" id="2kr-fq-4Wy">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="Hf4-hF-kuv">
+                                            <rect key="frame" x="8" y="8" width="178" height="24"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hFi-xS-Cvu" id="gjm-jt-k9z"/>
+                            <outlet property="delegate" destination="hFi-xS-Cvu" id="eUg-ca-U5k"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="t5i-Sw-8Cd" kind="show" identifier="toSYO" id="bUH-by-kKg"/>
+                        <segue destination="XGV-Me-LRI" kind="show" identifier="fromSYO" id="xWs-d7-lxG"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NSH-Ix-NYR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="335" y="1753"/>
         </scene>
         <!--AV Player View Controller-->
         <scene sceneID="Cu0-N0-x0e">
@@ -895,7 +941,7 @@ Warren G. Harding High School</string>
                 <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="nS1-nd-fpO" customClass="AVViewController" customModule="TCTC_Student" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fr5-Dg-3t1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="335" y="1684"/>
+            <point key="canvasLocation" x="1118" y="1753"/>
         </scene>
         <!--TCTC Programs-->
         <scene sceneID="9J4-ks-VzH">
@@ -910,7 +956,7 @@ Warren G. Harding High School</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qTI-MZ-PxS" id="crt-b3-wHy">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Of8-xX-y8A">
@@ -945,7 +991,7 @@ Warren G. Harding High School</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yvn-mG-jL4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1122" y="1685"/>
+            <point key="canvasLocation" x="1884" y="941"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kBh-Fw-nao">
@@ -961,7 +1007,7 @@ Warren G. Harding High School</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oXW-zz-aZ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-477" y="-603"/>
+            <point key="canvasLocation" x="1884" y="249"/>
         </scene>
         <!--TCTC Events-->
         <scene sceneID="mZy-yX-wXp">
@@ -1031,7 +1077,7 @@ Warren G. Harding High School</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jov-Ms-YP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="336" y="-603"/>
+            <point key="canvasLocation" x="2657" y="249"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bfE-WN-bmA">
@@ -1047,7 +1093,7 @@ Warren G. Harding High School</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kc8-Vp-vK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1118" y="-603"/>
+            <point key="canvasLocation" x="3401" y="249"/>
         </scene>
         <!--The Cove Menu-->
         <scene sceneID="dcl-Xa-g3J">
@@ -1094,7 +1140,7 @@ Warren G. Harding High School</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xvt-Tb-rHT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1842" y="-603"/>
+            <point key="canvasLocation" x="335" y="249"/>
         </scene>
         <!--Cove Order Form View Controller-->
         <scene sceneID="281-rp-TzH">
@@ -1198,11 +1244,11 @@ Warren G. Harding High School</string>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="D1g-2F-1Wm">
                                         <rect key="frame" x="100" y="0.0" width="259" height="287"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rVy-cn-yll">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="rVy-cn-yll">
                                                 <rect key="frame" x="0.0" y="0.0" width="259" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
                                             </textField>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lq4-sW-2ui">
                                                 <rect key="frame" x="0.0" y="57" width="259" height="29"/>
@@ -1228,7 +1274,7 @@ Warren G. Harding High School</string>
                                                     <action selector="lunchSegAction:" destination="TQW-8N-GId" eventType="valueChanged" id="4tY-3f-l7y"/>
                                                 </connections>
                                             </segmentedControl>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ta-nZ-iRo">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="bezel" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="4ta-nZ-iRo">
                                                 <rect key="frame" x="0.0" y="167" width="259" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="5ok-3q-vnm"/>
@@ -1236,7 +1282,7 @@ Warren G. Harding High School</string>
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -1276,7 +1322,7 @@ Warren G. Harding High School</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K2d-fl-f61" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2581.5999999999999" y="-603.14842578710648"/>
+            <point key="canvasLocation" x="334" y="-527"/>
         </scene>
         <!--Slide Out View Controller-->
         <scene sceneID="hPW-dQ-gil">
@@ -1298,7 +1344,7 @@ Warren G. Harding High School</string>
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PzU-lH-9eM" id="0Hs-A0-QqG">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuM-mf-Ul2">
@@ -1336,11 +1382,12 @@ Warren G. Harding High School</string>
                     </view>
                     <connections>
                         <outlet property="tblTableView" destination="jLC-4m-v0v" id="h8L-QG-L7S"/>
+                        <segue destination="XGV-Me-LRI" kind="show" identifier="fromSOTM" id="x0V-RK-uy9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffb-pP-gJv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-476" y="205.54722638680661"/>
+            <point key="canvasLocation" x="1118" y="249"/>
         </scene>
         <!--Home-->
         <scene sceneID="ToD-q0-u3C">
@@ -1495,7 +1542,7 @@ Warren G. Harding High School</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9I-bh-lqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117.5999999999999" y="941.37931034482767"/>
+            <point key="canvasLocation" x="1119" y="941"/>
         </scene>
         <!--Home-->
         <scene sceneID="qog-S0-4Rb">
@@ -1529,7 +1576,7 @@ Warren G. Harding High School</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3q-ef-d8g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="336" y="206"/>
+            <point key="canvasLocation" x="1118" y="-526"/>
         </scene>
         <!--TCTC-->
         <scene sceneID="lf2-YZ-Lvf">
@@ -1544,11 +1591,11 @@ Warren G. Harding High School</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="817-40-qVz" id="0OW-IS-iWD">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yCm-B0-H4Y">
-                                            <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1576,7 +1623,7 @@ Warren G. Harding High School</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aS5-e8-bSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1122" y="206"/>
+            <point key="canvasLocation" x="1884" y="-527"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="GzL-Zt-spp">
@@ -1627,7 +1674,7 @@ Warren G. Harding High School</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dCp-fe-YiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1840.8" y="205.54722638680661"/>
+            <point key="canvasLocation" x="2657" y="-527"/>
         </scene>
         <!--Universal Web View Controller-->
         <scene sceneID="8TB-zW-Q9c">
@@ -1642,7 +1689,7 @@ Warren G. Harding High School</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bEE-1m-APd">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="30" width="375" height="637"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
@@ -1660,7 +1707,7 @@ Warren G. Harding High School</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MBq-Sd-QxK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2581.5999999999999" y="205.54722638680661"/>
+            <point key="canvasLocation" x="4908" y="941"/>
         </scene>
         <!--Parents-->
         <scene sceneID="9wE-ZD-ZHD">
@@ -1856,7 +1903,7 @@ Warren G. Harding High School</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="taf-Nt-Rjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1840.8" y="941.37931034482767"/>
+            <point key="canvasLocation" x="3402" y="941"/>
         </scene>
         <!--TCTC-->
         <scene sceneID="PjM-9r-eIJ">
@@ -1920,8 +1967,8 @@ Warren G. Harding High School</string>
         <image name="menu" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bHX-t4-HPp"/>
+        <segue reference="bUH-by-kKg"/>
+        <segue reference="xWs-d7-lxG"/>
         <segue reference="PpE-xn-20U"/>
-        <segue reference="9WS-DF-TWr"/>
     </inferredMetricsTieBreakers>
 </document>

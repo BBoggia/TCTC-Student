@@ -16,18 +16,20 @@ class ProgramDetailViewController: UIViewController {
     @IBOutlet weak var teacherName: UILabel!
     @IBOutlet weak var teacherPhonenumber: UILabel!
     @IBOutlet weak var teacherEmail: UILabel!
+    @IBOutlet weak var programDescription: UILabel!
     
     var sendData1: String!
     var sendData2: String!
     var sendData3: String!
     var sendData4: String!
-    var sendData5: String!
+    var sendData5: UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.contentInset = UIEdgeInsetsMake(0, 0, 100, 0)
+        scrollView.contentInset = UIEdgeInsetsMake(0, 0, 30, 0)
 
+        programImageView.image = sendData5
         programTitle.text = sendData1
         teacherName.text = sendData2
         teacherPhonenumber.text = sendData3
